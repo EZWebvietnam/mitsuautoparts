@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+	min-width:37px;
+	z-index:11;	
+}
+.sbSelector{
+	display: block;
+	height: 32px;
+	line-height: 29px;
+	outline: none;
+	width:auto;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #333;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background:url(images/arrow-down-black.png) 5px 0px no-repeat;
+	display: block;	
+	outline: none;
+	position: absolute;
+	right: -19px;
+	top: -2px;
+	width:30px;
+	height:32px;
+}
+.sbToggle:hover{
+	
+}
+.sbToggleOpen{
+	
+}
+.sbToggleOpen:hover{
+	
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #FFF;
+	border: solid 1px #dddddd;
+	list-style: none;
+	left: -10px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 163px;
+	z-index: 10;
+	overflow:auto;
+	height: 315px;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+	line-height: 1.8em;
+	height:21px;
+	overflow:hidden;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #333;
+	text-decoration: none;	
+}
+.sbOptions a:hover{
+	color: #FFF;
+	background:#4398db;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #333;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
