@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2014 at 04:53 AM
+-- Generation Time: Apr 18, 2014 at 05:50 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -115,9 +115,23 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
 ('059132c1107a3fae625a7ee53dc248e7', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397789132, ''),
+('1682a74f622ac8d6234c21adedffc8c5', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397790001, ''),
 ('1de32648233c4f45edab107d6407b5bb', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397789549, ''),
+('25b1eea7443a2b732f071fbb248fb5c4', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792586, ''),
+('265d702c0747070500db58999863f62e', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792681, ''),
 ('2e2aaa5f516a39450b79187a181c40a8', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397789506, ''),
-('4dddf7b18b38603591543dfc9d04ce22', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397789284, '');
+('3c7d15ad67a872d2915c6f880dd500f3', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792428, ''),
+('4b98995d8cdb7c2d60fb8e887f724919', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792179, ''),
+('4c9551a4c261806b728d0c126b4d9ffc', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792477, ''),
+('4dddf7b18b38603591543dfc9d04ce22', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397789284, ''),
+('5180201cdb964f7e94338040a6042ed9', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792624, ''),
+('661625be4d42f671ba4d867140ccf853', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792165, ''),
+('6dc9732fd3c184e915bc50ecca6f5275', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792451, ''),
+('7e364232b759bd6e592ee6ab56511ca4', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792818, ''),
+('92f45b691e9bf02c9c1ecaf71e666778', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792979, ''),
+('9e4fd6473efa8210c3eac0069b3042b1', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397791201, ''),
+('bbf3b0b7151132b04d886eb214490f49', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792250, ''),
+('fee9f16314b957714744763898a23a51', '127.0.0.1', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (K', 1397792414, '');
 
 -- --------------------------------------------------------
 
@@ -139,6 +153,40 @@ CREATE TABLE IF NOT EXISTS `login_attempts` (
 
 INSERT INTO `login_attempts` (`id`, `ip_address`, `login`, `time`) VALUES
 (1, '127.0.0.1', 'admin', '2014-04-02 03:52:22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE IF NOT EXISTS `product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `create_date` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `title`, `price`, `image`, `create_date`) VALUES
+(1, 'Lốc lạnh xe BMW E90 E91 E92 E93 X1 chính hãng', '', '2xoc3j15m2k025514025500biet_rang_logo.jpg', 0),
+(2, 'Rô tuyn cân bằng sau xe Lexus- IS250', '', '2e801skfrs9123014113023rô tuyn 3_logo.jpg', 0),
+(3, 'Chổi gạt mưa trước xe Mercedes S320 WDB220', '', '2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg', 0),
+(4, 'Lốc lạnh xe Mercedes E200K WDB211 chính hãng', '', '2denstkj2oi213713013758loc_lanh_logo.jpg', 0),
+(5, 'Bơm xăng xe Mercedes E240 WDB211', '', '2ktpdwcvkwi201213031255loc xang 2_logo.jpg', 0),
+(6, 'Dầu số tự động xe Mercedes E240 WDB211', '', '2tkb9vagnak192513052556dau so tu dong_logo.jpg', 0),
+(7, 'Má phanh trước xe Mercedes S320 WDB140 chính hãng', '', '21s0y1re02b074913094953ma phanh truoc_logo.jpg', 0),
+(8, 'Bình nước phụ xe Mercedes C200k WDB203 chính hãng', '', '2oocebtiztn223213013255binh_nuô_logo.jpg', 0),
+(9, 'Lọc gió điều hòa xe Mercedes R230, SL500 chính hãng', '', '2onadq31q7d170614020640lo_logo.jpg', 0),
+(10, 'Dàn lạnh xe Mercedes S600 W140 chính hãng', '', '22xie4gbjdz1758141158590254_logo.jpg', 0),
+(11, 'Dàn nóng xe Mercedes E200 W211 chính hãng', '', '2fvf3z9d0uz1737141137101154_logo.jpg', 0),
+(12, 'Dàn nóng xe Mercedes C180 W203 chính hãng', '', '2oua4yjejqe172614112657dh_logo.jpg', 0),
+(13, 'Dàn nóng xe Mercedes R280 W251 chính hãng', '', '240jwyygf6o1707141107160054_logo.jpg', 0);
 
 -- --------------------------------------------------------
 
