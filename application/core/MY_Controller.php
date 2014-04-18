@@ -9,21 +9,12 @@ class MY_Controller extends CI_Controller
         $this->data = array();
 
     }
-    public function list_cate()
+    public function list_cate_parent()
     {
-        $this->load->model('catemodel');
-        $this->data['list_cate']=$this->catemodel->load_cate();
+        $this->load->model('cateproducthomemodel');
+        $this->data['list_cate_parent']=$this->cateproducthomemodel->list_cate_parent();
     }
-    public function info_company()
-    {
-        $this->load->model('faq');
-        $this->data['info_company'] = $this->faq->info_com();
-    }
-    public function load_clip()
-    {
-        $this->load->model('productmodel');
-        $this->data['list_clip'] = $this->productmodel->load_clip();
-    }
+    
     public function load_header()
     {
         $link = $_SERVER['DOCUMENT_ROOT'] . ROT_DIR . 'setting.xml';
@@ -60,27 +51,6 @@ class MY_Controller extends CI_Controller
         }
         $this->data['header']=$data_setting;
     }
-    public function list_province()
-    {
-        $this->load->model('users');
-        $list_district = $this->users->get_province();
-        $this->data['list_province'] = $list_district;
-    }
-    public function list_province_admin()
-    {
-        $this->load->model('ctvmodel');
-        $list_district = $this->ctvmodel->get_province();
-        $a = array();
-        foreach($list_district as $k)
-        {
-            $a[$k['provinceid']]=$k['name'];
-        }
-        $this->data['list_province_admin'] = $a;
-    }
-    public function captcha_random()
-    {
-        $this->load->model('productmodel');
-        $this->data['captcha_question'] = $this->productmodel->random_captcha();
-    }
+    
 }
 ?>

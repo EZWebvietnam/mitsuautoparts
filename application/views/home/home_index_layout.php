@@ -8,12 +8,12 @@
       <meta name="google-site-verification" content="m8fDBKyVIyvrrx_CrBoy5sbMJquy5soxEH1nVw7kbyw" />
       <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/?gclid=copq3jttir0cfeib4godi34aug" />
       <!--http://www.minifycss.com/css-compressor  async="true"/-->
-      <link rel="stylesheet" type="text/css" href="css/Reset.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/Reset.css" />
       <!--rat quan trong de tuong thich voi nhieu trinh duyet -->
-      <link rel="stylesheet" type="text/css" href="css/ExtCss.css" />
-      <link rel="stylesheet" type="text/css" href="css/bxNews.css" />
-      <link rel="stylesheet" type="text/css" href="css/bxQuestion.css" />
-      <link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/ExtCss.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/bxNews.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/bxQuestion.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/jquery.selectbox.css" />
       <!--[if IE 7]>
       <link rel="stylesheet" href="Css/FixIE/ie7.css" type="text/css" media="screen" />
       <![endif]-->
@@ -23,18 +23,18 @@
       <!--[if IE 9]>
       <link rel="stylesheet" href="Css/FixIE/ie9.css" type="text/css" media="screen" />
       <![endif]-->
-      <script type="text/javascript" src="js/jq_version/1_7_1/jquery-1.7.1.min.js"></script>
-      <script type="text/javascript" src="js/Selectbox/jquery.selectbox-0.1.3.min.js"></script>
-      <script type="text/javascript" src="js/AutoComplete/jquery.autocomplete.js"></script>
-      <script type="text/javascript" src="js/Common.js"></script>
-      <script type="text/javascript" src="js/jquery.cookie.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/jq_version/1_7_1/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/Selectbox/jquery.selectbox-0.1.3.min.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/AutoComplete/jquery.autocomplete.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/Common.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/jquery.cookie.js"></script>
       <meta name="ROBOTS" content="ALL" />
       <meta name="description" content="Tư vấn kỹ thuật, cung cấp phụ tùng ô tô, linh kiện xe hơi nhập khẩu cao cấp giá tốt. Các phu tung o to chính hãng Mercedes, BMW, Audi cho gara tại Việt Nam" />
       <meta name="keywords" content="Phụ tùng ô tô,Phụ tùng xe hơi,linh kiện ô tô, linh kiện phụ tùng ô tô" />
    </head>
    <body>
       <div class="ajax-loader-email" style="display: none;">
-         <div><img src="images/ajax-loader-send-mail-2.gif" alt="send mail"/></div>
+         <div><img src="<?php echo base_url();?>template/ezwebvietnam/home/images/ajax-loader-send-mail-2.gif" alt="send mail"/></div>
       </div>
       <script type="text/javascript">
          //<![CDATA[
@@ -51,14 +51,14 @@
          }
          //]]>
       </script>
-      <script src="WebResource.axd?d=4zogrSb5tNMqoXhtFti3ZeWPd7RkZudkWaGsbtaJWPN67vU0K_m_0_-OArbAMSBEkrTWFv5elX7E76qrDP3bkiFu4_K0Sm8DTnVUpyY6jJo1&amp;t=635196033660000000" type="text/javascript"></script>
-      <script src="ScriptResource.axd?d=wW8sRNCvXeJnfYhKtG3pD_3bxrt5boUSHGQhp_ehA3irB_q4s31QAoR37SYjaJu8FomkR-gmZsn-l5djjs2DJyBQNn1ywdfqP4q9-SAAs2bdQwThXAw49_VccdzFsrNUxBnp3qyWrMcSUyfnJXap-M4ipcUl_9k6mJpg38b5wGGkx9xrA-2x2YuL-MHfj72e0&amp;t=ca758f3" type="text/javascript"></script>
+      <script src="<?php echo base_url();?>template/ezwebvietnam/home/WebResource.axd?d=4zogrSb5tNMqoXhtFti3ZeWPd7RkZudkWaGsbtaJWPN67vU0K_m_0_-OArbAMSBEkrTWFv5elX7E76qrDP3bkiFu4_K0Sm8DTnVUpyY6jJo1&amp;t=635196033660000000" type="text/javascript"></script>
+      <script src="<?php echo base_url();?>template/ezwebvietnam/home/ScriptResource.axd?d=wW8sRNCvXeJnfYhKtG3pD_3bxrt5boUSHGQhp_ehA3irB_q4s31QAoR37SYjaJu8FomkR-gmZsn-l5djjs2DJyBQNn1ywdfqP4q9-SAAs2bdQwThXAw49_VccdzFsrNUxBnp3qyWrMcSUyfnJXap-M4ipcUl_9k6mJpg38b5wGGkx9xrA-2x2YuL-MHfj72e0&amp;t=ca758f3" type="text/javascript"></script>
       <script type="text/javascript">
          //<![CDATA[
          if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
          //]]>
       </script>
-      <script src="ScriptResource.axd?d=o3dAp9gN68K1kr-MwffdiLgmyqnABTebb5DTfnpO4VXaNmJ-EcQclCRZnK76mtNBp6UK1OoW3I0Te0xcQ7Xxn43RHD-rdfYUOzFMQNF3F2hyuxxmfZRzu1bn96MOblouG_2u7nzQZe_O0ZN_8H7Q-SoFNwnWe5g_QHOY4VPNvG7ClOyhJeTp7zsmTuTTWksz0&amp;t=ca758f3" type="text/javascript"></script>
+      <script src="<?php echo base_url();?>template/ezwebvietnam/home/ScriptResource.axd?d=o3dAp9gN68K1kr-MwffdiLgmyqnABTebb5DTfnpO4VXaNmJ-EcQclCRZnK76mtNBp6UK1OoW3I0Te0xcQ7Xxn43RHD-rdfYUOzFMQNF3F2hyuxxmfZRzu1bn96MOblouG_2u7nzQZe_O0ZN_8H7Q-SoFNwnWe5g_QHOY4VPNvG7ClOyhJeTp7zsmTuTTWksz0&amp;t=ca758f3" type="text/javascript"></script>
       <div id="Wraper">
          <div id="wrapBody">
             <div id="Header">
@@ -88,7 +88,7 @@
                   <div class="clr header-main">
                      <div class="main-item-1">
                         <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="./">
-                        <img src="images/logo.jpg" width="249" height="39" alt="logo" />
+                        <img src="<?php echo base_url();?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
                         </a>
                      </div>
                      <div class="main-item-2">
@@ -177,89 +177,25 @@
                   <!--Headet menu-->
                   <div class="header-nav">
                      <ul class="nav-top">
-                        <li class='navL1 width1'>
-                           <i></i><a href='/He-thong-dien-dieu-hoa--product-c32428453-p1.aspx'><span>Hệ thống điện  -  điều hòa </span></a>
+                         <?php 
+                         $i = 1;
+                         foreach($list_cate_parent as $cate_parent)
+                         {
+                         ?>
+                        <li class='navL1 width<?php echo $i?>'>
+                           <i></i><a href='<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_parent['name'])));?>-c<?php echo $cate_parent['id'] ?>'><span><?php echo $cate_parent['name']?> </span></a>
                            <ul >
-                              <li><i></i><a href='/He-thong-cam-bien-product-c137814891-p1.aspx'>Hệ thống cảm biến</a></li>
-                              <li><i></i><a href='/He-thong-tui-khi--product-c46531879-p1.aspx'>Hệ thống túi khí </a></li>
-                              <li><i></i><a href='/Loc-lanh-product-c57501089-p1.aspx'>Lốc lạnh</a></li>
-                              <li><i></i><a href='/Dan-nong-product-c65317316-p1.aspx'>Dàn nóng</a></li>
-                              <li><i></i><a href='/He-thong-dieu-hoa--product-c71161997-p1.aspx'>Hệ thống điều hòa </a></li>
-                              <li><i></i><a href='/He-thong-hop-dieu-khien-product-c72973774-p1.aspx'>Hệ thống hộp điều khiển</a></li>
+                               <?php 
+                               $cate_sub = $this->cateproducthomemodel->list_cate_from_parent($cate_parent['id']);
+                               foreach($cate_sub as $cate_s)
+                               {
+                               ?>
+                              <li><i></i><a href='<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_s['name'])));?>-c<?php echo $cate_s['id'] ?>'><?php echo $cate_s['name']?></a></li>
+                              
+                               <?php } ?>
                            </ul>
                         </li>
-                        <li class='navL1 width2'>
-                           <i></i><a href='/Than-vo-guong-den-kinh--product-c38818800-p1.aspx'><span>Thân vỏ - gương,đèn,kính </span></a>
-                           <ul >
-                              <li><i></i><a href='/Mat-ga-lang-product-c67549043-p1.aspx'>Mặt ga lăng</a></li>
-                              <li><i></i><a href='/Ba-do-soc-truoc-sau--product-c68024511-p1.aspx'>Ba đờ sốc trước-sau </a></li>
-                              <li><i></i><a href='/Tai-xe-tay-mo-cua-product-c69172688-p1.aspx'>Tai xe, tay mở cửa</a></li>
-                              <li><i></i><a href='/He-thong-bom-product-c78722524-p1.aspx'>Hệ thống bơm</a></li>
-                              <li><i></i><a href='/Logo-tem-chu--product-c85638362-p1.aspx'>Logo, tem chữ </a></li>
-                              <li><i></i><a href='/Nep-cac-loai-op--product-c91978542-p1.aspx'>Nẹp các loại-ốp </a></li>
-                              <li><i></i><a href='/He-thong-cam-bien-product-c104417660-p1.aspx'>Hê thống cảm biến</a></li>
-                              <li><i></i><a href='/He-thong-den-Bong-den-guong--product-c105168944-p1.aspx'>Hệ thống đèn - Bóng đèn - gương </a></li>
-                           </ul>
-                        </li>
-                        <li class='navL1 width3'>
-                           <i></i><a href='/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'><span>Hệ thống động cơ - hộp số </span></a>
-                           <ul >
-                              <li><i></i><a href='/He-thong-truc-loc-bac--product-c50380646-p1.aspx'>Hệ thống trục, lốc, bạc </a></li>
-                              <li><i></i><a href='/He-thong-bi-bu-ly--product-c64591872-p1.aspx'>Hệ thống bi | bu ly </a></li>
-                              <li><i></i><a href='/Bau-loc-dong-co-bo-bin-product-c83908761-p1.aspx'>Bầu lọc động cơ, bô bin</a></li>
-                              <li><i></i><a href='/He-thong-cam-bien-cao-su-day--product-c85006575-p1.aspx'>Hệ thống cảm biến, cao su, dây </a></li>
-                              <li><i></i><a href='/He-thong-gioang-phot-loc-ong-hoi--product-c93528489-p1.aspx'>Hệ thống gioăng phớt, lọc, ống hơi </a></li>
-                              <li><i></i><a href='/He-thong-hop-so--product-c106237740-p1.aspx'>Hệ thống hộp số </a></li>
-                              <li><i></i><a href='/He-thong-bom-product-c106542910-p1.aspx'>Hệ thống bơm</a></li>
-                           </ul>
-                        </li>
-                        <li class='navL1 width4'>
-                           <i></i><a href='/He-thong-truyen-dong-he-thonglai--product-c64548138-p1.aspx'><span>Hệ thống truyền động,hệ thốnglái </span></a>
-                           <ul >
-                              <li><i></i><a href='/Truc-lap--product-c16019253-p1.aspx'>Trục láp </a></li>
-                              <li><i></i><a href='/Giam-tran-bi--product-c66040290-p1.aspx'>Giảm trấn, bi </a></li>
-                              <li><i></i><a href='/He-thong-lai--product-c82321013-p1.aspx'>Hệ thống lái </a></li>
-                              <li><i></i><a href='/He-thong-bi-moay-o--product-c95536937-p1.aspx'>Hệ thống bi moay ơ </a></li>
-                           </ul>
-                        </li>
-                        <li class='navL1 width5'>
-                           <i></i><a href='/He-thong-nhien-lieu-va-lam-mat--product-c80214057-p1.aspx'><span>Hệ thống nhiên liệu và làm mát </span></a>
-                           <ul >
-                              <li><i></i><a href='/He-thong-nhien-lieu--product-c38008663-p1.aspx'>Hệ thống nhiên liệu  </a></li>
-                              <li><i></i><a href='/Bom-xang-o-to-product-c40867735-p1.aspx'>Bơm xăng ô tô</a></li>
-                              <li><i></i><a href='/He-thong-lam-mat--product-c46536705-p1.aspx'>Hệ thống làm mát </a></li>
-                              <li><i></i><a href='/Loc-xang-product-c65326726-p1.aspx'>Lọc xăng</a></li>
-                              <li><i></i><a href='/Ket-nuoc-product-c77109292-p1.aspx'>Két nước</a></li>
-                              <li><i></i><a href='/Loc-dau-o-to-product-c86920721-p1.aspx'>Lọc dầu ô tô</a></li>
-                           </ul>
-                        </li>
-                        <li class='navL1 width6'>
-                           <i></i><a href='/He-thong-gam-he-thong-phanh--product-c101208231-p1.aspx'><span>Hệ thống gầm - hệ thống phanh </span></a>
-                           <ul >
-                              <li><i></i><a href='/He-thong-giam-xoc-product-c118309881-p1.aspx'>Hệ thống giảm xóc</a></li>
-                              <li><i></i><a href='/He-thong-lo-xo-product-c74154028-p1.aspx'>Hệ thống lò xo</a></li>
-                              <li><i></i><a href='/He-thong-phanh--product-c94119359-p1.aspx'>Hệ thống phanh </a></li>
-                              <li><i></i><a href='/He-thong-cang--product-c63779922-p1.aspx'>Hệ thống càng </a></li>
-                              <li><i></i><a href='/Cao-su-cac-loai--product-c108984489-p1.aspx'>Cao su các loại </a></li>
-                           </ul>
-                        </li>
-                        <li class='navL1 width7'>
-                           <i></i><a href='/Noi-that-chat-long-phu-kien--product-c102034090-p1.aspx'><span>Nội thất, chất lỏng, phụ kiện </span></a>
-                           <ul >
-                              <li><i></i><a href='/-Dong-ho-tap-lo--product-c113627818-p1.aspx'> Đồng hồ táp lô </a></li>
-                              <li><i></i><a href='/Lop-xe-o-to-chinh-hang-product-c123266933-p1.aspx'>Lốp xe ô tô chính hãng</a></li>
-                              <li><i></i><a href='/He-thong-dau-nhot--product-c142950191-p1.aspx'>Hệ thống dầu nhớt </a></li>
-                              <li><i></i><a href='/He-thong-Noi-that--product-c31796351-p1.aspx'>Hệ thống Nội thất </a></li>
-                              <li><i></i><a href='/He-thong-ao-goi-o-to--product-c42547292-p1.aspx'>Hệ thống áo, gối ô tô </a></li>
-                              <li><i></i><a href='/Kinh-chong-loa-o-to-product-c48863303-p1.aspx'>Kính chống lóa ô tô</a></li>
-                              <li><i></i><a href='/Dau-dung-cho-xe-mo-to-product-c59909950-p1.aspx'>Dầu dùng cho xe mô tô</a></li>
-                              <li><i></i><a href='/He-thong-tap-bi-product-c60241020-p1.aspx'>Hệ thống táp bi</a></li>
-                              <li><i></i><a href='/Thiet-bi-hien-thi-thong-tin-len-kinh-lai-product-c62032520-p1.aspx'>Thiết bị hiển thị thông tin lên kính lái</a></li>
-                              <li><i></i><a href='/O-to-dien-tre-em-va-Ghe-o-to-cho-be-product-c71220385-p1.aspx'>Ô tô điện trẻ em và Ghế ô tô cho bé</a></li>
-                              <li><i></i><a href='/Do-choi-xe-hoi--product-c104198599-p1.aspx'>Đồ chơi xe hơi </a></li>
-                              <li><i></i><a href='/Dau-phanh-tro-luc-cau-sau-product-c73022092-p1.aspx'>Dầu phanh, trợ lực, cầu sau</a></li>
-                           </ul>
-                        </li>
+                         <?php $i++;} ?>
                      </ul>
                   </div>
                   <script type="text/javascript">
@@ -432,7 +368,7 @@
                      <div class='banner-check'><a href='' target='blank'  ><img src='upload/image/banner/m.jpg' style='display:block;margin:0 auto; margin-bottom: 10px;' alt='Ha Thanh Auto'/></a></div>
                   </div>
                   <div class="pn-main-left">
-                     <script src="js/Silde/jqFancyTransitions.1.8.min.js" type="text/javascript"></script> 
+                     <script src="<?php echo base_url();?>template/ezwebvietnam/home/js/Silde/jqFancyTransitions.1.8.min.js" type="text/javascript"></script> 
                      <script type="text/javascript">
                         $(document).ready(function () {
                             $('#slideshowHolder').jqFancyTransitions({
@@ -529,7 +465,7 @@
                      </span>
                      <span class="foo-row" style="margin-top: 15px;">
                         <span style="float: left;">
-                        <img src="images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
+                        <img src="<?php echo base_url();?>template/ezwebvietnam/home/images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
                         </span>
                         <span class="foo-text-3">
                            <span><span class="foo-text-4">HaThanh AuTo</span><a  href=" http://www.facebook.com/otohathanh">  on
