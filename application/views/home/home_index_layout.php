@@ -478,10 +478,10 @@
                      <span class="foo-row foo-text-5">
                      </span>
                      <span class="sp_social"> Chúng tôi trên: </span>
-                     <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="images/youtube20.png" alt="youtube" /></a></span>
-                     <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
-                     <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="images/CarlsonFacebook.png" alt="facebook" /></a></span>
-                     <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="images/social-icon-google-plus.png" alt="googleplus" /></a></span>
+                     <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="<?php echo base_url();?>template/ezwebvietnam/home/images/youtube20.png" alt="youtube" /></a></span>
+                     <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="<?php echo base_url();?>template/ezwebvietnam/home/images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
+                     <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="<?php echo base_url();?>template/ezwebvietnam/home/images/CarlsonFacebook.png" alt="facebook" /></a></span>
+                     <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="<?php echo base_url();?>template/ezwebvietnam/home/images/social-icon-google-plus.png" alt="googleplus" /></a></span>
                   </div>
                   <div class="foo-item">
                      <div class="foo-wrap">
@@ -544,9 +544,10 @@
             </div>
          </div>
          <div class="footer-info">
-            <span style="float: left;">Copyright © 2012 <b>Hathanhauto.com</b> All rights reserved.</span>
+            <span style="float: left;">Copyright © 2012 <b>Mitsuvnautoparts.com</b> All rights reserved.</span>
             <span style="float: right;"><a href="/Mercedes-Benz-provider-c92477144.aspx" rel="nofollow"> &nbsp; Phụ tùng ô tô  Mercedes</a></span>
             <span style="float: right;margin-left: 10px;"><a href="/" rel="nofollow">Phụ tùng ô tô chính hãng nhập khẩu </a>  |</span>
+            <span style="float: right;margin-left: 20px;"><a href="http://www.facebook.com/ezwebvietnam" rel="nofollow">Desgin EZWeb Việt Nam </a>  |</span>
          </div>
       </div>
       <div class="overlayNonev2" style="display: none;">
