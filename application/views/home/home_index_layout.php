@@ -67,7 +67,7 @@
                   <!--Headet top-->
                   <div class="header-top">
                      <div class="h-item-left">
-                        <span>Hotline Ms.Hà: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">0942 399 366</span></span> | Email: lienhe@hathanhauto.com
+                        <span>Hotline: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">082.218.9762</span></span> | Email: lienhe@mitsuvnautoparts.com
                         | Yahoo! </span>
                      </div>
                      <div class="h-item-right">
@@ -321,12 +321,12 @@
                      <div id="box-support_home">
                         <ul>
                            <li class="su-item-1">HỖ TRỢ ONLINE </li>
-                           <li class="su-item-2">Hathanhauto.com chuyên tư vấn – báo giá – cung cấp <b><a href="/">phụ tùng ô tô chính hãng</a></b>giá cạnh tranh nhất trên thị trường.</li>
-                           <li class="su-item-2"><span class="txt-su-2">Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span></li>
+                           <li class="su-item-2">Mitsuvnautoparts.com chuyên tư vấn – báo giá – cung cấp <b><a href="/">phụ tùng ô tô chính hãng</a></b>giá cạnh tranh nhất trên thị trường.</li>
+                           <li class="su-item-2"><span class="txt-su-2">263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM </span></li>
                            <li class="su-item-2"><span class="txt-su-2"><span class="txt-su-left">Thời gian làm việc từ:</span> 8h00-18h00 từ thứ 2 đến thứ 7</span></li>
-                           <li class="su-item-3"><i class="icon-mobile"></i><span id="ctl00_cph1_SupportOnline1_lblmobileOrder" class="mobile">0942.399.366 - 0988.550.306</span> </li>
+                           <li class="su-item-3"><i class="icon-mobile"></i><span id="ctl00_cph1_SupportOnline1_lblmobileOrder" class="mobile">082.218.9762</span> </li>
                            <li class="su-item-4"><i class="icon-support"></i><a href="mailto:lienhe@hathanhauto.com" rel="nofollow" class="lnkmailsupport">
-                              lienhe@hathanhauto.com</a> 
+                              info@mitsuvnautoparts.com</a> 
                            </li>
                            <li class="su-item-5">
                               <div class="iconSupport">
@@ -461,7 +461,7 @@
             <div id="Footer">
                <div class="box-footer">
                   <div class="foo-item">
-                     <span class="foo-row"><span class="foo-text-1">Địa chỉ: Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span>
+                     <span class="foo-row"><span class="foo-text-1">Địa chỉ: 263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM</span>
                      </span>
                      <span class="foo-row" style="margin-top: 15px;">
                         <span style="float: left;">
