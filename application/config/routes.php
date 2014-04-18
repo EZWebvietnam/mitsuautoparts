@@ -40,19 +40,9 @@
 
 $route['default_controller'] = "home/index";
 $route['trang-chu'] = "home/home/index";
-$route['san-pham'] = "home/product/list_product";
-$route['san-pham/page/(:any)'] = "home/product/list_product";
-$route['ref/(:any)'] = "home/home/index";
 
-$route['san-pham/(:any)-(:any)'] = "home/product/detail/$1";
-$route['san-pham/(:any)-(:any)/ref/(:any)'] = "home/product/detail/$1";
+$route['p/(:any)-p(:any)'] = "home/product/detail/$2";
 
-$route['p_c-(:any)-(:any)/p_p-(:any)-(:any)'] = "home/product/detail/$3";
-$route['p_c-(:any)-(:any)'] = "home/product/list_product/$1";
-$route['p_c-(:any)-(:any)/page/(:any)'] = "home/product/list_product/$1";
-$route['cong-tac-vien'] = "ctv/productctv/index";
-$route['cong-tac-vien/login'] = "ctv/homectv/login";
-$route['cong-tac-vien/register'] = "home/home/register";
 $route['404_override'] = '';
 $route['hoi-dap']='home/product/faq_list';
 $route['gioi-thieu']='home/home/about';
