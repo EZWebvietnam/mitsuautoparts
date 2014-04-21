@@ -2,7 +2,7 @@
                <div class="product-breadcrum">
                   <ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                      <li class="breadcrum-text"><a itemprop="url" title="Trang chủ" href="/"><span itemprop="title">Trang chủ</span></a></li>
-                     <li class="breadcrum-text" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="<?php echo $product_detail[0]['name_cate']?> " class="" href="<?php echo base_url();?>c/<?php echo $product_detail[0]['name_cate']?> -c<?php echo $product_detail[0]['id_cate']?> "><span itemprop="title"><?php echo $product_detail[0]['name_cate']?>  </span><i></i></a></li>
+                     <li class="breadcrum-text" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="<?php echo $product_detail[0]['name_cate']?> " class="" href="<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($product_detail[0]['name_cate'])))?> -c<?php echo $product_detail[0]['id_cate']?> "><span itemprop="title"><?php echo $product_detail[0]['name_cate']?>  </span><i></i></a></li>
                   </ul>
                   <div class="clr">
                   </div>
@@ -83,12 +83,7 @@
                         </div>
                         <div class='clear'></div>
                      </div>
-                     <input type="hidden" name="ctl00$cph1$ProductDetailV21$Product_Detail_TopInfo1$hidId" id="ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidId" value="88131417" />
-                     <input type="hidden" name="ctl00$cph1$ProductDetailV21$Product_Detail_TopInfo1$hidPriceNotFomat" id="ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidPriceNotFomat" value="1400000" />
-                     <input type="hidden" name="ctl00$cph1$ProductDetailV21$Product_Detail_TopInfo1$hidTotalColor" id="ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidTotalColor" value="0" />
-                     <input type="hidden" name="ctl00$cph1$ProductDetailV21$Product_Detail_TopInfo1$hidSizeName" id="ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidSizeName" />
-                     <input type="hidden" name="ctl00$cph1$ProductDetailV21$Product_Detail_TopInfo1$hidColorName" id="ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidColorName" />
-                     <input type="hidden" id="chkColor" value="0" />
+                     <input type="hidden" name="id_product" id="id_product" value="<?php echo $product_detail[0]['id_pro']?>" />
                      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
                      <script type="text/javascript">    stLight.options({ publisher: "0469aa6dbcf320777c86766a9fe5ed88" });</script>
                      <script>
@@ -107,31 +102,7 @@
                                 $('.size-cols ul li span').removeClass('sizeAc');
                                 $(this).addClass('sizeAc');
                             });
-                            //Load imageColor
-                            $('.pn-Color ul li a').click(function () {
-                                $('.pn-Color ul li').removeClass('ColorAc');
-                                $(this).parent().addClass('ColorAc');
-                                var dataColorID = $(this).attr('datacolorid');
-                                var PID = $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidId').val();
-                        
-                                var Url = '/Pages/Ajax/BindProductImageByColorID.ashx?timespan=' + Number(new Date()) + '&cid=' + dataColorID + '&pid=' + PID;
-                                $.get(Url, function (data) {
-                                    if (data != '' && data != undefined) {
-                                        $('.wrap-slide-img-detail').html(data);
-                                        LoadProductImage();
-                                    } else {
-                                        $('.wrap-slide-img-detail').html('');
-                                    }
-                                });
-                        
-                                //luu lai ten cua mau da chon
-                                $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidColorName').val($(this).attr('datacolortext'));
-                                //bao hieu da chon 1 mau
-                                //gan ID vao do
-                                $('#chkColor').val(dataColorID);
-                        
-                        
-                            });
+                            
                             $('#icon_amount_down').click(function () {
                                 var _val = $('#txtAmount').val();
                                 _val = parseInt(_val);
@@ -156,72 +127,24 @@
                         
                             //button dat hang
                             $('#btn_buy_add').click(function () {
-                        
-                                var _id = $('input[id$=hidId]').val();
-                        
-                                // #Size
-                                var _sprice = $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidPriceNotFomat').val();
-                                var _scode = $('#sSizeCode').text();
-                                var _sName = $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidSizeName').val();
-                        
-                                // #Color
-                                var _cName = $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidColorName').val();
-                                var _Quan = $('#quantities-chosen').val(); ;
-                                var colorid = $('#chkColor').val();
-                                var Url = '/Pages/Ajax/AddToCart.ashx?timespan=' + Number(new Date());
-                        
-                                var strUrl = '';
-                                if (_id != '' && _id != undefined) {
-                                    strUrl = strUrl + '&id=' + _id;
-                                }
-                        
-                                if (_sprice != '' && _sprice != undefined) {
-                                    strUrl = strUrl + '&sprice=' + _sprice;
-                                }
+                                var _id = $('#id_product').val();
+                                var _quantity = $('#quantities-chosen').val();
                                 
-                                if (_scode != '' && _scode != undefined) {
-                                    strUrl = strUrl + '&scode=' + _scode;
-                                }
-                        
-                                if (_sName != '' && _sName != undefined) {
-                                    strUrl = strUrl + '&sName=' + _sName;
-                                }
-                        
-                                if (_cName != '' && _cName != undefined) {
-                                    strUrl = strUrl + '&cName=' + _cName;
-                                }
-                        
-                                if (_Quan != '' && _Quan != undefined) {
-                                    strUrl = strUrl + '&pQuan=' + _Quan;
-                                }
-                                
-                                if (colorid != '' && colorid != undefined) {
-                                    strUrl = strUrl + '&colorid=' + colorid;
-                                }
-                        
-                                Url = Url + strUrl;
-                                var _totalColor = $('#ctl00_cph1_ProductDetailV21_Product_Detail_TopInfo1_hidTotalColor').val();
-                                _totalColor = parseInt(_totalColor);
-                                if (_totalColor > 1) {
-                                    if (colorid != '0') {
-                                        $.get(Url, function (data) {
-                                            if (data == '1') {
-                                                $(location).attr('href', '/Orders.aspx');
-                                            }
-                                        });
-                                    } else {
-                                        alert('Khách hàng vui lòng chọn một mầu');
-                                        return false;
+                                $.ajax({
+                                    url: "<?php echo base_url();?>home/cart/add_to_cart",
+                                    type: "post",
+                                    dataType:'json',
+                                    data: {id:_id,quantity:_quantity},
+                                    success: function(respone){
+                                       if(respone.error == 0)
+                                       {
+                                           window.location.href='<?php echo base_url();?>gio-hang';
+                                       }
+                                    },
+                                    error:function(){
+                                       alert('Đặt hàng không thành công');
                                     }
-                                } else {
-                                    //neu khong co danh sach mau thi van cho dat hang
-                                    $.get(Url, function (data) {
-                                        if (data == '1') {
-                                            $(location).attr('href', '/Orders.aspx');
-                                        }
-                                    });
-                                }
-                        
+                                });
                             });
                         });
                         
@@ -245,48 +168,7 @@
                   </div>
                   <!-- END .pd-bottom -->
                   <script type="text/javascript">
-                     function AddToCartOneClick() {
-                         //gia theo size - sprice
-                         //Ma theo size - scode
-                         //Ten size - sName ------------
-                         //ten Mau - cName -------------
-                         //Ma san pham - id ------------
-                         //so luong dat - pQuan
-                     
-                         var SizeName = $('#hidSize').val();
-                         var ColorName = $('#hidColor').val();
-                         var ProID = '88131417';
-                         //xem lai cho nay
-                         var _cmdSizeActive = $('.item_size li .SizeActive');
-                         var sPrice = _cmdSizeActive.attr('dataprice');
-                         var sCode = _cmdSizeActive.attr('datacode');
-                         var pQuan = $('.ddlQuanCrat option:selected').val();
-                     
-                         var _urlOneClick = '/Pages/Ajax/AddToCartOneClick.ashx?id=' + ProID + '&sprice=' + sPrice + '&scode=' + sCode + '&pQuan=' + pQuan + '&sName=' + SizeName + '&cName=' + ColorName + '&timespan=' + Number(new Date());
-                         $.get(_urlOneClick, function (data) {
-                             if (data != undefined && data != '') {
-                                 $('#box-OneClick').html('');
-                                 $('#box-OneClick').append(data);
-                                 ShowBox(false, 'box-OneClick');
-                     
-                                 var url = '/Pages/Ajax/CartInfo.ashx?timespan=' + Number(new Date());
-                                 $.get(url, function (data) {
-                                     var lnkcart = $("[id$=lnkCart]");
-                                     lnkcart.html(data);
-                                     //alert(data.indexOf(">0<"));
-                                     if (data.indexOf(">0<") > -1) {
-                                         lnkcart.click(function () { return false; });
-                                     } else {
-                                         lnkcart.click(function () {
-                                             location.href = '/lvn-product-cart.aspx';
-                                         });
-                                     }
-                                 });
-                             } else {
-                                 alert('Cập nhập giỏ hàng không thành công !');
-                             }
-                         });
-                     }
+                    
                   </script>
                </div>
                <!-- END .product-detail -->

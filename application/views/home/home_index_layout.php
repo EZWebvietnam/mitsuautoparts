@@ -137,7 +137,7 @@
                              $(this).find('.nav-content-hide').stop(true, true).toggle();
                              if ($(this).hasClass('Cart-item')) {
                                  // hien thi gio hang khi di chuot qua tab gio hang tren trang home
-                                 var _url = '/Pages/Ajax/GetListCartHome.ashx?timespan=' + Number(new Date());
+                                 var _url = '<?php echo base_url();?>home/cart/show_cart';
                                  GetListShoppingCart(_url, '#pn-box-Cart');
                              }
                          });

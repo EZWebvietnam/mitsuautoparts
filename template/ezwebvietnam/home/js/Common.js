@@ -5,9 +5,11 @@ var delay = 10;
 
 function displaySubMenu(idMainMenu, idActive) {
     var subWidth, mainWidth, subLeft, mainLeft, subRight, conLeft;
-    if (idMainMenu == '' || idMainMenu == null) return;
+    if (idMainMenu == '' || idMainMenu == null)
+        return;
     if (lastMenu != idMainMenu) {
-        if (lastMenu != '' && lastMenu != null) hideMenu(lastMenu);
+        if (lastMenu != '' && lastMenu != null)
+            hideMenu(lastMenu);
         if (idActive != '' && acticeMenu != null && acticeMenu != idMainMenu) {
             hideMenu(idActive);
         }
@@ -19,9 +21,12 @@ function displaySubMenu(idMainMenu, idActive) {
         mainWidth = $("#mainmenu" + idMainMenu).width();
         subWidth = $("#submenu" + idMainMenu).width();
 
-        if (mainLeft + (mainWidth - subWidth) / 2 > subLeft) subLeft = mainLeft + (mainWidth - subWidth) / 2;
-        if (subLeft + subWidth > subRight) subLeft = subRight - subWidth;
-        if (subLeft < conLeft) subLeft = conLeft;
+        if (mainLeft + (mainWidth - subWidth) / 2 > subLeft)
+            subLeft = mainLeft + (mainWidth - subWidth) / 2;
+        if (subLeft + subWidth > subRight)
+            subLeft = subRight - subWidth;
+        if (subLeft < conLeft)
+            subLeft = conLeft;
         $("#submenu" + idMainMenu).fadeIn(5);
         $("#submenu" + idMainMenu).css({
             "position": "absolute",
@@ -34,7 +39,9 @@ function displaySubMenu(idMainMenu, idActive) {
 }
 
 function hideMenu(menuid) {
-    if (menuid != '') { $("#submenu" + menuid).fadeOut(0); }
+    if (menuid != '') {
+        $("#submenu" + menuid).fadeOut(0);
+    }
 }
 
 function wopen(url, name, w, h) {
@@ -48,7 +55,8 @@ function OpenPopup(Url, WindowName, width, height, extras, scrollbars) {
     var high = height;
     var additional = extras;
     var top = (screen.height - high) / 2;
-    var leftside = (screen.width - wide) / 2; newWindow = window.open('' + Url + '', '' + WindowName + '', 'width=' + wide + ',height=' + high + ',top=' + top + ',left=' + leftside + ',features=' + additional + '' + ',scrollbars=1');
+    var leftside = (screen.width - wide) / 2;
+    newWindow = window.open('' + Url + '', '' + WindowName + '', 'width=' + wide + ',height=' + high + ',top=' + top + ',left=' + leftside + ',features=' + additional + '' + ',scrollbars=1');
     newWindow.focus();
 }
 
@@ -68,10 +76,14 @@ function usnotime() {
         h = ut.getHours();
         m = ut.getMinutes();
         s = ut.getSeconds();
-        if (d <= 9) d = "0" + d;
-        if (mm <= 9) mm = "0" + mm;
-        if (s <= 9) s = "0" + s;
-        if (m <= 9) m = "0" + m;
+        if (d <= 9)
+            d = "0" + d;
+        if (mm <= 9)
+            mm = "0" + mm;
+        if (s <= 9)
+            s = "0" + s;
+        if (m <= 9)
+            m = "0" + m;
         if (h > 12) {
             p = " PM";
         }
@@ -79,7 +91,8 @@ function usnotime() {
             p = " AM";
         }
         h = h % 12;
-        if (h <= 9) h = "0" + h;
+        if (h <= 9)
+            h = "0" + h;
         time += d + "/" + mm + "/" + y + " " + h + ":" + m + ":" + s + p;
 
         dtObj.innerHTML = time;
@@ -88,7 +101,8 @@ function usnotime() {
     if (delay > 0) {
         delay -= 1;
         if (delay == 0) {
-            if (acticeMenu != '' && acticeMenu != null) displaySubMenu(acticeMenu, acticeMenu);
+            if (acticeMenu != '' && acticeMenu != null)
+                displaySubMenu(acticeMenu, acticeMenu);
         }
     }
 }
@@ -112,13 +126,15 @@ function WaterMarkAll(txt, evt, str) {
 function GetListShoppingCart(Url, Container) {
     var _cmdContainer = $(Container);
     var strContent = _cmdContainer.text();
-
-    $.get(Url, function (data) {
-        if (data != "") {
-            _cmdContainer.html(data);
-        }
-        else {
-            _cmdContainer.html('Giỏ hàng lỗi');
+    $.ajax({
+        url: Url,
+        type: "post",
+        dataType: 'html',
+        success: function(respone) {
+            _cmdContainer.html(respone);
+        },
+        error: function() {
+           _cmdContainer.html('Giỏ hàng lỗi');
         }
     });
 }
@@ -151,9 +167,9 @@ function showHide(shID) {
 
 
 //--slide content v2 dung cho admin
-$(document).ready(function () {
+$(document).ready(function() {
     $("#slide-panel-v2 .s-content:not(:first)").hide();
-    $("#slide-panel-v2 h3").click(function () {
+    $("#slide-panel-v2 h3").click(function() {
         $("#slide-panel-v2 .s-content:visible").slideUp("fast");
         $(".slide-active").removeClass("slide-active");
         $(".textNau").removeClass("textNau");
@@ -189,13 +205,13 @@ function ShowNumFav(FavList) {
 }
 function AddtoFav(id, FavList) {
     if (FavList == '' || FavList == null) {
-        $.cookie('ListFav', id, { expires: 90, path: '/' });
+        $.cookie('ListFav', id, {expires: 90, path: '/'});
     } else {
         if (FavList.indexOf(id) > -1) {
             //alert("Sản phẩm đã tồn tại");
         }
         else {
-            $.cookie('ListFav', FavList + "," + id, { expires: 90, path: '/' });
+            $.cookie('ListFav', FavList + "," + id, {expires: 90, path: '/'});
         }
     }
     ShowNumFav($.cookie('ListFav'));
@@ -216,9 +232,9 @@ function RemoveFromFav(id) {
             if (FavList.indexOf(",") == 0)
                 FavList = FavList.substring(1);
             if (FavList != '')
-                $.cookie('ListFav', FavList, { expires: 90, path: '/' });
+                $.cookie('ListFav', FavList, {expires: 90, path: '/'});
             else {
-                $.cookie('ListFav', null, { expires: -1, path: '/' });
+                $.cookie('ListFav', null, {expires: -1, path: '/'});
             }
         }
         else {
@@ -230,14 +246,14 @@ function RemoveFromFav(id) {
 }
 
 /*
-Craete -HNG-
-Load ajax nhung module nho cua shoptretho
---
-*/
+ Craete -HNG-
+ Load ajax nhung module nho cua shoptretho
+ --
+ */
 
 //--Function load left category
 function LoadLeftCategory(_url, _ContainerID) {
-    $.get(_url, function (data) {
+    $.get(_url, function(data) {
         if (data != "") {
             $("#imgLoading").show();
             $("#" + _ContainerID).html(data);
@@ -250,17 +266,17 @@ function LoadLeftCategory(_url, _ContainerID) {
 }
 
 /*  Product History recent
-    
-*/
+ 
+ */
 // --Them cookie his
 function AddToProHistory(pID, ListHistory) {
     if (ListHistory == '' || ListHistory == null) {
-        $.cookie('cookieProductHistory', pID, { expires: 10, path: '/' });
+        $.cookie('cookieProductHistory', pID, {expires: 10, path: '/'});
     } else {
         //kiem tra xem pID da co trong cookie chua
         if (ListHistory.indexOf(pID) <= -1) {
             //neu ID chua co trong danh sach cookie truoc day thi them vao
-            $.cookie("cookieProductHistory", ListHistory + "," + pID, { expires: 10, path: '/' });
+            $.cookie("cookieProductHistory", ListHistory + "," + pID, {expires: 10, path: '/'});
         }
     }
 }
@@ -276,9 +292,9 @@ function RemoveFromProHistory(pID) {
             if (historyList.indexOf(',') == 0)
                 historyList = historyList.substring(1);
             if (historyList != '')
-                $.cookie('cookieProductHistory', historyList, { expires: 90, path: '/' });
+                $.cookie('cookieProductHistory', historyList, {expires: 90, path: '/'});
             else {
-                $.cookie('cookieProductHistory', null, { expires: -1, path: '/' });
+                $.cookie('cookieProductHistory', null, {expires: -1, path: '/'});
             }
         }
         else {
@@ -289,16 +305,105 @@ function RemoveFromProHistory(pID) {
 
 
 /**
-* $.ScrollTo - Easy element scrolling using $.
-* Copyright (c) 2007-2009 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
-* Dual licensed under MIT and GPL.
-* Date: 5/25/2009
-* @author Ariel Flesler
-* @version 1.4.2
-*
-* http://flesler.blogspot.com/2007/10/$scrollto.html
-*/
-; (function (d) { var k = d.scrollTo = function (a, i, e) { d(window).scrollTo(a, i, e) }; k.defaults = { axis: 'xy', duration: parseFloat(d.fn.$) >= 1.3 ? 0 : 1 }; k.window = function (a) { return d(window)._scrollable() }; d.fn._scrollable = function () { return this.map(function () { var a = this, i = !a.nodeName || d.inArray(a.nodeName.toLowerCase(), ['iframe', '#document', 'html', 'body']) != -1; if (!i) return a; var e = (a.contentWindow || a).document || a.ownerDocument || a; return d.browser.safari || e.compatMode == 'BackCompat' ? e.body : e.documentElement }) }; d.fn.scrollTo = function (n, j, b) { if (typeof j == 'object') { b = j; j = 0 } if (typeof b == 'function') b = { onAfter: b }; if (n == 'max') n = 9e9; b = d.extend({}, k.defaults, b); j = j || b.speed || b.duration; b.queue = b.queue && b.axis.length > 1; if (b.queue) j /= 2; b.offset = p(b.offset); b.over = p(b.over); return this._scrollable().each(function () { var q = this, r = d(q), f = n, s, g = {}, u = r.is('html,body'); switch (typeof f) { case 'number': case 'string': if (/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(f)) { f = p(f); break } f = d(f, this); case 'object': if (f.is || f.style) s = (f = d(f)).offset() } d.each(b.axis.split(''), function (a, i) { var e = i == 'x' ? 'Left' : 'Top', h = e.toLowerCase(), c = 'scroll' + e, l = q[c], m = k.max(q, i); if (s) { g[c] = s[h] + (u ? 0 : l - r.offset()[h]); if (b.margin) { g[c] -= parseInt(f.css('margin' + e)) || 0; g[c] -= parseInt(f.css('border' + e + 'Width')) || 0 } g[c] += b.offset[h] || 0; if (b.over[h]) g[c] += f[i == 'x' ? 'width' : 'height']() * b.over[h] } else { var o = f[h]; g[c] = o.slice && o.slice(-1) == '%' ? parseFloat(o) / 100 * m : o } if (/^\d+$/.test(g[c])) g[c] = g[c] <= 0 ? 0 : Math.min(g[c], m); if (!a && b.queue) { if (l != g[c]) t(b.onAfterFirst); delete g[c] } }); t(b.onAfter); function t(a) { r.animate(g, j, b.easing, a && function () { a.call(this, n, b) }) } }).end() }; k.max = function (a, i) { var e = i == 'x' ? 'Width' : 'Height', h = 'scroll' + e; if (!d(a).is('html,body')) return a[h] - d(a)[e.toLowerCase()](); var c = 'client' + e, l = a.ownerDocument.documentElement, m = a.ownerDocument.body; return Math.max(l[h], m[h]) - Math.min(l[c], m[c]) }; function p(a) { return typeof a == 'object' ? a : { top: a, left: a} } })($);
+ * $.ScrollTo - Easy element scrolling using $.
+ * Copyright (c) 2007-2009 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+ * Dual licensed under MIT and GPL.
+ * Date: 5/25/2009
+ * @author Ariel Flesler
+ * @version 1.4.2
+ *
+ * http://flesler.blogspot.com/2007/10/$scrollto.html
+ */
+;
+(function(d) {
+    var k = d.scrollTo = function(a, i, e) {
+        d(window).scrollTo(a, i, e)
+    };
+    k.defaults = {axis: 'xy', duration: parseFloat(d.fn.$) >= 1.3 ? 0 : 1};
+    k.window = function(a) {
+        return d(window)._scrollable()
+    };
+    d.fn._scrollable = function() {
+        return this.map(function() {
+            var a = this, i = !a.nodeName || d.inArray(a.nodeName.toLowerCase(), ['iframe', '#document', 'html', 'body']) != -1;
+            if (!i)
+                return a;
+            var e = (a.contentWindow || a).document || a.ownerDocument || a;
+            return d.browser.safari || e.compatMode == 'BackCompat' ? e.body : e.documentElement
+        })
+    };
+    d.fn.scrollTo = function(n, j, b) {
+        if (typeof j == 'object') {
+            b = j;
+            j = 0
+        }
+        if (typeof b == 'function')
+            b = {onAfter: b};
+        if (n == 'max')
+            n = 9e9;
+        b = d.extend({}, k.defaults, b);
+        j = j || b.speed || b.duration;
+        b.queue = b.queue && b.axis.length > 1;
+        if (b.queue)
+            j /= 2;
+        b.offset = p(b.offset);
+        b.over = p(b.over);
+        return this._scrollable().each(function() {
+            var q = this, r = d(q), f = n, s, g = {}, u = r.is('html,body');
+            switch (typeof f) {
+                case 'number':
+                case 'string':
+                    if (/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(f)) {
+                        f = p(f);
+                        break
+                    }
+                    f = d(f, this);
+                case 'object':
+                    if (f.is || f.style)
+                        s = (f = d(f)).offset()
+            }
+            d.each(b.axis.split(''), function(a, i) {
+                var e = i == 'x' ? 'Left' : 'Top', h = e.toLowerCase(), c = 'scroll' + e, l = q[c], m = k.max(q, i);
+                if (s) {
+                    g[c] = s[h] + (u ? 0 : l - r.offset()[h]);
+                    if (b.margin) {
+                        g[c] -= parseInt(f.css('margin' + e)) || 0;
+                        g[c] -= parseInt(f.css('border' + e + 'Width')) || 0
+                    }
+                    g[c] += b.offset[h] || 0;
+                    if (b.over[h])
+                        g[c] += f[i == 'x' ? 'width' : 'height']() * b.over[h]
+                } else {
+                    var o = f[h];
+                    g[c] = o.slice && o.slice(-1) == '%' ? parseFloat(o) / 100 * m : o
+                }
+                if (/^\d+$/.test(g[c]))
+                    g[c] = g[c] <= 0 ? 0 : Math.min(g[c], m);
+                if (!a && b.queue) {
+                    if (l != g[c])
+                        t(b.onAfterFirst);
+                    delete g[c]
+                }
+            });
+            t(b.onAfter);
+            function t(a) {
+                r.animate(g, j, b.easing, a && function() {
+                    a.call(this, n, b)
+                })
+            }
+        }).end()
+    };
+    k.max = function(a, i) {
+        var e = i == 'x' ? 'Width' : 'Height', h = 'scroll' + e;
+        if (!d(a).is('html,body'))
+            return a[h] - d(a)[e.toLowerCase()]();
+        var c = 'client' + e, l = a.ownerDocument.documentElement, m = a.ownerDocument.body;
+        return Math.max(l[h], m[h]) - Math.min(l[c], m[c])
+    };
+    function p(a) {
+        return typeof a == 'object' ? a : {top: a, left: a}
+    }
+})($);
 
 
 //Them moi mot cookie
@@ -310,7 +415,7 @@ function AddCookieInToClient(urlHistory, ProID) {
     var listHis = '';
     $.ajax({
         url: urlHistory,
-        success: function (data) {
+        success: function(data) {
             if (data === '' || typeof data != "string") {
                 AddToProHistory(ProID, '');
             } else {
@@ -329,16 +434,16 @@ function AddCookieInToClient(urlHistory, ProID) {
 function LoadProductImage() {
     $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
     //bat ra lightbox khi kich vao anh thumb
-    $(".cloud-zoom-gallery").colorbox({ rel: 'cloud-zoom-gallery', width: "500px", height: "500px" });
+    $(".cloud-zoom-gallery").colorbox({rel: 'cloud-zoom-gallery', width: "500px", height: "500px"});
     //khi di chuot vao anh thumb se doi mau border cua anh thumb ngay ca khi di chuot ra ngoai
-    $("#Carousel-wrap .imgThumbZoom").hover(function () {
+    $("#Carousel-wrap .imgThumbZoom").hover(function() {
         //$(this).css('border','1px solid #666');
         //var strItem='Thumbnail '+parseInt($('#Carousel-wrap .imgThumbZoom').index(this)+1);
         var strItem = $(this).attr('alt');
         $(this).css('border', '1px solid #F36125');
         //$(':not(img[alt$=' + strItem + ']').css('border', '1px solid #e9e9e9');
         //alert(strItem);
-        $("#Carousel-wrap .imgThumbZoom").each(function () {
+        $("#Carousel-wrap .imgThumbZoom").each(function() {
             var ItemData = $(this).attr('alt');
             if (strItem != ItemData) {
                 $(this).css('border', '1px solid #e9e9e9');
@@ -367,7 +472,7 @@ function GetListShoppingCart(Url, Container) {
     var _cmdContainer = $(Container);
     var strContent = _cmdContainer.text();
 
-    $.get(Url, function (data) {
+    $.get(Url, function(data) {
         if (data != "") {
             _cmdContainer.html(data);
         }
@@ -379,7 +484,7 @@ function GetListShoppingCart(Url, Container) {
 
 function GetDataProductHome(url, Contianter) {
 
-    $.get(url, function (data) {
+    $.get(url, function(data) {
         if (data != '' && data != undefined) {
             Contianter.html(data);
         }
@@ -395,23 +500,23 @@ function ShowBox(chk, className) {
     $('.overlayNonev2').show();
     /*Can giua box-login*/
     fixCenterBox();
-    $('.box-login .box-login-content h1 i').click(function () {
+    $('.box-login .box-login-content h1 i').click(function() {
         HideBox();
     });
     //hide box OneClickCart
-    $('.btnBackToProductDetail').click(function () {
+    $('.btnBackToProductDetail').click(function() {
         HideBox();
     });
 
     //link sang list order
-    $('.btnPaymentNow').click(function () {
+    $('.btnPaymentNow').click(function() {
         location.href = "/lvn-product-cart.aspx";
     });
 
     if (chk) {
         $('.overlayNonev2').unbind('click');
     } else {
-        $('.overlayNonev2').click(function () {
+        $('.overlayNonev2').click(function() {
             HideBox();
         });
     }
@@ -425,8 +530,8 @@ function fixCenterBox() {
     var kichThuocBoxLogin = $('.box-login').outerWidth();
     var FixLeft = (kichThuocBrowser - kichThuocBoxLogin) / 2;
     var FixTop = parseInt($(window).scrollTop()) + 150;
-    $('.box-login').css({ left: FixLeft });
-    $('.box-login').css({ top: FixTop });
+    $('.box-login').css({left: FixLeft});
+    $('.box-login').css({top: FixTop});
 }
 
 function resizeBannerHome() {
@@ -440,14 +545,14 @@ function resizeBannerHome() {
     }
 }
 
-function textBlurInput(_cmd,txt) {
+function textBlurInput(_cmd, txt) {
     var cmd = $(_cmd);
     if (cmd.val() == txt || cmd.val() == '') {
         cmd.removeClass('inputFocus44');
     }
     else {
         cmd.addClass('inputFocus44');
-        
+
     }
 }
 

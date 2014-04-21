@@ -6,7 +6,7 @@
       </title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-      <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/choi-gat-mua-truoc-xe-mercedes-s320-wdb220-product-c38818800-d88131417.aspx" />
+      <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_($_SERVER)?>" />
       <!--http://www.minifycss.com/css-compressor  async="true"/-->
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/Reset.css" />
       <!--rat quan trong de tuong thich voi nhieu trinh duyet -->
@@ -112,7 +112,7 @@
                               </a>
                               <div class="nav-content-hide" style="right: 0px;">
                                  <div class="content-hide-body" id="pn-box-Cart">
-                                    Giỏ hàng còn trống
+                                     
                                  </div>
                               </div>
                            </div>
@@ -128,7 +128,7 @@
                              $(this).find('.nav-content-hide').stop(true, true).toggle();
                              if ($(this).hasClass('Cart-item')) {
                                  // hien thi gio hang khi di chuot qua tab gio hang tren trang home
-                                 var _url = '/Pages/Ajax/GetListCartHome.ashx?timespan=' + Number(new Date());
+                                 var _url = '<?php echo base_url();?>home/cart/show_cart';
                                  GetListShoppingCart(_url, '#pn-box-Cart');
                              }
                          });
@@ -367,7 +367,7 @@
                      </span>
                      <span class="foo-row" style="margin-top: 15px;">
                         <span style="float: left;">
-                        <img src="images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
+                        <img src="<?php echo base_url();?>template/ezwebvietnam/home/images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
                         </span>
                         <span class="foo-text-3">
                            <span><span class="foo-text-4">HaThanh AuTo</span><a  href=" http://www.facebook.com/otohathanh">  on
@@ -451,34 +451,11 @@
             <span style="float: right;margin-left: 10px;"><a href="/" rel="nofollow">Phụ tùng ô tô chính hãng nhập khẩu </a>  |</span>
          </div>
       </div>
-      <script type="text/javascript">
-         //<![CDATA[
-         var theForm = document.forms['aspnetForm'];
-         if (!theForm) {
-             theForm = document.aspnetForm;
-         }
-         function __doPostBack(eventTarget, eventArgument) {
-             if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                 theForm.__EVENTTARGET.value = eventTarget;
-                 theForm.__EVENTARGUMENT.value = eventArgument;
-                 theForm.submit();
-             }
-         }
-         //]]>
-      </script>
-      <script src="WebResource.axd?d=4zogrSb5tNMqoXhtFti3ZeWPd7RkZudkWaGsbtaJWPN67vU0K_m_0_-OArbAMSBEkrTWFv5elX7E76qrDP3bkiFu4_K0Sm8DTnVUpyY6jJo1&amp;t=635196033660000000" type="text/javascript"></script>
+      <script src="<?php echo base_url();?>template/ezwebvietnam/home/WebResource.axd?d=4zogrSb5tNMqoXhtFti3ZeWPd7RkZudkWaGsbtaJWPN67vU0K_m_0_-OArbAMSBEkrTWFv5elX7E76qrDP3bkiFu4_K0Sm8DTnVUpyY6jJo1&amp;t=635196033660000000" type="text/javascript"></script>
       <div class="overlayNonev2" style="display: none;">
       </div>
       <script type="text/javascript">
-         var _gaq = _gaq || [];
-         _gaq.push(['_setAccount', 'UA-37023348-1']);
-         _gaq.push(['_trackPageview']);
          
-         (function () {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
          
          
          var fixed = false;
