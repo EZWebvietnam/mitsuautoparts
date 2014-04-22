@@ -18,5 +18,12 @@ class Cateproducthomemodel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result_array();
     }
+    public function cate_detail($id_cate)
+    {
+        $id_cate = intval($id_cate);
+        $sql="SELECT * FROM cate_product WHERE id = $id_cate";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
 }
 ?>

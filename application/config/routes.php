@@ -42,7 +42,8 @@ $route['default_controller'] = "home/index";
 $route['trang-chu'] = "home/home/index";
 
 $route['p/(:any)-p(:any)'] = "home/product/detail/$2";
-
+$route['c/(:any)-c(:any)'] = "home/product/product_cate/$2";
+$route['c/(:any)-c(:any)/page/(:any)'] = "home/product/product_cate/$2";
 $route['404_override'] = '';
 $route['hoi-dap']='home/product/faq_list';
 $route['gioi-thieu']='home/home/about';

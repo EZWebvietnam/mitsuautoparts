@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
    <head>
       <title>
-         Phụ tùng ô tô Mercedes - Phu tung xe o to nhập khẩu giá tốt
+         <?php echo $cate_detail[0]['name']?>
       </title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-      <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/?gclid=copq3jttir0cfeib4godi34aug" />
+      <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_($_SERVER)?>" />
       <!--http://www.minifycss.com/css-compressor  async="true"/-->
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>template/ezwebvietnam/home/css/Reset.css" />
       <!--rat quan trong de tuong thich voi nhieu trinh duyet -->
@@ -28,9 +28,10 @@
       <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/AutoComplete/jquery.autocomplete.js"></script>
       <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/Common.js"></script>
       <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/jquery.cookie.js"></script>
+      <script type="text/javascript" src="<?php echo base_url();?>template/ezwebvietnam/home/js/paging.js"></script>
       <meta name="ROBOTS" content="ALL" />
-      <meta name="description" content="Tư vấn kỹ thuật, cung cấp phụ tùng ô tô, linh kiện xe hơi nhập khẩu cao cấp giá tốt. Các phu tung o to chính hãng Mercedes, BMW, Audi cho gara tại Việt Nam" />
-      <meta name="keywords" content="Phụ tùng ô tô,Phụ tùng xe hơi,linh kiện ô tô, linh kiện phụ tùng ô tô" />
+      <meta name="description" content="Đại lý cung cấp các loại hệ thống động cơ tại Hà Nội. Các loại động cơ giá rẻ. Chuyên bán buôn bán lẻ cung ứng hệ thống động cơ toàn quốc." />
+      <meta name="keywords" content="hệ thống động cơ, động cơ giá rẻ, hệ thống độ cơ đa năng, hộ số các loại, hệ thống hộ số, hệ thống số, hộ số đa năng, hệ thống hộ số" />
    </head>
    <body>
       <div class="ajax-loader-email" style="display: none;">
@@ -67,7 +68,7 @@
                   <!--Headet top-->
                   <div class="header-top">
                      <div class="h-item-left">
-                        <span>Hotline: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">082.218.9762</span></span> | Email: lienhe@mitsuvnautoparts.com
+                        <span>Hotline Ms.Hà: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">0942 399 366</span></span> | Email: lienhe@hathanhauto.com
                         | Yahoo! </span>
                      </div>
                      <div class="h-item-right">
@@ -87,7 +88,7 @@
                   <!--Headet main-->
                   <div class="clr header-main">
                      <div class="main-item-1">
-                        <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="./">
+                        <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="/">
                         <img src="<?php echo base_url();?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
                         </a>
                      </div>
@@ -96,7 +97,7 @@
                            <span class="bg-s-left"></span><span class="bg-s-right"></span>
                            <div onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_HeaderTop1_NavibarTop1_btnSearch&#39;)">
                               <span class="bg-txt-s">
-                              <input name="ctl00$HeaderTop1$NavibarTop1$txtCondition" type="text" id="ctl00_HeaderTop1_NavibarTop1_txtCondition" class="txtKeysearch AutocompleteText TextSearch" value="Nhập từ khóa tìm kiếm!" onblur="if(this.value==&#39;&#39;) this.value=&#39;Nhập từ khóa tìm kiếm!&#39;" onfocus="if(this.value ==&#39;Nhập từ khóa tìm kiếm!&#39; ) this.value=&#39;&#39;" />
+                              <input name="ctl00$HeaderTop1$NavibarTop1$txtCondition" type="text" id="key_search" class="txtKeysearch AutocompleteText TextSearch" value="Nhập từ khóa tìm kiếm!" onblur="if(this.value==&#39;&#39;) this.value=&#39;Nhập từ khóa tìm kiếm!&#39;" onfocus="if(this.value ==&#39;Nhập từ khóa tìm kiếm!&#39; ) this.value=&#39;&#39;" />
                               </span>
                               <span class="bg-btn-s">
                               <input type="submit" name="ctl00$HeaderTop1$NavibarTop1$btnSearch" value="" id="ctl00_HeaderTop1_NavibarTop1_btnSearch" class="btnSearch" />
@@ -145,7 +146,6 @@
                      
                          //Autocomplete
                          $(".AutocompleteText").autocomplete('<?php echo base_url();?>home/product/auto_complete');
-                     
                          //nhan enter chay vao nut search
                          var _cmdSearch = $("#ctl00_HeaderTop1_NavibarTop1_txtCondition");
                          _cmdSearch.keypress(function (e) {
@@ -246,11 +246,19 @@
                <!--End Header logo-->
             </div>
             <div id="Content">
-               <div class="main-slide-list">
-                  <div class="pn-main-right">
+               <div class="product-breadcrum">
+                  <ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                     <li class="breadcrum-text"><a itemprop="url" title="Trang chủ" href="/"><span itemprop="title">Trang chủ</span></a></li>
+                     <li class="breadcrum-text" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="<?php echo $cate_detail[0]['name']?> " class="" href="<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_detail[0]['name'])))?>-c<?php echo $cate_detail[0]['id']?>"><span itemprop="title"><?php echo $cate_detail[0]['name']?> </span><i></i></a></li>
+                  </ul>
+                  <div class="clr">
+                  </div>
+               </div>
+               <div class="pn-box-common">
+                  <div class="box-left">
                      <script type="text/javascript">
                         //<![CDATA[
-                        Sys.WebForms.PageRequestManager._initialize('ctl00$cph1$Product_Filter1$ScriptManager2', 'aspnetForm', ['tctl00$cph1$Product_Filter1$UPFilter',''], [], [], 90, 'ctl00');
+                        Sys.WebForms.PageRequestManager._initialize('ctl00$cph1$Product_Filter1$ScriptManager2', 'aspnetForm', ['tctl00$cph1$Product_Filter1$UPFilter','','tctl00$cph1$ProductListByCategory1$ctl00',''], ['ctl00$cph1$ProductListByCategory1$btnList','','ctl00$cph1$ProductListByCategory1$btnColumn','','ctl00$cph1$ProductListByCategory1$ddlOrder',''], [], 90, 'ctl00');
                         //]]>
                      </script>
                      <div id="ctl00_cph1_Product_Filter1_UPFilter">
@@ -318,30 +326,34 @@
                             }
                         });
                      </script>
-                     <div id="box-support_home">
-                        <ul>
-                           <li class="su-item-1">HỖ TRỢ ONLINE </li>
-                           <li class="su-item-2">Mitsuvnautoparts.com chuyên tư vấn – báo giá – cung cấp <b><a href="/">phụ tùng ô tô chính hãng</a></b>giá cạnh tranh nhất trên thị trường.</li>
-                           <li class="su-item-2"><span class="txt-su-2">263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM </span></li>
-                           <li class="su-item-2"><span class="txt-su-2"><span class="txt-su-left">Thời gian làm việc từ:</span> 8h00-18h00 từ thứ 2 đến thứ 7</span></li>
-                           <li class="su-item-3"><i class="icon-mobile"></i><span id="ctl00_cph1_SupportOnline1_lblmobileOrder" class="mobile">082.218.9762</span> </li>
-                           <li class="su-item-4"><i class="icon-support"></i><a href="mailto:lienhe@hathanhauto.com" rel="nofollow" class="lnkmailsupport">
-                              info@mitsuvnautoparts.com</a> 
-                           </li>
-                           <li class="su-item-5">
-                              <div class="iconSupport">
-                                 <div class="iconYahoo">
-                                    <a href="ymsgr:sendIM?hathanh.auto&amp;m=Chao ban!" rel="nofollow" style="background: url(http://opi.yahoo.com/online?u=hathanh.auto&amp;t=1&amp;l=us) no-repeat;
-                                       padding-left: 64px; padding-top: 2px;"></a>
-                                 </div>
-                                 <div class="iconSkype">
-                                    <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-                                    <a href="skype:hathanh.auto?chat"><img src="http://mystatus.skype.com/smallclassic/hathanh.auto" style="border: none;" width="63" height="17" alt="My status" /></a>
-                                 </div>
+                      <?php 
+                      if($cate_detail[0]['parent']==0)
+                      {
+                          $list_cate_sub = $this->cateproducthomemodel->list_cate_from_parent($cate_detail[0]['id']);
+                      ?>
+                     <div class="panel-box-right">
+                        <div class="panel-padding">
+                           <!--DANH MUC -->
+                           <div class="list-accessory">
+                              <h3 id="ctl00_cph1_ProductListFillter1_pnFillDmsp" class="la-title ColorRedBold">
+                                 Danh mục phụ tùng
+                              </h3>
+                              <div class="la-content">
+                                 <ul>
+                                     <?php 
+                                     foreach($list_cate_sub as $cate_s)
+                                     {
+                                     ?>
+                                    <li><a href='<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_s['name'])))?>-c<?php echo $cate_s['id']?>' class='activeLnk'><span class='icon-cate'></span><?php echo $cate_s['name']?></a></li>
+                                     <?php } ?>
+                                 </ul>
                               </div>
-                           </li>
-                        </ul>
+                           </div>
+                           <!-- END .list-accessory -->
+                        </div>
+                        <!-- END .pn-b-col-left -->
                      </div>
+                      <?php } ?>
                      <div class="box-yeucau">
                         <div class="yc-header">
                            <span>YÊU CẦU BÁO GIÁ</span>
@@ -364,40 +376,79 @@
                            </div>
                         </div>
                      </div>
-                     <div class='banner-check'><a href='' target='blank'  ><img src='upload/image/banner/xe-BMW.jpg' style='display:block;margin:0 auto; margin-bottom: 10px;' alt=''/></a></div>
-                     <div class='banner-check'><a href='' target='blank'  ><img src='upload/image/banner/m.jpg' style='display:block;margin:0 auto; margin-bottom: 10px;' alt='Ha Thanh Auto'/></a></div>
                   </div>
-                  <div class="pn-main-left">
-                     <script src="<?php echo base_url();?>template/ezwebvietnam/home/js/Silde/jqFancyTransitions.1.8.min.js" type="text/javascript"></script> 
-                     <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('#slideshowHolder').jqFancyTransitions({
-                                effect: 'zipper', // wave, zipper, curtain
-                                width: 732,
-                                height: 177,
-                                delay: 5000,
-                                links: true // show images as links
-                            });
-                        });
-                     </script>
-                     <?php echo $this->load->view($main_content);?>
+                  <div class="box-right">
+                     <div class="panel-box-list-item">
+                        <div class="panel-header">
+                           <span id="ctl00_cph1_ProductListByCategory1_CategoryCaption">
+                              <h2 class='ColorOrangeBold'>Hệ thống động cơ | Hệ thống máy | Hệ thống hộ số | Hộp động cơ</h2>
+                           </span>
+                           <span id="ctl00_cph1_ProductListByCategory1_lsTitleview">
+                              <p>
+                                 Nơi m&agrave; bạn c&oacute; thể t&igrave;m thấy tất cả những sản phẩm của hệ thống động cơ, c&aacute;c loại m&aacute;y động cơ.
+                              </p>
+                           </span>
+                        </div>
+                        <div id="ctl00_cph1_ProductListByCategory1_ctl00">
+                           <div class="panel-header2">
+                              <div class="panel-header2-padding">
+                                 <span>
+                                 <span id="ctl00_cph1_ProductListByCategory1_lblCateName1" class="panel-col-left">Có <strong><?php echo $total?></strong> sản phẩm được tìm thấy</span>
+                                 </span>
+                                 
+                              </div>
+                              <div class="clr">
+                              </div>
+                           </div>
+                           <!-----List sản phẩm ----->
+                           <?php echo $this->load->view($main_content);?>
+                           <input type="hidden" name="ctl00$cph1$ProductListByCategory1$paging" id="ctl00_cph1_ProductListByCategory1_paging" value="1" />
+                        </div>
+                        <script>
+                           $(function () {
+                               $('.btnOrderColumnList').click(function () {
+                                   var _id = $(this).attr('idata');
+                                   var _Quan = '1';
+                                   var Url = '/Pages/Ajax/AddToCart.ashx?timespan=' + Number(new Date());
+                           
+                                   var strUrl = '';
+                                   if (_id != '' && _id != undefined) {
+                                       strUrl = strUrl + '&id=' + _id;
+                                   }
+                           
+                                   if (_Quan != '' && _Quan != undefined) {
+                                       strUrl = strUrl + '&pQuan=' + _Quan;
+                                   }
+                           
+                                   Url = Url + strUrl;
+                                   //neu khong co danh sach mau thi van cho dat hang
+                                   $.get(Url, function (data) {
+                                       if (data == '1') {
+                                           $(location).attr('href', '/Orders.aspx');
+                                       }
+                                   });
+                               });
+                           });
+                           
+                           if ($('#ctl00_cph1_ProductListByCategory1_paging').val() == 1) {
+                               $('.panel-pagging').css("padding-left", "140px");
+                           }
+                           else if ($('#ctl00_cph1_ProductListByCategory1_paging').val() <= 7) {
+                               $('.panel-pagging').css("padding-left", "90px");
+                           }
+                        </script>
+                        <div class="clr">
+                        </div>
+                        <div class="box-category-Info">
+                        </div>
+                        <div class="box-category-tag">
+                           Tags: <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'>hệ thống động cơ</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> động cơ giá rẻ</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hệ thống độ cơ đa năng</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hộ số các loại</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hệ thống hộ số</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hệ thống số</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hộ số đa năng</a> , <a href='http://www.hathanhauto.com/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'> hệ thống hộ số</a> 
+                        </div>
+                     </div>
                   </div>
                   <div class="clr">
                   </div>
-                  <div id="fb-root"></div>
                </div>
-               <script type="text/javascript">    (function (d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                  fjs.parentNode.insertBefore(js, fjs);
-                  } (document, 'script', 'facebook-jssdk'));
-                  //an banner hai ben khi man hinh <1280
-                  jQuery(window).resize(function () {
-                  resizeBannerHome();
-                  });
-               </script>
             </div>
             <div class="FooterTop">
                <div class="box-footer-navi">
@@ -461,7 +512,7 @@
             <div id="Footer">
                <div class="box-footer">
                   <div class="foo-item">
-                     <span class="foo-row"><span class="foo-text-1">Địa chỉ: 263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM</span>
+                     <span class="foo-row"><span class="foo-text-1">Địa chỉ: Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span>
                      </span>
                      <span class="foo-row" style="margin-top: 15px;">
                         <span style="float: left;">
@@ -544,10 +595,9 @@
             </div>
          </div>
          <div class="footer-info">
-            <span style="float: left;">Copyright © 2012 <b>Mitsuvnautoparts.com</b> All rights reserved.</span>
+            <span style="float: left;">Copyright © 2012 <b>Hathanhauto.com</b> All rights reserved.</span>
             <span style="float: right;"><a href="/Mercedes-Benz-provider-c92477144.aspx" rel="nofollow"> &nbsp; Phụ tùng ô tô  Mercedes</a></span>
             <span style="float: right;margin-left: 10px;"><a href="/" rel="nofollow">Phụ tùng ô tô chính hãng nhập khẩu </a>  |</span>
-            <span style="float: right;margin-left: 20px;"><a href="http://www.facebook.com/ezwebvietnam" rel="nofollow">Desgin EZWeb Việt Nam </a>  |</span>
          </div>
       </div>
       <div class="overlayNonev2" style="display: none;">
