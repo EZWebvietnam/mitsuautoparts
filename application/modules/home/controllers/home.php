@@ -129,17 +129,17 @@ class Home extends MY_Controller {
     }
 
     function _send_email($type, $to, $email, &$data) {
-        /* $this->load->library('email');
+        $this->load->library('email');
           $this->load->library('maillinux');
-          $from = 'nguyentruonggiang91@gmail.com';
+          $from = 'no-reply@mitsuvnautoparts.com';
           $subject = 'Register Account Success';
           $messsage = $this->load->view('email/'.$type.'-html', $data, TRUE);
-          $this->maillinux->SendMail($from,$email,$subject,$messsage); */
-        $this->load->library('mailer');
+          $this->maillinux->SendMail($from,$to,$subject,$messsage);
+        /*$this->load->library('mailer');
         $from = 'nguyentruonggiang91@gmail.com';
         $subject = 'Register Account Success';
         $messsage = $this->load->view('email/' . $type . '-html', $data, TRUE);
-        $this->mailer->sendmail($to, $to, $subject, $messsage);
+        $this->mailer->sendmail($to, $to, $subject, $messsage);*/
     }
 
 }
