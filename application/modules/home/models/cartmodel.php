@@ -16,6 +16,12 @@ class Cartmodel extends CI_Model
         $query = $this->db->query($sql,array($ip,$id_product));
         return $query->result_array();
     }
+    public function check_cart_id($id)
+    {
+        $sql ='SELECT * FROM cart WHERE id  = ?';
+        $query = $this->db->query($sql,array($id));
+        return $query->result_array();
+    }
     public function check_cart_ip($ip)
     {
         $sql ='SELECT * FROM cart WHERE ip = ?';

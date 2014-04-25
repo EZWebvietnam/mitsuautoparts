@@ -69,5 +69,58 @@ class Cart extends MY_Controller
             echo 'Không có sản phẩm';
         }
     }
+    public function list_cart()
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        $detail_cart = $this->cartmodel->check_cart_ip($ip);
+        $this->data['list_cart']=$this->cartmodel->list_cart_ip($ip);
+        $this->load->view('home/order_layout',$this->data);
+        
+    }
+    public function update_cart()
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        $id_cart = $this->input->post('id');
+        $quantyti = $this->input->post('quantity');
+        $detail_cart = $this->cartmodel->check_cart_id($id_cart);
+        if(empty($detail_cart))
+        {
+            show_404();
+            exit;
+        }
+        $price = $detail_cart[0]['price'];
+        $total_price = $quantyti*$price;
+        $data_save = array('quantity'=>$quantyti,'total_price'=>$total_price);
+        $this->cartmodel->update_cart($id_cart,$data_save);
+        $detail_cart = $this->cartmodel->check_cart_ip($ip);
+        $this->data['list_cart']=$this->cartmodel->list_cart_ip($ip);
+        $this->load->view('home_view/cart_ajax',$this->data);
+    }
+    public function delete_cart()
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        $id_cart = $this->input->post('id');
+        $this->cartmodel->delete_cart($id_cart);
+        $this->data['list_cart']=$this->cartmodel->list_cart_ip($ip);
+        $this->load->view('home_view/cart_ajax',$this->data);
+    }
 }
 ?>
