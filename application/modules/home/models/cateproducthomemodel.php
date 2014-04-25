@@ -25,5 +25,11 @@ class Cateproducthomemodel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result_array();
     }
+    public function get_fac()
+    {
+        $sql="SELECT * FROM manufac";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
 }
 ?>

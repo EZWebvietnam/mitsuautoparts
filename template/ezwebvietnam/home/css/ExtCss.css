@@ -276,7 +276,7 @@ a .pro-name { display: block; height: 28px; line-height: 14px; overflow: hidden;
 .login-right .content,.login-right .content-login{border:1px solid #ddd;background:#fcfcfc;padding:23px 34px;}
 .login-right .content h1{font-size:16px;border-bottom:1px solid #ddd;margin-bottom: 15px;}
 .login-right .content h2{margin-top:15px;font-weight:normal;width:136px;float:left;}
-.login-right .content h2 i,.login-right .content h3 i,.login-right .content h4 i{color:Red;}
+.login-right .content h2 i,.login-right .content h3 i,.login-right .content h4 i, .login-right .content h5 i {color:Red;}
 .login-right .content h2 b{font-size:11px;font-weight:normal;padding-right: 17px;}
 .login-right .content h2 b:last-child{margin-left: -5px;}
 .login-right .content h3{margin-top:15px;font-weight:normal;width:136px;float:left;padding-left:9px;}
@@ -307,7 +307,7 @@ a .pro-name { display: block; height: 28px; line-height: 14px; overflow: hidden;
 .activeBoxTab .icon-cart{background:url(../Images/icon-cart-white.png) 0 0 no-repeat;}
 .nav-content-hide{ -moz-box-shadow: 0px 5px 19px #6b6b6b; -webkit-box-shadow: 0px 5px 19px #6b6b6b; box-shadow: 0px 5px 19px #6b6b6b; position:absolute; top: 40px; width: 305px; display: none; background: white; z-index: 99999999999999999999; left: 3px; }
 .content-hide-body{padding:10px;color:#414141; text-align:center;}
-.btnLogin { border:none; background:url(../Images/btn-dang-nhap.png) 0 0 no-repeat; width:102px;height:28px; text-indent:-99999px; }
+.btnLogin { border:none; background:url(../images/btn-dang-nhap.png) 0 0 no-repeat; width:102px;height:28px; text-indent:-99999px; }
 .btnLogin:hover{-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;}
 .btnLogin-abc,.btnListCart{color: white; display: block; font-weight: bold; text-decoration:none; line-height: 22px; text-align: center; background:#fb9b1e; background: -moz-linear-gradient(center top , #F16744, #FEA437) repeat scroll 0 0 transparent; border: 1px solid #F05028; border-radius: 2px 2px 2px 2px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F16744, endColorstr=#fea437); }
 .btnLogin-abc:hover,.btnListCart:hover{-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;color: white;}
@@ -321,7 +321,7 @@ a .pro-name { display: block; height: 28px; line-height: 14px; overflow: hidden;
 .padd-logout{border-top: 1px solid #DDD;margin-top: 7px;display: block;padding-top: 10px;line-height: 20px;margin-left: 10px;margin-right: 10px;}
 .padd-logout a{color:#414141;}
 .padd-logout a:hover{color:#B41309;text-decoration:none;}
-.btn-Register { background: url(../Images/btn-dang-ky.png) 0 0 no-repeat; font-size: 14px; height: 28px; margin-top: 20px; width: 102px; text-indent: -99999px; border: none; }
+.btn-Register { background: url(../images/btn-dang-ky.png) 0 0 no-repeat; font-size: 14px; height: 28px; margin-top: 20px; width: 102px; text-indent: -99999px; border: none; }
 .pn-Slide-home{margin-top:12px;}
 .box-dmtg{width:238px;margin-top:12px;}
 .dmtg-header{width:238px;height:38px;background:url(../images/title-help.png) 0 0 no-repeat;}

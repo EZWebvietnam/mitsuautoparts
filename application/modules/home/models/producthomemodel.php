@@ -42,5 +42,48 @@ class Producthomemodel extends CI_Model
         $query = $this->db->query($sql,array($id_cate));
         return count($query->result_array()); 
     }
+    public function list_product_search(array $condition,$number,$offset)
+    {
+        $sql="SELECT * FROM product WHERE 1 = 1 ";
+        if(isset($condition['key_search']))
+        {
+            $condition['key_search'] = loaibohtmltrongvanban($condition['key_search']);
+            $sql.=" AND title LIKE '%".$condition['key_search']."%'";
+        }
+        if(isset($condition['year']) && $condition['year']!=0)
+        {
+            $sql.=" AND year = ".$condition['year'];
+        }
+        if(isset($condition['manu_fac']))
+        {
+            $sql.=" AND id_fac = ".$condition['manu_fac'];
+        }
+         $sql.=" LIMIT ?,?";
+        
+        $query = $this->db->query($sql,array($offset,$number));
+        return $query->result_array(); 
+    }
+    public function count_product_search(array $condition)
+    {
+        $sql="SELECT * FROM product WHERE 1 = 1 ";
+        
+      
+        if(isset($condition['key_search']))
+        {
+            $condition['key_search'] = loaibohtmltrongvanban($condition['key_search']);
+            $sql.=" AND title LIKE '%".$condition['key_search']."%'";
+        }
+        if(isset($condition['year']))
+        {
+            $sql.=" AND year = ".$condition['year'];
+        }
+        if(isset($condition['manu_fac']))
+        {
+            $sql.=" AND id_fac = ".$condition['manu_fac'];
+        }
+        //echo $sql;exit;
+        $query = $this->db->query($sql);
+        return count($query->result_array()); 
+    }
 }
 ?>

@@ -14,7 +14,11 @@ class MY_Controller extends CI_Controller
         $this->load->model('cateproducthomemodel');
         $this->data['list_cate_parent']=$this->cateproducthomemodel->list_cate_parent();
     }
-    
+    public function list_manufac()
+    {
+        $this->load->model('cateproducthomemodel');
+        $this->data['list_manufac']=$this->cateproducthomemodel->get_fac();
+    }
     public function load_header()
     {
         $link = $_SERVER['DOCUMENT_ROOT'] . ROT_DIR . 'setting.xml';

@@ -68,7 +68,7 @@ class Tank_auth {
             } else {
                 $get_user_func = 'get_user_by_email';
             }
-
+            
             if (!is_null($user = $this->ci->users->$get_user_func($login))) { // login ok
                 // Does password match hash in database?
                 $hasher = new PasswordHash(
@@ -87,7 +87,6 @@ class Tank_auth {
                             'status' => ($user->activated == 1) ? STATUS_ACTIVATED : STATUS_NOT_ACTIVATED,
                             'role' => $user->role
                         ));
-
                         if ($user->activated == 0) {       // fail - not activated
                             $this->error = array('not_activated' => '');
                         } else {            // success
@@ -195,7 +194,7 @@ class Tank_auth {
      * @param	bool
      * @return	array
      */
-    function create_user($username, $email, $password, $fullname, $phone, $role, $email_activation, $add) {
+    function create_user($username, $email, $password, $fullname, $phone, $role, $email_activation) {
         if ((strlen($username) > 0) AND ! $this->ci->users->is_username_available($username)) {
             $this->error = array('username' => 'auth_username_in_use');
         } elseif (!$this->ci->users->is_email_available($email)) {
@@ -213,9 +212,8 @@ class Tank_auth {
                 'full_name' => $fullname,
                 'phone' => $phone,
                 'last_ip' => $this->ci->input->ip_address(),
-                'activated' => 1,
+                'activated' => 0,
                 'role' => $role,
-                'address' => $add,
                 'phone' => $phone
             );
             if ($email_activation) {

@@ -15,14 +15,14 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/bxQuestion.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/jquery.selectbox.css" />
         <!--[if IE 7]>
-        <link rel="stylesheet" href="Css/FixIE/ie7.css" type="text/css" media="screen" />
-        <![endif]-->
-        <!--[if IE 8]>
-        <link rel="stylesheet" href="Css/FixIE/ie8.css" type="text/css" media="screen" />
-        <![endif]-->
-        <!--[if IE 9]>
-        <link rel="stylesheet" href="Css/FixIE/ie9.css" type="text/css" media="screen" />
-        <![endif]-->
+      <link rel="stylesheet" href="<?php echo base_url();?>template/ezwebvietnam/home/css/ie7.css" type="text/css" media="screen" />
+      <![endif]-->
+      <!--[if IE 8]>
+      <link rel="stylesheet" href="<?php echo base_url();?>template/ezwebvietnam/home/css/ie8.css" type="text/css" media="screen" />
+      <![endif]-->
+      <!--[if IE 9]>
+      <link rel="stylesheet" href="<?php echo base_url();?>template/ezwebvietnam/home/css/ie9.css" type="text/css" media="screen" />
+      <![endif]-->
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/jq_version/1_7_1/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/Selectbox/jquery.selectbox-0.1.3.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/AutoComplete/jquery.autocomplete.js"></script>
@@ -85,25 +85,41 @@
                             <div class="main-item-2">
                                 <div class="box-search">
                                     <span class="bg-s-left"></span><span class="bg-s-right"></span>
-                                    <div onkeypress="javascript:return WebForm_FireDefaultButton(event, & #39; ctl00_HeaderTop1_NavibarTop1_btnSearch & #39; )">
-                                        <span class="bg-txt-s">
-                                            <input name="ctl00$HeaderTop1$NavibarTop1$txtCondition" type="text" id="ctl00_HeaderTop1_NavibarTop1_txtCondition" class="txtKeysearch AutocompleteText TextSearch" value="Nhập từ khóa tìm kiếm!" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Nhập từ khóa tìm kiếm! & #39;" onfocus="if (this.value == & #39; Nhập từ khóa tìm kiếm! & #39; ) this.value = & #39; & #39;" />
-                                        </span>
-                                        <span class="bg-btn-s">
-                                            <input type="submit" name="ctl00$HeaderTop1$NavibarTop1$btnSearch" value="" id="ctl00_HeaderTop1_NavibarTop1_btnSearch" class="btnSearch" />
-                                        </span>
-                                    </div>
+                                    <form name="form_search" action="<?php echo base_url();?>tim-kiem" method="get">
+                           
+                              <span class="bg-txt-s">
+                              <input name="key_search" type="text" id="key_search" class="txtKeysearch AutocompleteText TextSearch" value="Nhập từ khóa tìm kiếm!" onblur="if(this.value==&#39;&#39;) this.value=&#39;Nhập từ khóa tìm kiếm!&#39;" onfocus="if(this.value ==&#39;Nhập từ khóa tìm kiếm!&#39; ) this.value=&#39;&#39;" />
+                              </span>
+                              <span class="bg-btn-s">
+                                  <input  type="submit"  value="" id="btn_search_main" class="btnSearch" />
+                              </span>
+                          
+                           </form>
                                 </div>
                             </div>
                             <div class="main-item-3">
                                 <div class="bg-cart">
-                                    <div class="navBox login-item">
-                                        <span class="icon-down"></span>
-                                        <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogin" class="pos-login" href="CustomerLogin-lvn.aspx"><b>Đăng nhập</b><br />Tài khoản & đơn hàng </a>
-                                        <div class="nav-content-hide" style="right: -131px;width:200px;">
-                                            <div class='content-hide-body'><span><a href='/CustomerLogin-lvn.aspx' class='btnLogin-abc'><span class=''>Đăng nhập</span></a></span><span style='padding-top: 10px;'><span style='float: left; padding-right: 10px;margin: 10px 0;'>Khách hàng mới?</span><a style='float: left;margin-bottom: 10px;' href='/CustomerRegister-lvn.aspx'>Đăng ký tại đây.</a></span></div>
+                                    <?php
+                                    if ($this->tank_auth->is_logged_in()) {
+                                        ?>
+                                        <div class="navBox login-item">
+                                            <span class="icon-down"></span>
+
+                                            <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogin" class="pos-login" href="CustomerInfor-lvn.aspx">Xin chào <br> <b><?php echo $this->session->userdata('full_name');?></b></a>
+                                            <div class="nav-content-hide" style="right: -131px; width: 200px; display: none;">
+                                                <div style="font-size: 11px; font-weight: bold; color: #333;text-align: left;padding:10px 0;"><span class="padd-cate"><a href="/CustomerInfor-lvn.aspx">Bảng điều khiển</a></span><span class="padd-cate"><a href="/AccountInfor-lvn.aspx">Thông tin tài khoản</a></span><span class="padd-cate"><a href="/ManageOrder-lvn.aspx">Đơn hàng</a></span><span class="padd-cate"><a href="/quan-ly-so-dia-chi-lvn-d62792383.aspx">Sổ địa chỉ</a></span><span class="padd-cate"><a href="/Comment-lvn.aspx">Quản lý bình luận</a></span><span class="padd-cate"><a href="/quan-ly-cau-hoi-lvn-d62792383.aspx">Quản lý câu hỏi</a></span><span class="padd-logout"><a href="<?php echo base_url();?>dang-xuat">Thoát</a></span></div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php } else { ?>
+
+                                       <div class="navBox login-item">
+                                            <span class="icon-down"></span>
+                                            <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogin" class="pos-login" href="<?php echo base_url();?>dang-nhap"><b>Đăng nhập</b><br />
+                                            <div class="nav-content-hide" style="right: -131px;width:200px;">
+                                                <div class='content-hide-body'><span><a href='<?php echo base_url();?>dang-nhap' class='btnLogin-abc'><span class=''>Đăng nhập</span></a></span><span style='padding-top: 10px;'><span style='float: left; padding-right: 10px;margin: 10px 0;'>Khách hàng mới?</span><a style='float: left;margin-bottom: 10px;' href='<?php echo base_url();?>dang-ky'>Đăng ký tại đây.</a></span></div>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
                                     <div class="navBox Cart-item">
                                         <span class="icon-down"></span>
                                         <span class="numCart" id="lnkCart">&nbsp;0</span>

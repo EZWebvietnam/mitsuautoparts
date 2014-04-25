@@ -1,13 +1,16 @@
-<?php
+<?php //
 class Product extends MY_Controller
 {
     public function __construct() {
         parent::__construct();
         $this->load->model('producthomemodel');
+         $this->load->library('session');
+        $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
         $this->load->library('tank_auth');
         $this->lang->load('tank_auth');
         parent::list_cate_parent();
+        parent::list_manufac();
     }
     public function detail($id = null)
     {
@@ -79,6 +82,32 @@ class Product extends MY_Controller
         $result = $this->producthomemodel->list_product_name($key_search);
         $this->data['result'] = $result;
         $this->load->view('home_view/auto_complete_view',$this->data);
+    }
+    public function search()
+    {
+        $this->load->model('cateproducthomemodel');
+        $this->load->helper('url');
+        $config['uri_segment'] = 5;
+        $page = $this->uri->segment(4);
+        $config['per_page'] = 10;
+        $config['total_rows'] = $this->producthomemodel->count_product_search($_GET);
+        if ($page == '') {
+            $page = 1;
+        }
+        $page1 = ($page - 1) * $config['per_page'];
+        if (!is_numeric($page)) {
+            show_404();
+            exit;
+        }
+       $num_pages = ceil($config['total_rows']/ $config['per_page']);
+       $array_sv = $this->producthomemodel->list_product_search($_GET,$config['per_page'], $page1);
+       $this->data['total_page'] = $num_pages;
+       $this->data['offset'] = $page1;
+       $this->data['page']=$page;
+       $this->data['total']=$config['total_rows'];
+       $this->data['list']=$array_sv;
+       $this->data['main_content']='home_view/list_product';
+       $this->load->view('home/product_list_search',$this->data);
     }
 }
 ?>

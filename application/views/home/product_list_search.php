@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
    <head>
       <title>
-         <?php echo $cate_detail[0]['name']?>
+         Tìm kiếm
       </title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
@@ -94,7 +94,7 @@
                      </div>
                      <div class="main-item-3">
                         <div class="bg-cart">
-                          <?php
+                           <?php
                                     if ($this->tank_auth->is_logged_in()) {
                                         ?>
                                         <div class="navBox login-item">
@@ -250,7 +250,7 @@
                <div class="product-breadcrum">
                   <ul itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                      <li class="breadcrum-text"><a itemprop="url" title="Trang chủ" href="/"><span itemprop="title">Trang chủ</span></a></li>
-                     <li class="breadcrum-text" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="<?php echo $cate_detail[0]['name']?> " class="" href="<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_detail[0]['name'])))?>-c<?php echo $cate_detail[0]['id']?>"><span itemprop="title"><?php echo $cate_detail[0]['name']?> </span><i></i></a></li>
+                     <li class="breadcrum-text" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Tìm kiếm " class="" href="<?php echo base_url();?>tim-kiem"><span itemprop="title">Tìm kiếm </span><i></i></a></li>
                   </ul>
                   <div class="clr">
                   </div>
@@ -318,34 +318,7 @@
                             }
                         });
                      </script>
-                      <?php 
-                      if($cate_detail[0]['parent']==0)
-                      {
-                          $list_cate_sub = $this->cateproducthomemodel->list_cate_from_parent($cate_detail[0]['id']);
-                      ?>
-                     <div class="panel-box-right">
-                        <div class="panel-padding">
-                           <!--DANH MUC -->
-                           <div class="list-accessory">
-                              <h3 id="ctl00_cph1_ProductListFillter1_pnFillDmsp" class="la-title ColorRedBold">
-                                 Danh mục phụ tùng
-                              </h3>
-                              <div class="la-content">
-                                 <ul>
-                                     <?php 
-                                     foreach($list_cate_sub as $cate_s)
-                                     {
-                                     ?>
-                                    <li><a href='<?php echo base_url();?>c/<?php echo mb_strtolower(url_title(removesign($cate_s['name'])))?>-c<?php echo $cate_s['id']?>' class='activeLnk'><span class='icon-cate'></span><?php echo $cate_s['name']?></a></li>
-                                     <?php } ?>
-                                 </ul>
-                              </div>
-                           </div>
-                           <!-- END .list-accessory -->
-                        </div>
-                        <!-- END .pn-b-col-left -->
-                     </div>
-                      <?php } ?>
+                      
                      <div class="box-yeucau">
                         <div class="yc-header">
                            <span>YÊU CẦU BÁO GIÁ</span>

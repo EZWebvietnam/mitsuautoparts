@@ -40,7 +40,11 @@
 
 $route['default_controller'] = "home/index";
 $route['trang-chu'] = "home/home/index";
-
+$route['dang-nhap'] = "home/home/login";
+$route['dang-ky'] = "home/home/register";
+$route['dang-xuat'] = "home/home/logout";
+$route['tim-kiem?(:any)']="home/product/search";
+$route['active-user/(:any)/(:any)']="home/home/active";
 $route['p/(:any)-p(:any)'] = "home/product/detail/$2";
 $route['c/(:any)-c(:any)'] = "home/product/product_cate/$2";
 $route['c/(:any)-c(:any)/page/(:any)'] = "home/product/product_cate/$2";
