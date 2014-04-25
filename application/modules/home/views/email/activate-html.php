@@ -16,7 +16,7 @@
                      <p>Vui lòng kích hoạt email trong vòng <?php echo $activation_period; ?> tiếng kể từ khi bạn nhận được email này</p>
                      <p>Nếu có bất kỳ thắc mắc gì, vui lòng liên hệ với bộ phận Chăm Sóc Khách Hàng: <a href="mailto:lienhe@mitsuvnautoparts.com" target="_blank">lienhe@mitsuvnautoparts.com</a>.</p>
                      <p>Chúc quý khách hàng có một ngày tốt lành tại  <a href="<?php echo base_url();?>" style="font-size:14px;color:#004c92;text-decoration:none" target="_blank"><?php echo $site_name; ?></a>! </p>
-                     <p>Trân trọng,<br>Đội ngũ HaThanhAuto.com.</p>
+                     <p>Trân trọng,<br>Đội ngũ Mitsuvnautoparts.com.</p>
                   </td>
                </tr>
                <tr>
