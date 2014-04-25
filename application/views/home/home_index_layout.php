@@ -6,7 +6,7 @@
         </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-        <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/?gclid=copq3jttir0cfeib4godi34aug" />
+        <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_($_SERVER);?>" />
         <!--http://www.minifycss.com/css-compressor  async="true"/-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/Reset.css" />
         <!--rat quan trong de tuong thich voi nhieu trinh duyet -->

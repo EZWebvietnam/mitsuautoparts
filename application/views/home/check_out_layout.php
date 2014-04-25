@@ -4,36 +4,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
     <head><title>
             HaThanhAuto.com - THẾ GIỚI PHỤ TÙNG Ô TÔ NHẬP KHẨU-DẦU NHỚT PHỤ GIA Ô TÔ!
-        </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        </title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-        <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/orders.aspx" />
-        <!--http://www.minifycss.com/css-compressor  async="true"/-->
+        <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_($_SERVER); ?>" />
+       <!--http://www.minifycss.com/css-compressor  async="true"/-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/Reset.css" /><!--rat quan trong de tuong thich voi nhieu trinh duyet -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ExtCss.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/bxNews.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/bxQuestion.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/jquery.selectbox.css" />
-        <!--[if IE 7]><link rel="stylesheet" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ie7.css" type="text/css" media="screen" /><![endif]-->
-        <!--[if IE 8]><link rel="stylesheet" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ie8.css" type="text/css" media="screen" /><![endif]-->
-        <!--[if IE 9]><link rel="stylesheet" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ie9.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" href="Css/FixIE/ie7.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" href="Css/FixIE/ie8.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 9]><link rel="stylesheet" href="Css/FixIE/ie9.css" type="text/css" media="screen" /><![endif]-->
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/jq_version/1_7_1/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/Selectbox/jquery.selectbox-0.1.3.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/AutoComplete/jquery.autocomplete.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/Common.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>template/ezwebvietnam/home/js/jquery.cookie.js"></script>
         <meta name="ROBOTS" content="ALL" />
-        <title>Thông tin đơn hàng</title>
+        <title>Xác nhận và thanh toán</title>
     </head>
     <body>  
         <div class="ajax-loader-email" style="display: none;">
             <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/ajax-loader-send-mail-2.gif" alt="send mail"/></div>
         </div>
-
-
-
-
-
         <div id="Wraper">
             <div id="wrapBody">
                 <div id="Header">
@@ -65,7 +59,7 @@
                         <div class="clr header-main">
                             <div class="main-item-1">
                                 <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="./">
-                                    <img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
+                                    <img src="images/logo.jpg" width="249" height="39" alt="logo" />
                                 </a>
                             </div>
                             <div class="main-item-2">
@@ -221,224 +215,328 @@
                 <div id="Content">
 
 
-                    <div class="order-info">
+                    <div class="order-steps">
+                        <span class="os-icon-cart"></span>
+                        <span class="colorGray bold">GIỎ HÀNG</span>
+                        <span class="os-icon-arrow"></span>
+                        <span class="os-icon-bag-red"></span>
+                        <span class="ColorRedBold">THANH TOÁN</span>
+                        <span class="os-icon-arrow"></span>
+                        <span class="os-icon-stick"></span>
+                        <span class="colorGray">HOÀN TẤT</span>
+                        <div class="clear"></div>
+                    </div> <!-- END  .order-steps -->
+
+                    <div class="box-Order-3 clr">
+                        <input type="hidden" name="ctl00$cph1$Order31$ddlStreetValueHidden" id="ctl00_cph1_Order31_ddlStreetValueHidden" />
+                        <input type="hidden" name="ctl00$cph1$Order31$ddlStreetTextHidden" id="ctl00_cph1_Order31_ddlStreetTextHidden" />
+                        <ul class="o3-col">
 
 
-                        <div class="order-steps">
-                            <span class="os-icon-cart-red"></span>
-                            <span class="ColorRedBold">GIỎ HÀNG</span>
-                            <span class="os-icon-arrow"></span>
-                            <span class="os-icon-bag"></span>
-                            <span class="colorGray">THANH TOÁN</span>
-                            <span class="os-icon-arrow"></span>
-                            <span class="os-icon-stick"></span>
-                            <span class="colorGray">HOÀN TẤT</span>
-                            <div class="clear"></div>
-                        </div> <!-- END  .order-steps -->
-
-                        <div class="order-cart-choice">
-                            <span id="ctl00_cph1_OrderHome1_lblCartChoice">Sản phẩm <b style='color: #B41309;'>Chổi gạt mưa trước xe Mercedes S320 WDB220</b> là sản phẩm mới nhất bạn vừa thêm</span>            
-                        </div>
-
-                        <div class="oi-content">
-
-                            <div class="oic-header">
-                                <div class="fl-l p-info-width">Sản phẩm</div>
-                                <div class="fl-l p-tranformer">Dự kiến giao hàng</div>
-                                <div class="fl-l p-price">Giá</div>
-                                <div class="fl-l p-quantity">Số lượng</div>
-                                <div class="fl-l">Thành tiền</div>
-                                <div class="clear"></div>
-                            </div> <!-- END .oic-header -->
-
-                            <div class="oic-content">
-                                <!--Cartlist-->
-
-                                <?php 
-                                $total_money = 0;
-                                foreach($list_cart as $cart_)
-                                {
-                                ?>    
-                                <div class='oicc-item '>
-                                    <div class="fl-l p-info-width">
-                                        <p class="fl-l mrg-r-10">
-                                            <input type="hidden" name="ctl00$cph1$OrderHome1$rptListCart$ctl00$hidProID" id="ctl00_cph1_OrderHome1_rptListCart_ctl00_hidProID" value="<?php echo $cart_['id_cart']?>" />
-                                            <a id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lnkProductDetail" class="cart-product-img-link" href="Choi-gat-mua-truoc-xe-Mercedes-S320-WDB220-product-c38818800-d88131417.aspx">
-                                                <?php 
-                                                if(file_exists(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$cart_['image'])&& is_file(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$cart_['image']) && $cart_['image']!='')
-                                                {
-                                                ?>
-                                                <img id="ctl00_cph1_OrderHome1_rptListCart_ctl00_imgPath" width="150" height="150" class="cart-product-img" src="<?php echo base_url();?>file/uploads/product/<?php echo $cart_['image']?>" style="height:77px;width:62px;" />
-                                                <?php } else { ?>
-                                                <img id="ctl00_cph1_OrderHome1_rptListCart_ctl00_imgPath" width="150" height="150" class="cart-product-img" src="<?php echo base_url();?>file/uploads/no_image.gif" style="height:77px;width:62px;" />
-                                                <?php } ?>
-                                            </a>
-                                        </p>
-                                        <p>
-                                            <a id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lnkTitle" class="bold" href="Choi-gat-mua-truoc-xe-Mercedes-S320-WDB220-product-c38818800-d88131417.aspx"><?php echo $cart_['title']?></a>
-                                        </p>
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            CODE: <span id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lblBarCode"><?php echo $cart_['code']?></span>
-                                        </p>
-                                        <p>
-                                            <span id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lblSizeValue"></span>
-                                            <span id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lblColorValue"></span>
-                                        </p>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="fl-l p-tranformer">
-                                        Trong vòng 12h làm việc
-                                    </div>
-                                    <div class="fl-l p-price">
-                                        <p>
-                                            <span id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lblPriceCurrent" class="bold fo-si-12 oicc-price"><?php echo $cart_['price']?> đ</span>
-                                        </p>
-                                        <p>
-
-                                        </p>
-                                        <p>
-
-                                        </p>
-                                    </div>
-                                    <div class="fl-l p-quantity">
-                                        <p>
-                                            <select name="ctl00$cph1$OrderHome1$rptListCart$ctl00$ddQuantity" id="ddQuantity" class="cart-select">
-                                                <option value="1">1</option>
-                                                <option selected="selected" value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
+                            <li class="o3-item">
+                                <div class="o3-info">
+                                    <span class="o3-info-h">
+                                        Thông tin thanh toán
+                                    </span>
+                                    <span class="o3-info-text">
+                                        Email
+                                    </span>
+                                    <span>
+                                        <input name="email" type="text" value="<?php echo $this->session->userdata('email');?>" id="ctl00_cph1_Order31_txtEmail" class="o3-input" style="width:96%" />
+                                    </span>
+                                    <span class="o3-info-text">
+                                        Họ tên
+                                    </span>
+                                    <span>
+                                        <span class="o3-bg-input">
+                                            <select name="sex" id="ctl00_cph1_Order31_ddlGender" style="margin-right:5px;width:auto;border:none;font-size:14px;box-shadow:none;">
+                                                <option value="0"> Anh </option>
+                                                <option value="1"> Chị </option>
 
                                             </select>
-                                            <input type="hidden" id="hidPID" value='<?php echo $cart_['id_cart']?>' />
-                                        </p>
-                                        <p class="oicc-del-item">
-                                            <span class="oicc-icon-del"></span>
-                                            <a href='javascript:void(0)' id="btn-o-delCart" idata='<?php echo $cart_['id_cart']?>' title="Xóa sản phẩm">Xóa SP</a>
-                                        </p>
-                                    </div>
-                                    <div class="fl-l">
-                                        <p>
-                                            <span id="ctl00_cph1_OrderHome1_rptListCart_ctl00_lblTotalMeneyItem" class="bold fo-si-12"><?php echo $cart_['total_price']?> đ</span>
-                                        </p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div><!-- END .oicc-item -->
-                                <?php 
-                                $total_money += $cart_['total_price'];
-                                
-                                } ?>        
-                                <!--End Cartlist-->
-                            </div>
+                                            <input name="name" type="text" value="<?php echo $this->session->userdata('full_name');?>" id="ctl00_cph1_Order31_txtHoTen" class="o3-input-spec" style="width:79%" />
+                                        </span>
 
-                        </div> <!-- END .oi-content -->
+                                    </span>
+                                    <span class="o3-info-text">
+                                        Điện thoại
+                                    </span>
+                                    <span>
+                                        <input name="mobile" type="text" value="<?php echo $this->session->userdata('phone');?>" maxlength="12" id="ctl00_cph1_Order31_txtPhone" class="o3-input" style="width:96%" />
+                                    </span>
+                                    <span class="o3-info-text">
+                                        Địa chỉ thanh toán (<b style="color: #B4130B;">Số nhà, ngõ ngách</b>)
+                                    </span>
+                                    <span style="overflow: hidden;">
 
-                        <div class="oic-tran-total">
-                            <div class="fl-l oic-f-tranfer">
-                                <div class="oic-ft-content">
-                                    <div class="oic-ft-one fl-l">
-                                        <h4>Phương thức thanh toán</h4>
-                                        <div class="bank-list-one">
-                                            <span class="icon-visa fl-l dis-block"></span>
-                                            <span class="icon-mastercard fl-l dis-block"></span>
-                                            <span class="icon-cash fl-l dis-block"></span>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="bank-list-two">
-                                            <span class="icon-one-pay fl-l dis-block"></span>
-                                            <span class="icon-nganluong fl-l dis-block"></span>
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                    <div class="oic-ft-two fl-l">
-                                        <h4>An toàn bảo mật</h4>
-                                        <div class="p-relative">
-                                            <span class="icon-security dis-block"></span>
-                                        </div>
-                                    </div>	
-                                    <div class="oic-ft-three fl-l" style="width:225px;">
+                                        <textarea name="ctl00$cph1$Order31$txtAddress" rows="2" cols="20" id="ctl00_cph1_Order31_txtAddress" class="o3-input o3i-street" style="width:96%;height:50px;">
+</textarea>
+                                    </span>
+                                    <span>
+                                        <select name="ctl00$cph1$Order31$ddlCountry" id="ctl00_cph1_Order31_ddlCountry" class="o3-select" style="margin-right:10px;width:142px;">
+                                            <option selected="selected" value="0">- Tỉnh/Th&#224;nh phố -</option>
+                                            <option value="30">H&#224; Nội</option>
+                                            <option value="35">TP Hồ Ch&#237; Minh</option>
+                                            <option value="76">An Giang</option>
+                                            <option value="7">B&#224; Rịa - Vũng T&#224;u</option>
+                                            <option value="8">Bạc Li&#234;u</option>
+                                            <option value="9">Bắc Cạn</option>
+                                            <option value="10">Bắc Giang</option>
+                                            <option value="11">Bắc Ninh</option>
+                                            <option value="12">Bến Tre</option>
+                                            <option value="13">B&#236;nh Dương</option>
+                                            <option value="14">B&#236;nh  Đinh</option>
+                                            <option value="15">B&#236;nh Phước</option>
+                                            <option value="16">B&#236;nh Thuận</option>
+                                            <option value="18">C&#224; Mau</option>
+                                            <option value="19">Cao Bằng</option>
+                                            <option value="20">Cần Thơ</option>
+                                            <option value="21">Đ&#224; Nẵng</option>
+                                            <option value="22">Đăk lắk</option>
+                                            <option value="23">Đăk N&#244;ng</option>
+                                            <option value="24">Điện Bi&#234;n</option>
+                                            <option value="25">Đồng Nai</option>
+                                            <option value="26">Đồng Th&#225;p</option>
+                                            <option value="27">Gia Lai</option>
+                                            <option value="28">H&#224; Giang</option>
+                                            <option value="29">H&#224; Nam</option>
+                                            <option value="31">H&#224; Tĩnh</option>
+                                            <option value="32">Hải Dương</option>
+                                            <option value="33">Hải Ph&#242;ng</option>
+                                            <option value="34">H&#242;a B&#236;nh</option>
+                                            <option value="36">Hậu Giang</option>
+                                            <option value="37">Hưng Y&#234;n</option>
+                                            <option value="72">Hưng Y&#234;n</option>
+                                            <option value="38">Kh&#225;nh H&#242;a</option>
+                                            <option value="39">Ki&#234;n Giang</option>
+                                            <option value="40">Kon Tum</option>
+                                            <option value="41">Lai Ch&#226;u</option>
+                                            <option value="42">L&#224;o Cai</option>
+                                            <option value="43">Lạng Sơn</option>
+                                            <option value="44">L&#226;m Đồng</option>
+                                            <option value="45">Long An</option>
+                                            <option value="47">Nam Định</option>
+                                            <option value="48">Nghệ An</option>
+                                            <option value="49">Ninh B&#236;nh</option>
+                                            <option value="50">Ninh Thuận</option>
+                                            <option value="51">Ph&#250; Thọ</option>
+                                            <option value="52">Ph&#250; Y&#234;n</option>
+                                            <option value="53">Quảng B&#236;nh</option>
+                                            <option value="54">Quảng Nam</option>
+                                            <option value="55">Quảng Ng&#227;i</option>
+                                            <option value="56">Quảng Ninh</option>
+                                            <option value="57">Quảng Trị</option>
+                                            <option value="58">S&#243;c Trăng</option>
+                                            <option value="59">Sơn La</option>
+                                            <option value="60">T&#226;y Ninh</option>
+                                            <option value="61">Th&#225;i B&#236;nh</option>
+                                            <option value="62">Th&#225;i Nguy&#234;n</option>
+                                            <option value="63">Thanh H&#243;a</option>
+                                            <option value="65">Thừa Thi&#234;n Huế</option>
+                                            <option value="66">Tiền Giang</option>
+                                            <option value="67">Tr&#224; Vinh</option>
+                                            <option value="68">Tuy&#234;n Quang</option>
+                                            <option value="69">Vĩnh Long</option>
+                                            <option value="70">Vĩnh Ph&#250;c</option>
+                                            <option value="71">Y&#234;n B&#225;i</option>
 
-                                    </div>
-                                    <div class="clear"></div>
+                                        </select>
+                                        
+                                    </span>
+                                    <span class="o3-info-text" style="font-style:italic;">
+                                        Ghi chú cho người giao hàng
+                                    </span>
+                                    <span>
+                                        <textarea name="ctl00$cph1$Order31$txtCusNote" rows="2" cols="20" id="ctl00_cph1_Order31_txtCusNote" class="o3-area">
+                                        </textarea>
+                                    </span>
+
+
                                 </div>
-                            </div> <!-- END .oic-f-tranfer -->
+                            </li> <!-- END  .COl 1 -->
 
-                            <div class="oic-f-money">
-                                <div class="oic-fm-content">
-                                    <span class="icon-order-cart"></span>
-                                    <p><span>Tổng tiền</span><span class="fl-r"><?php echo $total_money;?> đ
-                                        </span></p>
-                                    <p class="hr-line"><span>Phí vận chuyển</span><span class="fl-r">0 đ</span></p>
-                                    <p class="oic-fmc-total"><span class="ColorRed bold">Thanh toán</span><span class="ColorRed bold fl-r"><?php echo $total_money;?> đ</span></p>
-                                </div> <!-- END .oic-fm-content -->
-                            </div> <!-- END .oic-f-money -->
-                            <div class="clear"></div>
-                        </div> <!-- END .oic-tran-total -->
 
-                        <div class="action-order">
-                            <a href="javascript:void(0)" class="btn-ao-continue"></a>
-                            <a href="javascript:void(0)" class="btn-ao-next"></a>
-                        </div>
-                        <input type="hidden" name="ctl00$cph1$OrderHome1$hidCateId" id="ctl00_cph1_OrderHome1_hidCateId" value="www.hathanhauto.com/Than-vo-guong-den-kinh--product-c38818800-p1.aspx" />
-                        <script>
-                                    $(function () {
-                                    //button back
-                                    $('a.btn-ao-next"').click(function () {
-                        //            var _url = $('#ctl00_cph1_OrderHome1_hidCateId').val();
-                                    //            location.href = 'http://' + _url;
-                                    location.href = '/';
-                                    });
-                                            //button next
-                                            $('a.btn-ao-continue').click(function () {
-                                    location.href = '<?php echo base_url();?>thanh-toan';
-                                    });
-                                            //button Del cart
-                                            $('a#btn-o-delCart').live('click',function () {
-                                             var _dt = $(this).attr('iData');
-                                            // $(this).parent().parent().parent().parent().parent().fadeOut(500);
-                                            var _url = '<?php echo base_url();?>home/cart/delete_cart';
-                                            $.ajax({
-                                                url: _url,
-                                                type: "post",
-                                                data:{id:_dt},
-                                                dataType: 'html',
-                                                success: function(respone) {
-                                                    $('.order-info').html(respone);
-                                                },
-                                                error: function() {
-                                                   $('.order-info').html('Giỏ hàng lỗi');
+
+
+                            <li class="o3-item">
+                                <div class="o3-info">
+                                    <span class="o3-info-h">
+                                        Hình thức thanh toán
+                                    </span>
+                                    <ul class="o3-list-radio">
+                                        <li>
+                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoCash" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoCash" checked="checked" /><label for="ctl00_cph1_Order31_rdoCash">Thanh toán khi nhận hàng</label></span> 
+                                        </li>
+                                        <li>
+                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoPay" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoPay" /><label for="ctl00_cph1_Order31_rdoPay">Chuyển khoản qua Internet/mobile Banking</label></span>
+                                        </li>
+                                        <li>
+                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoPayOnl" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoPayOnl" /><label for="ctl00_cph1_Order31_rdoPayOnl">Thanh toán trực tuyến</label></span>
+                                        </li>
+                                    </ul>
+                                    <div class="clr"></div>
+                                </div>     
+                            </li> <!-- END  .COl 2 -->
+
+
+
+
+                            <li class="o3-item">
+                                <div class="o3-Cart">
+                                    <span class="o3-info-h" style="font-weight:normal;">
+                                        <b style="font-weight:bold;font-size:14px;">Giỏ hang</b> (<?php echo count($list_cart);?>)
+                                    </span>
+                                    <!--Cartlist--> 
+                                    <ul class="o3-list-cart">
+                                        <?php 
+                                        $total = 0;
+                                        foreach($list_cart as $cart_c)
+                                        {
+                                        ?>
+                                        <li>
+                                            <div class="cart-item clr">
+                                                <div class="cart-item-img">
+                                                    <?php 
+                                                    if(file_exists(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$cart_c['image']) && is_file(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$cart_c['image'])&&$cart_c['image']!='')
+                                                    {
+                                                    ?>
+                                                    <img id="ctl00_cph1_Order31_rptListCart_ctl01_imgProduct" src="<?php echo base_url();?>file/uploads/product/<?php echo $cart_c['image']?>" width="250" height="250" style="height:55px;width:44px;" />
+                                                    <?php } else {?>
+                                                    <img id="ctl00_cph1_Order31_rptListCart_ctl01_imgProduct" src="<?php echo base_url();?>file/uploads/no_image.gif" width="250" height="250" style="height:55px;width:44px;" />
+                                                    <?php } ?>
+                                                </div>
+                                                <div class="cart-item-price">
+                                                    <span id="ctl00_cph1_Order31_rptListCart_ctl01_lblToTalPrice"><?php echo $cart_c['total_price'];?> đ</span>
+                                                </div>
+                                                <div class="cart-item-body">
+                                                    <span>
+                                                        <a id="ctl00_cph1_Order31_rptListCart_ctl01_lnkProductName" href="Cam-bien-bao-mon-ma-phanh-xe-BMW-X5-4USFE83517LY64270-San-pham-Germany-product-c137814891-d73439657.aspx"><?php echo $cart_c['title']?></a> x <?php echo $cart_c['quantity']?>
+                                                    </span>
+                                                </div>                                
+                                                <div class="clr"></div>
+                                            </div>
+                                        </li>
+                                        <?php 
+                                        $total += $cart_c['total_price']*$cart_c['quantity'];
+                                        } 
+                                        $deliver_fee = 0;
+                                        ?>
+                                    </ul>
+                                    <div class="clr"></div>
+
+                                    <div class="o3-cart-content">
+                                        <div class="content-top" style="margin-top:10px;">
+                                            <span style="float:left;">
+                                                <b style="font-size:16px;">Tổng tiền</b>
+                                            </span>
+                                            <span style="float:right;color:#b4130b;">
+                                                <b style="font-size:16px;"><?php echo $total;?> đ </b>
+                                            </span>                            
+                                        </div>
+                                        <div class="clr"></div>
+                                        
+                                        <div class="content-top">
+                                            <span style="float:left;">
+                                                Phí vận chuyển
+                                            </span>
+                                            <span style="float:right;">
+                                                <?php echo $deliver_fee;?>
+                                            </span>
+                                            <span class="clr"></span>
+                                        </div>
+                                        <div class="content-top">
+                                            <span style="float:left;">
+                                                Phí gói qùa
+                                            </span>
+                                            <span style="float:right;">
+                                                0 đ
+                                            </span>
+                                            <span class="clr"></span>
+                                        </div>
+                                        <div class="content-top">
+                                            <span style="float:left;">
+                                                Điểm tích lũy
+                                            </span>
+                                            <span style="float:right;">
+                                                0
+                                            </span>
+                                            <span class="clr"></span>
+                                        </div>
+                                        <div class="content-top" style="border-top:1px solid #cccccc;padding-top:15px;margin-top:10px;">
+                                            <span style="float:left;color:#b4130b;">
+                                                <b style="font-size:18px;">Thanh toán</b>
+                                            </span>
+                                            <span style="float:right;color:#b4130b;">
+                                                <b style="font-size:18px;">
+                                                    <?php echo $deliver_fee+$total;?> đ
+                                                </b>
+                                            </span>
+                                            <span class="clr"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> <!-- END  .COl 3 -->      
+
+
+
+                        </ul>
+                        <div class="clr"></div>        
+                    </div>
+
+                    <div class="o3-btn">
+                        <a id="ctl00_cph1_Order31_btnPayment" title="Thanh toán" class="o3-thanhtoan" href="javascript:__doPostBack(&#39;ctl00$cph1$Order31$btnPayment&#39;,&#39;&#39;)"></a>
+                        <a href="<?php echo base_url();?>gio-hang" class="o3-xemgiohang" title="Xem giỏ hàng"></a>
+                    </div> <!-- END  .Button -->
+                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                var cmdddlCountryFirst = $('[id$=ddlCountry]');
+                                        var cmdddlStreetFirst = $('#ctl00_cph1_Order31_ddlStreet');
+                                        var idCountry = cmdddlCountryFirst.val();
+                                        if (idCountry != '0') {
+                                var Url = '/Pages/Ajax/BindSubCountry.ashx?id=' + cmdddlCountryFirst.val();
+                                        $.get(Url, function (data) {
+                                        if (data != '1') {
+                                        cmdddlStreetFirst.find('option').remove();
+                                                cmdddlStreetFirst.append(data);
+                                                var streetVal = $('#ctl00_cph1_Order31_ddlStreetValueHidden');
+                                                $('#ctl00_cph1_Order31_ddlStreet').children('option[value="' + streetVal.val() + '"]').attr('selected', 'selected');
+                                        } else {
+                                        cmdddlStreetFirst.html('');
+                                        }
+                                        });
+                                }
+
+                                        $('#ctl00_cph1_Order31_ddlStreet').change(function () {
+                                var streetVal = $('#ctl00_cph1_Order31_ddlStreetValueHidden');
+                                        var streetText = $('#ctl00_cph1_Order31_ddlStreetTextHidden');
+                                        streetVal.val($(this).val());
+                                        streetText.val($(this).children('option:selected').text());
+                                });
+                                        // load quan huyen tinh thanh theo khach hang da dang nhap
+                                        var _coutr = $('input[id$=hidCountry]').val();
+                                        var _street = $('input[id$=hidStresst]').val();
+                                        LoadCountryByCus(_coutr, _street);
+                                });
+                                        function LoadCountryByCus(countryId, stressId) {
+                                        var cmdddlCountryFirst = $('[id$=ddlCountry]');
+                                                var cmdddlStreet = $('select[id$=ddlStreet]');
+                                                if (countryId == '0') {
+                                        cmdddlCountryFirst.children('option[value="' + countryId + '"]').attr('selected', 'selected');
+                                        }
+                                        if (stressId != '0') {
+                                        var Url = '/Pages/Ajax/BindSubCountry.ashx?id=' + countryId;
+                                                $.get(Url, function (data) {
+                                                if (data != '1') {
+                                                cmdddlStreet.find('option').remove();
+                                                        cmdddlStreet.append(data);
+                                                } else {
+                                                cmdddlStreet.html('');
                                                 }
-                                            });
-                                    });
-                                            $('select[id=ddQuantity]').live('change',function () {
-                                            var _val = $(this).children('option:selected').val();
-                                    
-                                            var _pID = $(this).parent().find('input[id$=hidPID]').val();
-                                            
-                                            var _url = '<?php echo base_url();?>home/cart/update_cart';
-                                            $.ajax({
-                                                url: _url,
-                                                type: "post",
-                                                data:{id:_pID,quantity:_val},
-                                                dataType: 'html',
-                                                success: function(respone) {
-                                                    $('.order-info').html(respone);
-                                                },
-                                                error: function() {
-                                                   $('.order-info').html('Giỏ hàng lỗi');
-                                                }
-                                            });
-                                    });
-                                    });</script>
-                    </div><!-- END .order-info -->
+                                                cmdddlStreet.children('option[value="' + stressId + '"]').attr('selected', 'selected');
+                                                });
+                                        }
+                                        }
+                    </script>
 
                 </div>
                 <div class="FooterTop">
@@ -503,16 +601,16 @@
                             <span class="foo-row"><span class="foo-text-1">Địa chỉ: Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span>
                             </span><span class="foo-row" style="margin-top: 15px;">
                                 <span style="float: left;">
-                                    <img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
+                                    <img src="images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
                                 </span><span class="foo-text-3"><span><span class="foo-text-4">HaThanh AuTo</span><a  href=" http://www.facebook.com/otohathanh">  on
                                             Facebook</a></span> <span style="text-align: right; display: block; padding:3px 128px 0;"><div class="fb-like" data-href="http://hathanhauto.com" data-layout="button_count" data-width="50" ></div>
                                     </span> </span></span><span class="foo-row foo-text-5">
                             </span>
                             <span class="sp_social"> Chúng tôi trên: </span>
-                            <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/youtube20.png" alt="youtube" /></a></span>
-                            <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
-                            <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/CarlsonFacebook.png" alt="facebook" /></a></span>
-                            <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/social-icon-google-plus.png" alt="googleplus" /></a></span>
+                            <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="../../images/youtube20.png" alt="youtube" /></a></span>
+                            <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="../../images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
+                            <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="../../images/CarlsonFacebook.png" alt="facebook" /></a></span>
+                            <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="../../images/social-icon-google-plus.png" alt="googleplus" /></a></span>
                         </div>
                         <div class="foo-item">
                             <div class="foo-wrap">
@@ -584,24 +682,8 @@
             </div>
         </div>
 
-        <script type="text/javascript">
-        //<![CDATA[
-                            var theForm = document.forms['aspnetForm'];
-                            if (!theForm) {
-                    theForm = document.aspnetForm;
-                            }
-                    function __doPostBack(eventTarget, eventArgument) {
-                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                    theForm.__EVENTTARGET.value = eventTarget;
-                            theForm.__EVENTARGUMENT.value = eventArgument;
-                            theForm.submit();
-                    }
-                    }
-        //]]>
-        </script>
-
-
         <script src="<?php echo base_url(); ?>template/ezwebvietnam/home/WebResource.axd?d=4zogrSb5tNMqoXhtFti3ZeWPd7RkZudkWaGsbtaJWPN67vU0K_m_0_-OArbAMSBEkrTWFv5elX7E76qrDP3bkiFu4_K0Sm8DTnVUpyY6jJo1&amp;t=635196033660000000" type="text/javascript"></script>
+
 
         <div class="overlayNonev2" style="display: none;">
         </div>

@@ -4,6 +4,10 @@ class Cart extends MY_Controller
     public function __construct() {
         parent::__construct();
         $this->load->model('cartmodel');
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->library('tank_auth');
+        $this->lang->load('tank_auth');
     }
     public function add_to_cart()
     {
@@ -121,6 +125,25 @@ class Cart extends MY_Controller
         $this->cartmodel->delete_cart($id_cart);
         $this->data['list_cart']=$this->cartmodel->list_cart_ip($ip);
         $this->load->view('home_view/cart_ajax',$this->data);
+    }
+    public function check_out()
+    {
+        
+        if (!$this->tank_auth->is_logged_in()) {         // logged in
+            redirect(base_url().'dang-nhap?redirect='.  full_url_($_SERVER));
+        }
+        else
+        {
+            if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+            $this->data['list_cart']=$this->cartmodel->list_cart_ip($ip);
+            $this->load->view('home/check_out_layout',$this->data);
+        }
     }
 }
 ?>

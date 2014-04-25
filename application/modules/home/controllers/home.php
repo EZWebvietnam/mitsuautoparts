@@ -85,7 +85,14 @@ class Home extends MY_Controller {
             if ($this->form_validation->run()) {// validation ok
                 if ($this->tank_auth->login(
                                 $this->form_validation->set_value('login'), $this->form_validation->set_value('password'), $this->form_validation->set_value('remember'), $this->data['login_by_username'], $this->data['login_by_email'])) {        // success
-                    redirect('/');
+                    if(isset($_GET['redirect']))
+                    {
+                        redirect($_GET['redirect']);
+                    }
+                    else
+                    {
+                        redirect('/');
+                    }
                 } else {
                     $errors = $this->tank_auth->get_error_message();
                     if (isset($errors['banned'])) {        // banned user
