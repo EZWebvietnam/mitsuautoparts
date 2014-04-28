@@ -43,6 +43,7 @@ $route['trang-chu'] = "home/home/index";
 $route['dang-nhap'] = "home/home/login";
 $route['gio-hang'] = "home/cart/list_cart";
 $route['thanh-toan'] = "home/cart/check_out";
+$route['kt-thanh-toan'] = "home/cart/finish_check_out";
 $route['dang-ky'] = "home/home/register";
 $route['dang-xuat'] = "home/home/logout";
 $route['tim-kiem?(:any)']="home/product/search";

@@ -109,5 +109,10 @@ class Product extends MY_Controller
        $this->data['main_content']='home_view/list_product';
        $this->load->view('home/product_list_search',$this->data);
     }
+	public function test()
+	{
+		$this->load->model('producthomemodel');
+		$this->producthomemodel->count_product_search();
+	}
 }
 ?>

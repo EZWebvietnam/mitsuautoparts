@@ -34,6 +34,12 @@ class Cartmodel extends CI_Model
         $query = $this->db->query($sql,array($ip));
         return $query->result_array();
     }
+	public function list_cart_ip_2($ip)
+    {
+        $sql ='SELECT * FROM cart WHERE cart.ip = ?';
+        $query = $this->db->query($sql,array($ip));
+        return $query->result_array();
+    }
     public function update_cart($id_cart,array $data)
     {
         $id_cart = intval($id_cart);
@@ -44,6 +50,11 @@ class Cartmodel extends CI_Model
     {
         $id_cart = intval($id_cart);
         $this->db->delete('cart',array('id'=>$id_cart));
+    }
+	public function delete_cart_ip($id_cart)
+    {
+        $id_cart = intval($id_cart);
+        $this->db->delete('cart',array('ip'=>$id_cart));
     }
 }
 ?>

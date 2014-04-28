@@ -65,7 +65,7 @@
                             <div class="main-item-2">
                                 <div class="box-search">
                                     <span class="bg-s-left"></span><span class="bg-s-right"></span>
-                                    <div onkeypress="javascript:return WebForm_FireDefaultButton(event, & #39; ctl00_HeaderTop1_NavibarTop1_btnSearch & #39; )">
+                                    <div >
 
                                         <span class="bg-txt-s">
                                             <input name="ctl00$HeaderTop1$NavibarTop1$txtCondition" type="text" id="ctl00_HeaderTop1_NavibarTop1_txtCondition" class="txtKeysearch AutocompleteText TextSearch" value="Nhập từ khóa tìm kiếm!" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Nhập từ khóa tìm kiếm! & #39;" onfocus="if (this.value == & #39; Nhập từ khóa tìm kiếm! & #39; ) this.value = & #39; & #39;" />
@@ -228,10 +228,8 @@
                     </div> <!-- END  .order-steps -->
 
                     <div class="box-Order-3 clr">
-                        <input type="hidden" name="ctl00$cph1$Order31$ddlStreetValueHidden" id="ctl00_cph1_Order31_ddlStreetValueHidden" />
-                        <input type="hidden" name="ctl00$cph1$Order31$ddlStreetTextHidden" id="ctl00_cph1_Order31_ddlStreetTextHidden" />
+					<form name="check_out" method="post">                        
                         <ul class="o3-col">
-
 
                             <li class="o3-item">
                                 <div class="o3-info">
@@ -242,19 +240,19 @@
                                         Email
                                     </span>
                                     <span>
-                                        <input name="email" type="text" value="<?php echo $this->session->userdata('email');?>" id="ctl00_cph1_Order31_txtEmail" class="o3-input" style="width:96%" />
+                                        <input name="email" type="text" value="<?php echo $this->session->userdata('email');?>" id="email" class="o3-input" style="width:96%" />
                                     </span>
                                     <span class="o3-info-text">
                                         Họ tên
                                     </span>
                                     <span>
                                         <span class="o3-bg-input">
-                                            <select name="sex" id="ctl00_cph1_Order31_ddlGender" style="margin-right:5px;width:auto;border:none;font-size:14px;box-shadow:none;">
+                                            <select name="sex" id="sex" style="margin-right:5px;width:auto;border:none;font-size:14px;box-shadow:none;">
                                                 <option value="0"> Anh </option>
                                                 <option value="1"> Chị </option>
 
                                             </select>
-                                            <input name="name" type="text" value="<?php echo $this->session->userdata('full_name');?>" id="ctl00_cph1_Order31_txtHoTen" class="o3-input-spec" style="width:79%" />
+                                            <input name="name" type="text" value="<?php echo $this->session->userdata('full_name');?>" id="name" class="o3-input-spec" style="width:79%" />
                                         </span>
 
                                     </span>
@@ -262,18 +260,18 @@
                                         Điện thoại
                                     </span>
                                     <span>
-                                        <input name="mobile" type="text" value="<?php echo $this->session->userdata('phone');?>" maxlength="12" id="ctl00_cph1_Order31_txtPhone" class="o3-input" style="width:96%" />
+                                        <input name="mobile" type="text" value="<?php echo $this->session->userdata('phone');?>" maxlength="12" id="mobile" class="o3-input" style="width:96%" />
                                     </span>
                                     <span class="o3-info-text">
                                         Địa chỉ thanh toán (<b style="color: #B4130B;">Số nhà, ngõ ngách</b>)
                                     </span>
                                     <span style="overflow: hidden;">
 
-                                        <textarea name="ctl00$cph1$Order31$txtAddress" rows="2" cols="20" id="ctl00_cph1_Order31_txtAddress" class="o3-input o3i-street" style="width:96%;height:50px;">
+                                        <textarea name="address" rows="2" cols="20" id="address" class="o3-input o3i-street" style="width:96%;height:50px;">
 </textarea>
                                     </span>
                                     <span>
-                                        <select name="ctl00$cph1$Order31$ddlCountry" id="ctl00_cph1_Order31_ddlCountry" class="o3-select" style="margin-right:10px;width:142px;">
+                                        <select name="city" id="city" class="o3-select" style="margin-right:10px;width:142px;">
                                             <option selected="selected" value="0">- Tỉnh/Th&#224;nh phố -</option>
                                             <option value="30">H&#224; Nội</option>
                                             <option value="35">TP Hồ Ch&#237; Minh</option>
@@ -347,7 +345,7 @@
                                         Ghi chú cho người giao hàng
                                     </span>
                                     <span>
-                                        <textarea name="ctl00$cph1$Order31$txtCusNote" rows="2" cols="20" id="ctl00_cph1_Order31_txtCusNote" class="o3-area">
+                                        <textarea name="note" rows="2" cols="20" id="ctl00_cph1_Order31_txtCusNote" class="o3-area">
                                         </textarea>
                                     </span>
 
@@ -365,13 +363,13 @@
                                     </span>
                                     <ul class="o3-list-radio">
                                         <li>
-                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoCash" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoCash" checked="checked" /><label for="ctl00_cph1_Order31_rdoCash">Thanh toán khi nhận hàng</label></span> 
+                                            <span class="o3-radio"><input id="rdoCash" type="radio" name="rdoCash" value="0" checked="checked" /><label for="ctl00_cph1_Order31_rdoCash">Thanh toán khi nhận hàng</label></span> 
                                         </li>
                                         <li>
-                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoPay" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoPay" /><label for="ctl00_cph1_Order31_rdoPay">Chuyển khoản qua Internet/mobile Banking</label></span>
+                                            <span class="o3-radio"><input name="rdoCash" id="rdoCash" type="radio" name="rdoCash" value="1" /><label for="ctl00_cph1_Order31_rdoPay">Chuyển khoản qua Internet/mobile Banking</label></span>
                                         </li>
                                         <li>
-                                            <span class="o3-radio"><input id="ctl00_cph1_Order31_rdoPayOnl" type="radio" name="ctl00$cph1$Order31$rboPayment" value="rdoPayOnl" /><label for="ctl00_cph1_Order31_rdoPayOnl">Thanh toán trực tuyến</label></span>
+                                            <span class="o3-radio"><input id="rdoCash" type="radio" name="rdoCash" value="2" /><label for="ctl00_cph1_Order31_rdoPayOnl">Thanh toán trực tuyến</label></span>
                                         </li>
                                     </ul>
                                     <div class="clr"></div>
@@ -484,10 +482,15 @@
                     </div>
 
                     <div class="o3-btn">
-                        <a id="ctl00_cph1_Order31_btnPayment" title="Thanh toán" class="o3-thanhtoan" href="javascript:__doPostBack(&#39;ctl00$cph1$Order31$btnPayment&#39;,&#39;&#39;)"></a>
+                        <a onclick="do_check_out();" id="ctl00_cph1_Order31_btnPayment" title="Thanh toán" class="o3-thanhtoan"></a>
                         <a href="<?php echo base_url();?>gio-hang" class="o3-xemgiohang" title="Xem giỏ hàng"></a>
                     </div> <!-- END  .Button -->
+					</form>
                     <script type="text/javascript">
+					function do_check_out()
+					{
+						document.forms.check_out.submit();
+					}
                                         $(document).ready(function () {
                                 var cmdddlCountryFirst = $('[id$=ddlCountry]');
                                         var cmdddlStreetFirst = $('#ctl00_cph1_Order31_ddlStreet');

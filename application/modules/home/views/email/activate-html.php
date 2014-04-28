@@ -4,7 +4,7 @@
          <table cellspacing="0" cellpadding="0" width="100%" align="center">
             <tbody>
                <tr style="height:75px;background:#127fc0">
-                  <td style="padding:0 15px"><a href="http://www.hathanhauto.com" style="color:#fff;font-weight:bold;display:block;float:left;font-size:28px;line-height:75px;text-decoration:none" target="_blank">HaThanhAuto.com</a> <span style="font-size:24px;color:#fff;padding-left:260px;display:block;line-height:75px"></span></td>
+                  <td style="padding:0 15px"><a href="<?php echo base_url();?>" style="color:#fff;font-weight:bold;display:block;float:left;font-size:28px;line-height:75px;text-decoration:none" target="_blank"><?php echo $site_name; ?></a> <span style="font-size:24px;color:#fff;padding-left:260px;display:block;line-height:75px"></span></td>
                </tr>
                <tr style="background:#fff">
                   <td style="color:#444444;border:1px solid #dddddd;padding:0 20px">
