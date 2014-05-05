@@ -96,7 +96,7 @@
                                                             <li class="main">
                                                                 <a href="<?php echo base_url(); ?>admin/productadmin/list_product" rel="khachhang" class="v_link">
                                                                     <div><img src="http://quanlybanhang.360vnit.com/icon/customers.png" alt=""></div>
-                                                                    Quản trị
+                                                                    Sản phẩm
                                                                 </a>
                                                             </li>
                                                             <li class="main">
@@ -105,12 +105,7 @@
                                                                     User
                                                                 </a>
                                                             </li>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/ctvadmin/list_ctv" rel="npp" class="v_link">
-                                                                    <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/hire-me.png" alt=""></div>
-                                                                    Cộng Tác Viên
-                                                                </a>
-                                                            </li>
+                                                            
                                                         </ul>
                                                         <div class="title_menu">Khách hàng</div>
                                                     </div>
@@ -135,41 +130,12 @@
                                                                     CT Hóa đơn
                                                                 </a>
                                                             </li>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/faqadmin/list_faq" rel="faq" class="v_link">
-                                                                    <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/faq.png" width="32" height="32" alt=""></div>
-                                                                    Hỏi đáp
-                                                                </a>
-                                                            </li>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/messageadmin/list_message" rel="message" class="v_link">
-                                                                    <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/mail.png" alt=""></div>
-                                                                    Tin nhắn
-                                                                </a>
-                                                            </li>
+                                                            
+                                                            
                                                             <li class="main">
                                                                 <a href="<?php echo base_url(); ?>admin/contactadmin/list_contact" rel="contact" class="v_link">
                                                                     <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/contact.png" alt=""></div>
                                                                     Liên hệ
-                                                                </a>
-                                                            </li>
-                                                            
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/saleadmin/list_sale" rel="sale" class="v_link">
-                                                                    <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/sale.png" alt=""></div>
-                                                                    Khuyến mại
-                                                                </a>
-                                                            </li>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/mailbook/list_mailbook" rel="mailbook" class="v_link">
-                                                                    <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/fileopen.png" alt=""></div>
-                                                                    Mail Book
-                                                                </a>
-                                                            </li>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/customeradmin/list_mail_customer" rel="customeradmin" class="v_link">
-                                                                    <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/fileopen.png" alt=""></div>
-                                                                    Khách hàng nhận quà
                                                                 </a>
                                                             </li>
                                                             <li class="main">
@@ -179,12 +145,7 @@
                                                                 </a>
                                                             </li>
                                                     <?php } ?>
-                                                            <li class="main">
-                                                                <a href="<?php echo base_url(); ?>admin/newsadmin/list_new" rel="news" class="v_link">
-                                                                    <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/news.png" width="32" height="32" alt=""></div>
-                                                                    Tin tức
-                                                                </a>
-                                                            </li>
+                                                            
                                                         </ul>
                                                         <div class="title_menu">Danh mục</div>
                                                     </div>

@@ -85,5 +85,10 @@ class Producthomemodel extends CI_Model
         $query = $this->db->query($sql);
         return count($query->result_array()); 
     }
+	public function insert_request_price(array $data)
+	{
+		$this->db->insert('request_price',$data);
+		return $this->db->insert_id();
+	}
 }
 ?>

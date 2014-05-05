@@ -69,7 +69,6 @@ class Productadmin extends MY_Controller {
             exit;
         }
         $this->productmodel->delete_product($id);
-        $this->productmodel->delete_user_product($id);
         $array = array('error' => 0, 'msg' => "Xóa thành công");
         echo json_encode($array);
     }
@@ -127,46 +126,25 @@ class Productadmin extends MY_Controller {
             exit;
         }
         if ($this->input->post()) {
-            $clip = $this->input->post('clip');
             $data_save = array(
                 'title' => $this->input->post('title'),
-                'cost' => intval($this->input->post('cost')),
-                'description' => stripslashes($this->input->post('description')),
+                'price' => intval($this->input->post('cost')),
                 'content' => stripslashes($this->input->post('content')),
-                'comission' => $this->input->post('hoa_hong'),
-                'img' => $this->input->post('file'),
-                'position'=>1
+                'image' => $this->input->post('file'),
+				'id_cate'=>1,
+				'stock'=>100,
+				'create_date'=>strtotime('now'),
+				'year'=>$this->input->post('year')
             );
             $id = $this->productmodel->add_product($data_save);
-            if($clip!='')
-            {
-                
-                $clip_2 = array();
-                $data_clip = array();
-                $clip = explode(';', $clip);
-                foreach($clip as $k=>$v)
-                {
-                    if(strpos('?v=',$v))
-                    {
-                        $clip_2 = explode('?v=', $v);
-                    }
-                    else
-                    {
-                        if(empty($clip_2))
-                        {
-                            $clip_2 = explode('watch?&v=', $v);
-                        }
-                    }
-                    if(!empty($clip_2))
-                    {
-                        $this->productmodel->delete_clip($id);
-                        $data_clip = array('id_product'=>$id,'code'=>$clip_2[1],'create_date'=>strtotime('now'));
-                        $this->productmodel->insert_clip($data_clip);
-                        $data_clip = array();
-                    }
-                }
-            }
-            $array = array('error' => 0, 'msg' => 'Thêm thành công');
+			if($id>0)
+			{
+				 $array = array('error' => 0, 'msg' => 'Thêm thành công');
+			}
+           else
+		   {
+		   		 $array = array('error' => 1, 'msg' => 'Thêm thất bại');	
+		   }
             echo json_encode($array);
         } else {
             $this->load->model('categorymodel');

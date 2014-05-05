@@ -7,7 +7,6 @@ class Productmodel extends CI_Model
     }
     public function list_product($number,$offset)
     {
-        //$sql ="SELECT * FROM product LIMIT $offset,$number";
         $sql ="SELECT * FROM product LIMIT $offset,$number";
         $query = $this->db->query($sql);
         return $query->result_array();
@@ -21,12 +20,12 @@ class Productmodel extends CI_Model
     }
     public function delete_product($id)
     {
-        $this->db->delete('product',array('id_product'=>$id));
+        $this->db->delete('product',array('id'=>$id));
     }
     public function view_product($id)
     {
         $id = intval($id);
-        $sql ="SELECT * FROM product WHERE id_product = $id";
+        $sql ="SELECT * FROM product WHERE id = $id";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
@@ -43,11 +42,11 @@ class Productmodel extends CI_Model
     }
     public function delete_user_product($id_product)
     {
-        $this->db->delete('user_product',array('id_product'=>$id_product));
+        $this->db->delete('user_product',array('id'=>$id_product));
     }
      public function delete_user_product_2($id_user)
     {
-        $this->db->delete('user_product',array('id_user'=>$id_user));
+        $this->db->delete('user_product',array('id'=>$id_user));
     }
     public function insert_clip(array $data)
     {
@@ -56,7 +55,7 @@ class Productmodel extends CI_Model
     }
     public function delete_clip($id)
     {
-        $this->db->delete('clip_marketing',array('id_product'=>$id));
+        $this->db->delete('clip_marketing',array('id'=>$id));
     }
     public function list_mail_book($number,$offset)
     {

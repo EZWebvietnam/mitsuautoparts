@@ -48,6 +48,7 @@ $route['dang-ky'] = "home/home/register";
 $route['dang-xuat'] = "home/home/logout";
 $route['tim-kiem?(:any)']="home/product/search";
 $route['active-user/(:any)/(:any)']="home/home/active";
+$route['yeu-cau-bao-gia']="home/product/request_get_price";
 $route['p/(:any)-p(:any)'] = "home/product/detail/$2";
 $route['c/(:any)-c(:any)'] = "home/product/product_cate/$2";
 $route['c/(:any)-c(:any)/page/(:any)'] = "home/product/product_cate/$2";

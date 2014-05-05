@@ -114,5 +114,26 @@ class Product extends MY_Controller
 		$this->load->model('producthomemodel');
 		$this->producthomemodel->count_product_search();
 	}
+	public function request_get_price()
+	{
+		$name = $this->input->post('name');
+		$email = $this->input->post('email');
+		$phone = $this->input->post('phone');
+		$content = loaibohtmltrongvanban(addslashes($this->input->post('content')));
+		echo strlen($content);exit;
+		if($content=='' || empty($content))
+		{
+			redirect(''.$this->input->post('url_curent'));
+		}
+		else
+		{
+			$data_save = array('name'=>$name,'email'=>$email,'phone'=>$phone,'content'=>$content);
+			$id = $this->producthomemodel->insert_request_price($data_save);
+			if($id>0)
+			{
+				redirect(''.$this->input->post('url_curent'));
+			}
+		}
+	}
 }
 ?>

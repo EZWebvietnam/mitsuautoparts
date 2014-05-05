@@ -347,20 +347,23 @@ foreach ($list_manufac as $manufac) {
                                     <span>YÊU CẦU BÁO GIÁ</span>
                                 </div>
                                 <div class="yc-content">
-                                    <div id="ctl00_cph1_RequirePrice1_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, & #39; ctl00_cph1_RequirePrice1_btnGui & #39; )">
+                                    <div id="ctl00_cph1_RequirePrice1_Panel1">
+									<form method="POST" action="<?php echo base_url();?>yeu-cau-bao-gia"
                                         <span>
                                             <span id="ctl00_cph1_RequirePrice1_lblError"></span></span> <span>
-                                            <input name="ctl00$cph1$RequirePrice1$txtName" type="text" id="ctl00_cph1_RequirePrice1_txtName" value="Họ và Tên" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Họ và Tên & #39;" onfocus="if (this.value == & #39; Họ và Tên & #39; ) this.value = & #39; & #39;" />
+                                            <input name="name" type="text" id="ctl00_cph1_RequirePrice1_txtName" value="Họ và Tên" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Họ và Tên & #39;" onfocus="if (this.value == & #39; Họ và Tên & #39; ) this.value = & #39; & #39;" />
                                         </span><span>
-                                            <input name="ctl00$cph1$RequirePrice1$txtEmail" type="text" id="ctl00_cph1_RequirePrice1_txtEmail" value="Email" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Email & #39;" onfocus="if (this.value == & #39; Email & #39; ) this.value = & #39; & #39;" />
+                                            <input name="email" type="text" id="ctl00_cph1_RequirePrice1_txtEmail" value="Email" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Email & #39;" onfocus="if (this.value == & #39; Email & #39; ) this.value = & #39; & #39;" />
                                         </span><span>
-                                            <input name="ctl00$cph1$RequirePrice1$txtPhone" type="text" id="ctl00_cph1_RequirePrice1_txtPhone" value="Điện thoại" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Điện thoại & #39;" onfocus="if (this.value == & #39; Điện thoại & #39; ) this.value = & #39; & #39;" />
+                                            <input name="phone" type="text" id="ctl00_cph1_RequirePrice1_txtPhone" value="Điện thoại" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Điện thoại & #39;" onfocus="if (this.value == & #39; Điện thoại & #39; ) this.value = & #39; & #39;" />
                                         </span><span>
-                                            <textarea name="ctl00$cph1$RequirePrice1$txtContent" rows="2" cols="20" id="ctl00_cph1_RequirePrice1_txtContent" value="Nhu cầu" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Nhu cầu & #39;" onfocus="if (this.value == & #39; Nhu cầu & #39; ) this.value = & #39; & #39;">
+                                            <textarea name="content" rows="2" cols="20" id="ctl00_cph1_RequirePrice1_txtContent" value="">
                                             </textarea>
                                         </span><span>
-                                            <input type="submit" name="ctl00$cph1$RequirePrice1$btnGui" value="Gửi yêu cầu" id="ctl00_cph1_RequirePrice1_btnGui" class="btnGuiYeuCau" />
+											<input type="hidden" value="<?php echo full_url_($_SERVER)?>" name="url_curent"/>
+                                            <input type="submit" value="Gửi yêu cầu" id="ctl00_cph1_RequirePrice1_btnGui" class="btnGuiYeuCau" />
                                         </span>
+										</form>
                                     </div>
                                 </div>
                             </div>
