@@ -175,27 +175,27 @@
                <div class="right-detail">
                   <div id="box-support_home">
                      <ul>
-                        <li class="su-item-1">HỖ TRỢ ONLINE </li>
-                        <li class="su-item-2">Hathanhauto.com chuyên tư vấn – báo giá – cung cấp <b><a href="/">phụ tùng ô tô chính hãng</a></b>giá cạnh tranh nhất trên thị trường.</li>
-                        <li class="su-item-2"><span class="txt-su-2">Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span></li>
-                        <li class="su-item-2"><span class="txt-su-2"><span class="txt-su-left">Thời gian làm việc từ:</span> 8h00-18h00 từ thứ 2 đến thứ 7</span></li>
-                        <li class="su-item-3"><i class="icon-mobile"></i><span id="ctl00_cph1_ProductDetailV21_SupportOnline1_lblmobileOrder" class="mobile">0942.399.366 - 0988.550.306</span> </li>
-                        <li class="su-item-4"><i class="icon-support"></i><a href="mailto:lienhe@hathanhauto.com" rel="nofollow" class="lnkmailsupport">
-                           lienhe@hathanhauto.com</a> 
-                        </li>
-                        <li class="su-item-5">
-                           <div class="iconSupport">
-                              <div class="iconYahoo">
-                                 <a href="ymsgr:sendIM?hathanh.auto&amp;m=Chao ban!" rel="nofollow" style="background: url(http://opi.yahoo.com/online?u=hathanh.auto&amp;t=1&amp;l=us) no-repeat;
-                                    padding-left: 64px; padding-top: 2px;"></a>
-                              </div>
-                              <div class="iconSkype">
-                                 <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-                                 <a href="skype:hathanh.auto?chat"><img src="http://mystatus.skype.com/smallclassic/hathanh.auto" style="border: none;" width="63" height="17" alt="My status" /></a>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
+                                    <li class="su-item-1">HỖ TRỢ ONLINE </li>
+                                    <li class="su-item-2">Mitsuvnautoparts.com chuyên tư vấn – báo giá – cung cấp <b><a href="/">phụ tùng ô tô chính hãng</a></b>giá cạnh tranh nhất trên thị trường.</li>
+                                    <li class="su-item-2"><span class="txt-su-2">263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM </span></li>
+                                    <li class="su-item-2"><span class="txt-su-2"><span class="txt-su-left">Thời gian làm việc từ:</span> 8h00-18h00 từ thứ 2 đến thứ 7</span></li>
+                                    <li class="su-item-3"><i class="icon-mobile"></i><span id="ctl00_cph1_SupportOnline1_lblmobileOrder" class="mobile">082.218.9762</span> </li>
+                                    <li class="su-item-4"><i class="icon-support"></i><a href="mailto:lienhe@hathanhauto.com" rel="nofollow" class="lnkmailsupport">
+                                            info@mitsuvnautoparts.com</a> 
+                                    </li>
+                                    <li class="su-item-5">
+                                        <div class="iconSupport">
+                                            <div class="iconYahoo">
+                                                <a href="ymsgr:sendIM?hathanh.auto&amp;m=Chao ban!" rel="nofollow" style="background: url(http://opi.yahoo.com/online?u=hathanh.auto&amp;t=1&amp;l=us) no-repeat;
+                                                   padding-left: 64px; padding-top: 2px;"></a>
+                                            </div>
+                                            <div class="iconSkype">
+                                                <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+                                                <a href="skype:hathanh.auto?chat"><img src="http://mystatus.skype.com/smallclassic/hathanh.auto" style="border: none;" width="63" height="17" alt="My status" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                   </div>
                   <div class="box-yeucau">
                      <div class="yc-header">

@@ -148,6 +148,10 @@ class Home extends MY_Controller {
         $messsage = $this->load->view('email/' . $type . '-html', $data, TRUE);
         $this->mailer->sendmail($to, $to, $subject, $messsage);*/
     }
+	public function contact()
+	{
+		$this->load->view('home/contact_layout', $this->data);
+	}
 
 }
 

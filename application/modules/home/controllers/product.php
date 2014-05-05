@@ -120,7 +120,6 @@ class Product extends MY_Controller
 		$email = $this->input->post('email');
 		$phone = $this->input->post('phone');
 		$content = loaibohtmltrongvanban(addslashes($this->input->post('content')));
-		echo strlen($content);exit;
 		if($content=='' || empty($content))
 		{
 			redirect(''.$this->input->post('url_curent'));

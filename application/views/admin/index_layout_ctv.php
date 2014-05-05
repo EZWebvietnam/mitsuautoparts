@@ -1,3 +1,11 @@
+<?php 
+function microtime_float()
+{
+list($usec, $sec) = explode(" ", microtime());
+return ((float)$usec + (float)$sec);
+}
+$time_start = microtime_float();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html>
     <head>
@@ -138,6 +146,12 @@
                                                                     Liên hệ
                                                                 </a>
                                                             </li>
+															<li class="main">
+                                                                <a href="<?php echo base_url(); ?>admin/priceadmin/list_request_price" rel="price" class="v_link">
+                                                                    <div><img width="32" height="32" src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/contact.png" alt=""></div>
+                                                                    Yêu cầu báo giá
+                                                                </a>
+                                                            </li>
                                                             <li class="main">
                                                                 <a href="<?php echo base_url(); ?>admin/settingadmin/list_setting" rel="setting" class="v_link">
                                                                     <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/setting.png" width="32" height="32" alt=""></div>
@@ -173,7 +187,7 @@
                                                     <table style="width: 100%;" class="table_full">
                                                         <tr>
                                                             <td valign="top" style="background: #FFF;padding: 5px 5px 5px 5px;">
-                                                              Chào mừng bạn đến với Hệ thống quản trị - Việt Mông Cổ
+                                                              Chào mừng bạn đến với Hệ thống quản trị
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -181,8 +195,12 @@
                                                 <!-- Tab content goes here -->
                                             </div>
                                             <div id="footer">
-                                                <div>Thời gian nạp trang 0.0782 's</div>
-                                                <div>Copyright &copy; 2009 - 2011 Version 2.0. All right reserved</div>
+											<?php
+$time_end = microtime_float();
+$time = $time_end - $time_start;
+?>
+                                                <div>Thời gian nạp trang <?php echo number_format($time,5,".",",");?>'s</div>
+                                                <div>Copyright &copy; 2009 - <?php echo date('Y');?> Version 2.0. All right reserved</div>
                                             </div>
                                             <div id="msg"></div>
                                             <div id="pop_bg"></div>

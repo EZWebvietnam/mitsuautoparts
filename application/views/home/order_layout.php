@@ -43,16 +43,13 @@
                         <!--Headet top-->
                         <div class="header-top">
                             <div class="h-item-left">
-                                <span>Hotline Ms.Hà: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">0942 399 366</span></span> | Email: lienhe@hathanhauto.com
+                                <span>Hotline: <span class="PhomeRed"><span id="ctl00_HeaderTop1_lblmobile">082.218.9762</span></span> | Email: lienhe@mitsuvnautoparts.com
                                     | Yahoo! </span>
                             </div>
                             <div class="h-item-right">
                                 <ul class="menu-top">
-                                    <li><a href="/" class="menu-ac">Trang chủ</a> </li>
-                                    <li><a href="/News.aspx">Tin tức</a> </li>
-                                    <li><a href="/Question.aspx">Hỏi đáp</a> </li>
-                                    <li><a href="/Help-lvn.aspx">Trợ giúp</a> </li>
-                                    <li><a href="/StreetMap-lvn.aspx">Liên hệ</a> </li>
+                                    <li><a href="<?php echo base_url();?>" class="menu-ac">Trang chủ</a> </li>
+                                    <li><a href="<?php echo base_url();?>lien-he">Liên hệ</a> </li>
                                 </ul>
                             </div>
                             <div class="clr">
@@ -64,7 +61,7 @@
                         <!--Headet main-->
                         <div class="clr header-main">
                             <div class="main-item-1">
-                                <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="./">
+                                <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="<?php echo base_url();?>">
                                     <img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
                                 </a>
                             </div>
@@ -497,16 +494,14 @@
                     </div>
                 </div>
                 <div id="Footer">
-
                     <div class="box-footer">
                         <div class="foo-item">
-                            <span class="foo-row"><span class="foo-text-1">Địa chỉ: Số 17- Ngõ 603 Lạc Long Quân - Tây Hồ - Hà Nội</span>
-                            </span><span class="foo-row" style="margin-top: 15px;">
-                                <span style="float: left;">
-                                    <img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/logo_footer.jpg" width="117" height="24" style="margin-right: 10px;" alt="Logo" />
-                                </span><span class="foo-text-3"><span><span class="foo-text-4">HaThanh AuTo</span><a  href=" http://www.facebook.com/otohathanh">  on
-                                            Facebook</a></span> <span style="text-align: right; display: block; padding:3px 128px 0;"><div class="fb-like" data-href="http://hathanhauto.com" data-layout="button_count" data-width="50" ></div>
-                                    </span> </span></span><span class="foo-row foo-text-5">
+                            
+                            <span class="foo-row" style="margin-top: 15px;">
+                                
+                                
+                            </span>
+                            <span class="foo-row foo-text-5">
                             </span>
                             <span class="sp_social"> Chúng tôi trên: </span>
                             <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/youtube20.png" alt="youtube" /></a></span>
@@ -515,40 +510,11 @@
                             <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/social-icon-google-plus.png" alt="googleplus" /></a></span>
                         </div>
                         <div class="foo-item">
-                            <div class="foo-wrap">
-                                <div id="ctl00_Footer1_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, & #39; ctl00_Footer1_btnSendMail & #39; )">
-
-                                    <span class="foo-row foo-text-2">Đăng ký nhận Email </span><span class="foo-row foo-text-6">
-                                        Đăng ký để nhận giảm giá và các chương<br />
-                                        trình khuyến mãi </span><span class="foo-row">
-                                        <input name="ctl00$Footer1$txt_cusEmail" type="text" value="Nhập địa chỉ email của bạn" id="ctl00_Footer1_txt_cusEmail" class="txtEmail" onblur="if (this.value == & #39; & #39; ) this.value = & #39; Nhập địa chỉ email của bạn & #39;" onfocus="if (this.value == & #39; Nhập địa chỉ email của bạn & #39; ) this.value = & #39; & #39;" />
-                                        <input type="submit" name="ctl00$Footer1$btnSendMail" value="Đăng ký" id="ctl00_Footer1_btnSendMail" class="btnEmailReg" />                    
-                                    </span>
-
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="foo-item">
                             <div class="foo-3-wrap">
-                                <span class="foo-row-1"><span><b>Thông tin</b> </span>
-                                    <ul>
-                                        <li><a href="/Ve-Ha-Thanh-Auto-News-c114196691.aspx" rel="nofollow">Về chúng tôi</a> </li>
-                                        <li><a href="/Tuyen-dung-News-c93619780.aspx" rel="nofollow">Tin tuyển dụng </a></li>
-                                        <li><a href="/Bao-chi-viet-News-c84825329.aspx" rel="nofollow">Báo chí viết</a> </li>
-                                        <li><a href="/Ban-tin-khuyen-mai-News-c88533362.aspx	" rel="nofollow">Thông tin khuyến mại</a> </li>
-                                        <li><a href="/StreetMap-lvn.aspx" rel="nofollow">Liên hệ</a> </li>
-                                    </ul>
-                                </span><span class="foo-row-1"><span><b>Hỗ trợ khách hàng</b> </span>
-                                    <ul>
-                                        <li><a href="/Thoa-thuan-su-dung-lvn-Help-c126721119-d83421524.aspx" rel="nofollow">Điều khoản sử dụng </a></li>
-                                        <li><a href="/Huong-dan-mua-hang-lvn-Help-c126721119-d126238581.aspx" rel="nofollow">Hướng dẫn mua hàng </a></li>
-                                        <li><a href="/Dat-hang-Thanh-toan-lvn-Help-c70156952-d84425903.aspx" rel="nofollow">Phương thức thanh toán </a></li>
-                                        <li><a href="/Giao-hang-nhanh-va-dam-bao-lvn-Help-c72522223-d67877961.aspx" rel="nofollow">Phương thức vận chuyển </a></li>
-                                        <li><a href="/Quy-dinh-bao-mat-lvn-Help-c126721119-d89343019.aspx" rel="nofollow">Chính sách bảo mật </a></li>
-                                        <li><a href="/Chinh-sach-doi-hang-lvn-Help-c126721119-d98485760.aspx" rel="nofollow">Chính sách đổi trả hàng </a></li>
-                                        <li><a href="/Question-p1.aspx" rel="nofollow">Câu hỏi thường gặp </a></li>
-                                    </ul>
-                                </span>
+                                
                             </div>
                         </div>
                         <div class="clr">
@@ -565,7 +531,7 @@
                                                 js = d.createElement(s); js.id = id;
                                                 js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
                                                 fjs.parentNode.insertBefore(js, fjs);
-                                        } (document, 'script', 'facebook-jssdk'));</script>
+                                        } (document, 'script', 'facebook-jssdk'));               </script>
                 </div>
                 <div class="bannersrcollleft" style="position: absolute;top: -8px;left: -153px;">
 
@@ -577,10 +543,10 @@
                 </div>
             </div>
             <div class="footer-info">
-                <span style="float: left;">Copyright © 2012 <b>Hathanhauto.com</b> All rights reserved.</span>
-                <span style="float: right;"><a href="/Phu-tung-Mercedes-Benz-provider-c92477144.aspx" rel="nofollow"> &nbsp; Phụ tùng ô tô  Mercedes</a></span>
+                <span style="float: left;">Copyright © 2012 <b>Mitsuvnautoparts.com</b> All rights reserved.</span>
+                
                 <span style="float: right;margin-left: 10px;"><a href="/" rel="nofollow">Phụ tùng ô tô chính hãng nhập khẩu </a>  |</span>
-
+                <span style="float: right;margin-left: 20px;"><a href="http://www.facebook.com/ezwebvietnam" rel="nofollow">Desgin EZWeb Việt Nam </a>  |</span>
             </div>
         </div>
 
