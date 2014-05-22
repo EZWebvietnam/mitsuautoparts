@@ -10,7 +10,7 @@ class Productadmin extends MY_Controller {
         $this->load->library('tank_auth');
         $this->lang->load('tank_auth');
         $this->load->library('form_validation');
-        
+        $this->load->model('categorymodel');
     }
 
     public function index() {
@@ -134,7 +134,8 @@ class Productadmin extends MY_Controller {
 				'id_cate'=>1,
 				'stock'=>100,
 				'create_date'=>strtotime('now'),
-				'year'=>$this->input->post('year')
+				'year'=>$this->input->post('year'),
+				'id_cate'=>$this->input->post('category')
             );
             $id = $this->productmodel->add_product($data_save);
 			if($id>0)
@@ -177,55 +178,24 @@ class Productadmin extends MY_Controller {
             if ($file != '') {
                 $data_save = array(
                     'title' => $this->input->post('title'),
-                    'cost' => $this->input->post('cost'),
-                    'description' => stripslashes($this->input->post('description')),
+                    'price' => $this->input->post('cost'),
                     'content' => $this->input->post('content'),
-                    'comission' => $this->input->post('hoa_hong'),
-                    'img' => $file
+                    'image' => $file,
+					'id_cate'=>$this->input->post('category')
                 );
             } else {
                 $data_save = array(
                     'title' => $this->input->post('title'),
-                    'cost' => $this->input->post('cost'),
-                    'description' => stripslashes($this->input->post('description')),
-                    'content' => $this->input->post('content'),
-                    'comission' => $this->input->post('hoa_hong')
+                    'price' => $this->input->post('cost'),
+                    'image' => $this->input->post('content'),
+					'id_cate'=>$this->input->post('category')
                 );
             }
             $this->productmodel->update_product($id, $data_save);
-            $clip = $this->input->post('clip');
-           
-            if($clip!='')
-            {
-                
-                $clip_2 = array();
-                $data_clip = array();
-                $clip = explode(';', $clip);
-                foreach($clip as $k=>$v)
-                {
-                    if(strlen(strstr($v,'?v='))>0)
-                    {
-                        $clip_2 = explode('watch?v=',$v);
-                    }
-                    else
-                    {
-                        if(empty($clip_2))
-                        {
-                            $clip_2 = explode('watch?&v=', $v);
-                        }
-                    }
-                    if(!empty($clip_2))
-                    {
-                        $this->productmodel->delete_clip($id);
-                        $data_clip = array('id_product'=>$id,'code'=>$clip_2[1],'create_date'=>strtotime('now'));
-                        $this->productmodel->insert_clip($data_clip);
-                        $data_clip = array();
-                    }
-                }
-            }
             $array = array('error' => 0, 'msg' => 'Cập nhập thành công');
             echo json_encode($array);
         } else {
+			$this->data['list_cate']=$this->categorymodel->list_category();
             $this->data['detail_product'] = $detail;
             $this->load->view('product/ajax_admin_edit_product', $this->data);
         }

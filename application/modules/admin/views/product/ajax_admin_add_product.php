@@ -41,6 +41,19 @@
 					</select>
                 </td>
             </tr>
+			<tr>
+                <td class="label">Loại sản phẩm</td>
+                <td colspan="3">
+                    <select name="category" id="category">
+					<?php 
+					foreach($list_cate as $cate)
+					{
+						?>
+						<option value="<?php echo $cate['id']?>"><?php echo $cate['name']?></option>
+					<?php } ?>
+					</select>
+                </td>
+            </tr>
             <tr>
                 <td class="label">Hình ảnh</td>
                 <td colspan="3">
@@ -94,7 +107,7 @@
                 $.ajax({
                     type: "POST",
                     url: $("#adminform").attr('action'),
-                    data: {title:$('#title_').val(),cost:$('#cost_').val(),file:$('#file').val(),content:content,year:$('#year_').val()},
+                    data: {title:$('#title_').val(),cost:$('#cost_').val(),file:$('#file').val(),content:content,year:$('#year_').val(),category:$('#category').val()},
                     mimeType: "multipart/form-data",
                     dataType: "json",
                     cache: false,

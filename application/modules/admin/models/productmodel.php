@@ -37,7 +37,7 @@ class Productmodel extends CI_Model
     public function update_product($id,array $data)
     {
         $id = intval($id);
-        $this->db->where('id_product',$id);
+        $this->db->where('id',$id);
         $this->db->update('product',$data);
     }
     public function delete_user_product($id_product)
