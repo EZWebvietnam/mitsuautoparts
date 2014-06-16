@@ -71,8 +71,10 @@
                   <div class="clr header-main">
                      <div class="main-item-1">
                         <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="<?php echo base_url();?>">
-                        <img src="<?php echo base_url();?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
-                        </a>
+                      <div style="width:249px; height:39px;"></div>
+                                   <!--<img src="images/logo.jpg" width="249" height="39" alt="logo" />-->
+                                </a>
+                       
                      </div>
                      <div class="main-item-2">
                         <div class="box-search">
@@ -99,7 +101,7 @@
 
                                             <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogin" class="pos-login" href="CustomerInfor-lvn.aspx">Xin chào <br> <b><?php echo $this->session->userdata('full_name');?></b></a>
                                             <div class="nav-content-hide" style="right: -131px; width: 200px; display: none;">
-                                                <div style="font-size: 11px; font-weight: bold; color: #333;text-align: left;padding:10px 0;"><span class="padd-cate"><a href="/CustomerInfor-lvn.aspx">Bảng điều khiển</a></span><span class="padd-cate"><a href="/AccountInfor-lvn.aspx">Thông tin tài khoản</a></span><span class="padd-cate"><a href="/ManageOrder-lvn.aspx">Đơn hàng</a></span><span class="padd-cate"><a href="/quan-ly-so-dia-chi-lvn-d62792383.aspx">Sổ địa chỉ</a></span><span class="padd-cate"><a href="/Comment-lvn.aspx">Quản lý bình luận</a></span><span class="padd-cate"><a href="/quan-ly-cau-hoi-lvn-d62792383.aspx">Quản lý câu hỏi</a></span><span class="padd-logout"><a href="<?php echo base_url();?>dang-xuat">Thoát</a></span></div>
+                                                <div style="font-size: 11px; font-weight: bold; color: #333;text-align: left;padding:10px 0;"><span class="padd-logout"><a href="<?php echo base_url();?>dang-xuat">Thoát</a></span></div>
                                             </div>
                                         </div>
                                     <?php } else { ?>
@@ -443,80 +445,54 @@
                </div>
             </div>
             <div class="FooterTop">
-               <div class="box-footer-navi">
-                  <div class="f-n-header">
-                  </div>
-                  <div class="f-n-content">
-                     <div class="f-n-item">
-                        <div class="n-item">
-                           <span class="n-left"></span>
-                           <span class="n-right">
-                           <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
-                           Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của Hà Thành Auto nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). Hà Thành Auto cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho Hà Thành Auto đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
-                           </span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
-                           </span>
-                           <span class="clr"></span>
+
+                    <div class="box-footer-navi">
+                        <div class="f-n-header">
                         </div>
-                     </div>
-                     <div class="f-n-item">
-                        <div class="n-item">
-                           <div class="n-h-text ColorRedBold">
-                              Dịch Vụ Ưu Trội
-                           </div>
-                           <div class="n-c-img">
-                              <ul>
-                                 <li>
-                                    <a href="/Dat-hang-Thanh-toan-lvn-Help-c70156952-d84425903.aspx" class="i-cart">Mua hàng online</a>
-                                 </li>
-                                 <li>
-                                    <a href="/Thanh-toan-qua-ngan-hang-lvn-Help-c70156952-d51450992.aspx" class="i-pay">Thanh toán Tiện lợi</a>
-                                 </li>
-                                 <li>
-                                    <a href="/Mien-phi-van-chuyen-Free-Shipping-lvn-Help-c72522223-d179365925.aspx" class="i-chan">Giao hàng tận nơi</a>
-                                 </li>
-                                 <li>
-                                    <a href="/Phuc-vu-chu-dao-lvn-Help-c55004637-d81911276.aspx" class="i-ser">Phục vụ chu đáo</a>
-                                 </li>
-                              </ul>
-                           </div>
+                        <div class="f-n-content">
+                            <div class="f-n-item">
+
+                                <div class="n-item">
+                                    <span class="n-left"></span>
+                                    <span class="n-right">
+                                        <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
+                                            Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của MitsuvnAutoPart nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). MitsuvnAutoPart cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho MitsuvnAutoPart đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
+                                        </span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
+                                    </span>
+                                    <span class="clr"></span>
+                                </div>
+                            </div>
+                            <div class="f-n-item">
+                                <div class="n-item">
+                                    <div class="n-h-text ColorRedBold">
+                                        Dịch Vụ Ưu Trội
+                                    </div>
+                                    <div class="n-c-img">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="i-cart">Mua hàng online</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-pay">Thanh toán Tiện lợi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-chan">Giao hàng tận nơi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-ser">Phục vụ chu đáo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clr"></div>
                         </div>
-                     </div>
-                     <div class="f-n-item f-n-item-last">
-                        <div class="n-item">
-                           <div class="n-ques-text ColorRedBold">
-                              <span>Hỏi đáp</span>
-                           </div>
-                           <div class='n-c-text'>
-                              <ul>
-                                 <li><a class='lnkcontent' href='/Lua-chon-giua-Toyota-Camry-va-Mercedes-GLK-voi-1-6-ty-Question-c91686724-d32821808.aspx' title='Lựa chọn giữa Toyota Camry và Mercedes GLK với 1,6 tỷ'>Lựa chọn giữa Toyota Camry và Mercedes GLK với 1,6 tỷ</a></li>
-                                 <li><a class='lnkcontent' href='/Xin-tu-van-mua-xe-BMW-X5-doi-2008--Question-c91686724-d111710369.aspx' title='Xin tư vấn mua xe BMW X5 đời 2008?'>Xin tư vấn mua xe BMW X5 đời 2008?</a></li>
-                                 <li><a class='lnkcontent' href='/Nen-chon-mua-xe-BMW-318i-hay-Mecedes-C180-doi-2005--Question-c91686724-d59048319.aspx' title='Nên chọn mua xe BMW 318i hay Mecedes C180 đời 2005?'>Nên chọn mua xe BMW 318i hay Mecedes C180 đời 2005?</a></li>
-                                 <li><a class='lnkcontent' href='/-Xe-Mercedes-E240-doi-2004-750-trieu-co-nen-mua-Question-c91686724-d140579940.aspx' title=' Xe Mercedes E240 đời 2004? 750 triệu có nên mua'>Xe Mercedes E240 đời 2004? 750 triệu có nên mua...</a></li>
-                                 <li><a class='lnkcontent' href='/Duoi-300-trieu-dong-Xe-cu-nao-dang-gia--Question-c91686724-d66079626.aspx' title='Dưới 300 triệu đồng - Xe cũ nào đáng giá ?'>Dưới 300 triệu đồng - Xe cũ nào đáng giá ?</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="clr"></div>
-                  </div>
-               </div>
-            </div>
+                    </div>
+                </div>
             <div id="Footer">
                     <div class="box-footer">
-                        <div class="foo-item">
-                            
-                            <span class="foo-row" style="margin-top: 15px;">
-                                
-                                
-                            </span>
-                            <span class="foo-row foo-text-5">
-                            </span>
-                            <span class="sp_social"> Chúng tôi trên: </span>
-                            <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/youtube20.png" alt="youtube" /></a></span>
-                            <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
-                            <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/CarlsonFacebook.png" alt="facebook" /></a></span>
-                            <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/social-icon-google-plus.png" alt="googleplus" /></a></span>
-                        </div>
+                       
                         <div class="foo-item">
                             
                         </div>

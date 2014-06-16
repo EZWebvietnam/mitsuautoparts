@@ -1,5 +1,5 @@
 <div class="pn-Slide-home">
-    <div id='slideshowHolder'><img border='0' src='upload/image/banner/sua-chua-bao-duong-oto-chuyen-nghiep.jpg'/><a href=''></a><img border='0' src='upload/image/banner/mien-phi-van-chuyen-phu-tung.jpg'/><a href=''></a><img border='0' src='upload/image/banner/phu-tung-o-to-mercedes-bmw-audi-chinh-hang.jpg'/><a href='http://www.hathanhauto.com/Phu-tung-Mercedes-Benz-provider-c92477144.aspx'></a><img border='0' src='upload/image/banner/300-garage-oto.jpg'/><a href=''></a><img border='0' src='upload/image/banner/Tu-van-ky-thuat-o-to.jpg'/><a href=''></a><img border='0' src='upload/image/banner/phuc-hoi-hop-dieu-khien-dong-co.jpg'/><a href=''></a></div>
+    
     <div class="clr"></div>
 </div>
 <div class="p-item-list">

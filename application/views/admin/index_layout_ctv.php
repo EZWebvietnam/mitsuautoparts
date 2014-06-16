@@ -138,7 +138,12 @@ $time_start = microtime_float();
                                                                     CT Hóa đơn
                                                                 </a>
                                                             </li>
-                                                            
+                                                            <li class="main">
+                                                                <a href="<?php echo base_url(); ?>admin/categoryadmin/list_category" rel="category" class="v_link">
+                                                                    <div><img src="<?php echo base_url(); ?>template/ezwebvietnam/admin_cp/icon/unit-icon.png" alt=""></div>
+                                                                    Danh muc san pham
+                                                                </a>
+                                                            </li>
                                                             
                                                             <li class="main">
                                                                 <a href="<?php echo base_url(); ?>admin/contactadmin/list_contact" rel="contact" class="v_link">

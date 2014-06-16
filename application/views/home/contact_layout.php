@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
 <head><title>
-	HaThanhAuto.com - THẾ GIỚI PHỤ TÙNG Ô TÔ NHẬP KHẨU-DẦU NHỚT PHỤ GIA Ô TÔ!
+	Phụ tùng ô tô - Phu tung xe o to nhập khẩu giá tốt
 </title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="google-site-verification" content="m8fDBKyVIyvrrx_CrBoy5sbMJquy5soxEH1nVw7kbyw" /><link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/streetmap-lvn.aspx" />
 <!--http://www.minifycss.com/css-compressor  async="true"/-->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/Reset.css" /><!--rat quan trong de tuong thich voi nhieu trinh duyet -->
@@ -84,7 +84,9 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
             <div class="clr header-main">
             	<div class="main-item-1">
                 <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogo" href="<?php echo base_url();?>">
-                                    <img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/logo.jpg" width="249" height="39" alt="logo" />
+                                    <div style="width:249px; height:39px;"></div>
+                                   <!--<img src="images/logo.jpg" width="249" height="39" alt="logo" />-->
+                                </a>
                                 </a>
                 </div>
                 <div class="main-item-2">
@@ -113,7 +115,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
 
                                             <a id="ctl00_HeaderTop1_NavibarTop1_lnkLogin" class="pos-login" href="CustomerInfor-lvn.aspx">Xin chào <br> <b><?php echo $this->session->userdata('full_name');?></b></a>
                                             <div class="nav-content-hide" style="right: -131px; width: 200px; display: none;">
-                                                <div style="font-size: 11px; font-weight: bold; color: #333;text-align: left;padding:10px 0;"><span class="padd-cate"><a href="/CustomerInfor-lvn.aspx">Bảng điều khiển</a></span><span class="padd-cate"><a href="/AccountInfor-lvn.aspx">Thông tin tài khoản</a></span><span class="padd-cate"><a href="/ManageOrder-lvn.aspx">Đơn hàng</a></span><span class="padd-cate"><a href="/quan-ly-so-dia-chi-lvn-d62792383.aspx">Sổ địa chỉ</a></span><span class="padd-cate"><a href="/Comment-lvn.aspx">Quản lý bình luận</a></span><span class="padd-cate"><a href="/quan-ly-cau-hoi-lvn-d62792383.aspx">Quản lý câu hỏi</a></span><span class="padd-logout"><a href="<?php echo base_url();?>dang-xuat">Thoát</a></span></div>
+                                                <div style="font-size: 11px; font-weight: bold; color: #333;text-align: left;padding:10px 0;"><span class="padd-logout"><a href="<?php echo base_url();?>dang-xuat">Thoát</a></span></div>
                                             </div>
                                         </div>
                                     <?php } else { ?>
@@ -193,8 +195,25 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
 <!--Headet menu-->
 <div class="header-nav">
     <ul class="nav-top">
-        <li class='navL1 width1'><i></i><a href='/He-thong-dien-dieu-hoa--product-c32428453-p1.aspx'><span>Hệ thống điện  -  điều hòa </span></a><ul ><li><i></i><a href='/He-thong-cam-bien-product-c137814891-p1.aspx'>Hệ thống cảm biến</a></li><li><i></i><a href='/He-thong-tui-khi--product-c46531879-p1.aspx'>Hệ thống túi khí </a></li><li><i></i><a href='/Loc-lanh-product-c57501089-p1.aspx'>Lốc lạnh</a></li><li><i></i><a href='/Dan-nong-product-c65317316-p1.aspx'>Dàn nóng</a></li><li><i></i><a href='/He-thong-dieu-hoa--product-c71161997-p1.aspx'>Hệ thống điều hòa </a></li><li><i></i><a href='/He-thong-hop-dieu-khien-product-c72973774-p1.aspx'>Hệ thống hộp điều khiển</a></li></ul></li><li class='navL1 width2'><i></i><a href='/Than-vo-guong-den-kinh--product-c38818800-p1.aspx'><span>Thân vỏ - gương,đèn,kính </span></a><ul ><li><i></i><a href='/Mat-ga-lang-product-c67549043-p1.aspx'>Mặt ga lăng</a></li><li><i></i><a href='/Ba-do-soc-truoc-sau--product-c68024511-p1.aspx'>Ba đờ sốc trước-sau </a></li><li><i></i><a href='/Tai-xe-tay-mo-cua-product-c69172688-p1.aspx'>Tai xe, tay mở cửa</a></li><li><i></i><a href='/He-thong-bom-product-c78722524-p1.aspx'>Hệ thống bơm</a></li><li><i></i><a href='/Logo-tem-chu--product-c85638362-p1.aspx'>Logo, tem chữ </a></li><li><i></i><a href='/Nep-cac-loai-op--product-c91978542-p1.aspx'>Nẹp các loại-ốp </a></li><li><i></i><a href='/He-thong-cam-bien-product-c104417660-p1.aspx'>Hê thống cảm biến</a></li><li><i></i><a href='/He-thong-den-Bong-den-guong--product-c105168944-p1.aspx'>Hệ thống đèn - Bóng đèn - gương </a></li></ul></li><li class='navL1 width3'><i></i><a href='/He-thong-dong-co-hop-so--product-c49361637-p1.aspx'><span>Hệ thống động cơ - hộp số </span></a><ul ><li><i></i><a href='/He-thong-truc-loc-bac--product-c50380646-p1.aspx'>Hệ thống trục, lốc, bạc </a></li><li><i></i><a href='/He-thong-bi-bu-ly--product-c64591872-p1.aspx'>Hệ thống bi | bu ly </a></li><li><i></i><a href='/Bau-loc-dong-co-bo-bin-product-c83908761-p1.aspx'>Bầu lọc động cơ, bô bin</a></li><li><i></i><a href='/He-thong-cam-bien-cao-su-day--product-c85006575-p1.aspx'>Hệ thống cảm biến, cao su, dây </a></li><li><i></i><a href='/He-thong-gioang-phot-loc-ong-hoi--product-c93528489-p1.aspx'>Hệ thống gioăng phớt, lọc, ống hơi </a></li><li><i></i><a href='/He-thong-hop-so--product-c106237740-p1.aspx'>Hệ thống hộp số </a></li><li><i></i><a href='/He-thong-bom-product-c106542910-p1.aspx'>Hệ thống bơm</a></li></ul></li><li class='navL1 width4'><i></i><a href='/He-thong-truyen-dong-he-thonglai--product-c64548138-p1.aspx'><span>Hệ thống truyền động,hệ thốnglái </span></a><ul ><li><i></i><a href='/Truc-lap--product-c16019253-p1.aspx'>Trục láp </a></li><li><i></i><a href='/Giam-tran-bi--product-c66040290-p1.aspx'>Giảm trấn, bi </a></li><li><i></i><a href='/He-thong-lai--product-c82321013-p1.aspx'>Hệ thống lái </a></li><li><i></i><a href='/He-thong-bi-moay-o--product-c95536937-p1.aspx'>Hệ thống bi moay ơ </a></li></ul></li><li class='navL1 width5'><i></i><a href='/He-thong-nhien-lieu-va-lam-mat--product-c80214057-p1.aspx'><span>Hệ thống nhiên liệu và làm mát </span></a><ul ><li><i></i><a href='/He-thong-nhien-lieu--product-c38008663-p1.aspx'>Hệ thống nhiên liệu  </a></li><li><i></i><a href='/Bom-xang-o-to-product-c40867735-p1.aspx'>Bơm xăng ô tô</a></li><li><i></i><a href='/He-thong-lam-mat--product-c46536705-p1.aspx'>Hệ thống làm mát </a></li><li><i></i><a href='/Loc-xang-product-c65326726-p1.aspx'>Lọc xăng</a></li><li><i></i><a href='/Ket-nuoc-product-c77109292-p1.aspx'>Két nước</a></li><li><i></i><a href='/Loc-dau-o-to-product-c86920721-p1.aspx'>Lọc dầu ô tô</a></li></ul></li><li class='navL1 width6'><i></i><a href='/He-thong-gam-he-thong-phanh--product-c101208231-p1.aspx'><span>Hệ thống gầm - hệ thống phanh </span></a><ul ><li><i></i><a href='/He-thong-giam-xoc-product-c118309881-p1.aspx'>Hệ thống giảm xóc</a></li><li><i></i><a href='/He-thong-lo-xo-product-c74154028-p1.aspx'>Hệ thống lò xo</a></li><li><i></i><a href='/He-thong-phanh--product-c94119359-p1.aspx'>Hệ thống phanh </a></li><li><i></i><a href='/He-thong-cang--product-c63779922-p1.aspx'>Hệ thống càng </a></li><li><i></i><a href='/Cao-su-cac-loai--product-c108984489-p1.aspx'>Cao su các loại </a></li></ul></li><li class='navL1 width7'><i></i><a href='/Noi-that-chat-long-phu-kien--product-c102034090-p1.aspx'><span>Nội thất, chất lỏng, phụ kiện </span></a><ul ><li><i></i><a href='/-Dong-ho-tap-lo--product-c113627818-p1.aspx'> Đồng hồ táp lô </a></li><li><i></i><a href='/Lop-xe-o-to-chinh-hang-product-c123266933-p1.aspx'>Lốp xe ô tô chính hãng</a></li><li><i></i><a href='/He-thong-dau-nhot--product-c142950191-p1.aspx'>Hệ thống dầu nhớt </a></li><li><i></i><a href='/He-thong-Noi-that--product-c31796351-p1.aspx'>Hệ thống Nội thất </a></li><li><i></i><a href='/He-thong-ao-goi-o-to--product-c42547292-p1.aspx'>Hệ thống áo, gối ô tô </a></li><li><i></i><a href='/Kinh-chong-loa-o-to-product-c48863303-p1.aspx'>Kính chống lóa ô tô</a></li><li><i></i><a href='/Dau-dung-cho-xe-mo-to-product-c59909950-p1.aspx'>Dầu dùng cho xe mô tô</a></li><li><i></i><a href='/He-thong-tap-bi-product-c60241020-p1.aspx'>Hệ thống táp bi</a></li><li><i></i><a href='/Thiet-bi-hien-thi-thong-tin-len-kinh-lai-product-c62032520-p1.aspx'>Thiết bị hiển thị thông tin lên kính lái</a></li><li><i></i><a href='/O-to-dien-tre-em-va-Ghe-o-to-cho-be-product-c71220385-p1.aspx'>Ô tô điện trẻ em và Ghế ô tô cho bé</a></li><li><i></i><a href='/Do-choi-xe-hoi--product-c104198599-p1.aspx'>Đồ chơi xe hơi </a></li><li><i></i><a href='/Dau-phanh-tro-luc-cau-sau-product-c73022092-p1.aspx'>Dầu phanh, trợ lực, cầu sau</a></li></ul></li>
-    </ul>
+                                <?php
+                                $i = 1;
+                                foreach ($list_cate_parent as $cate_parent) {
+                                    ?>
+                                    <li class='navL1 width<?php echo $i ?>'>
+                                        <i></i><a href='<?php echo base_url(); ?>c/<?php echo mb_strtolower(url_title(removesign($cate_parent['name']))); ?>-c<?php echo $cate_parent['id'] ?>'><span><?php echo $cate_parent['name'] ?> </span></a>
+                                        <ul >
+    <?php
+    $cate_sub = $this->cateproducthomemodel->list_cate_from_parent($cate_parent['id']);
+    foreach ($cate_sub as $cate_s) {
+        ?>
+                                                <li><i></i><a href='<?php echo base_url(); ?>c/<?php echo mb_strtolower(url_title(removesign($cate_s['name']))); ?>-c<?php echo $cate_s['id'] ?>'><?php echo $cate_s['name'] ?></a></li>
+
+                                            <?php } ?>
+                                        </ul>
+                                    </li>
+                                            <?php $i++;
+                                        } ?>
+                            </ul>
 </div>
 <script type="text/javascript">
     $(function () {
@@ -345,76 +364,54 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$cph1$ScriptManager1', 'aspnet
 
                 </div>
                 <div class="FooterTop">
-                    
-<div class="box-footer-navi">
-		<div class="f-n-header">
-        </div>
-        <div class="f-n-content">
-        	<div class="f-n-item">
-            	
-<div class="n-item">
-    <span class="n-left"></span>
-    <span class="n-right">
-       <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
-Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của Hà Thành Auto nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). Hà Thành Auto cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho Hà Thành Auto đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
-</span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
-    </span>
-    <span class="clr"></span>
-</div>
-            </div>
-            <div class="f-n-item">
-            	<div class="n-item">
-                	<div class="n-h-text ColorRedBold">
-                    	Dịch Vụ Ưu Trội
-                    </div>
-                    <div class="n-c-img">
-                    	<ul>
-                        	<li>
-                            	<a href="/Dat-hang-Thanh-toan-lvn-Help-c70156952-d84425903.aspx" class="i-cart">Mua hàng online</a>
-                            </li>
-                            <li>
-                            	<a href="/Thanh-toan-qua-ngan-hang-lvn-Help-c70156952-d51450992.aspx" class="i-pay">Thanh toán Tiện lợi</a>
-                            </li>
-                            <li>
-                            	<a href="/Mien-phi-van-chuyen-Free-Shipping-lvn-Help-c72522223-d179365925.aspx" class="i-chan">Giao hàng tận nơi</a>
-                            </li>
-                            <li>
-                            	<a href="/Phuc-vu-chu-dao-lvn-Help-c55004637-d81911276.aspx" class="i-ser">Phục vụ chu đáo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="f-n-item f-n-item-last">
-            	<div class="n-item">
-                    
-<div class="n-ques-text ColorRedBold">
-    <span>Hỏi đáp</span>
-</div>
-    <div class='n-c-text'><ul><li><a class='lnkcontent' href='/Lua-chon-giua-Toyota-Camry-va-Mercedes-GLK-voi-1-6-ty-Question-c91686724-d32821808.aspx' title='Lựa chọn giữa Toyota Camry và Mercedes GLK với 1,6 tỷ'>Lựa chọn giữa Toyota Camry và Mercedes GLK với 1,6 tỷ</a></li><li><a class='lnkcontent' href='/Xin-tu-van-mua-xe-BMW-X5-doi-2008--Question-c91686724-d111710369.aspx' title='Xin tư vấn mua xe BMW X5 đời 2008?'>Xin tư vấn mua xe BMW X5 đời 2008?</a></li><li><a class='lnkcontent' href='/Nen-chon-mua-xe-BMW-318i-hay-Mecedes-C180-doi-2005--Question-c91686724-d59048319.aspx' title='Nên chọn mua xe BMW 318i hay Mecedes C180 đời 2005?'>Nên chọn mua xe BMW 318i hay Mecedes C180 đời 2005?</a></li><li><a class='lnkcontent' href='/-Xe-Mercedes-E240-doi-2004-750-trieu-co-nen-mua-Question-c91686724-d140579940.aspx' title=' Xe Mercedes E240 đời 2004? 750 triệu có nên mua'>Xe Mercedes E240 đời 2004? 750 triệu có nên mua...</a></li><li><a class='lnkcontent' href='/Duoi-300-trieu-dong-Xe-cu-nao-dang-gia--Question-c91686724-d66079626.aspx' title='Dưới 300 triệu đồng - Xe cũ nào đáng giá ?'>Dưới 300 triệu đồng - Xe cũ nào đáng giá ?</a></li></ul></div>
 
-                </div>
-            </div>
-            <div class="clr"></div>
-        </div>
-    </div>
+                    <div class="box-footer-navi">
+                        <div class="f-n-header">
+                        </div>
+                        <div class="f-n-content">
+                            <div class="f-n-item">
+
+                                <div class="n-item">
+                                    <span class="n-left"></span>
+                                    <span class="n-right">
+                                        <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
+                                            Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của MitsuvnAutoPart nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). MitsuvnAutoPart cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho MitsuvnAutoPart đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
+                                        </span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
+                                    </span>
+                                    <span class="clr"></span>
+                                </div>
+                            </div>
+                            <div class="f-n-item">
+                                <div class="n-item">
+                                    <div class="n-h-text ColorRedBold">
+                                        Dịch Vụ Ưu Trội
+                                    </div>
+                                    <div class="n-c-img">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="i-cart">Mua hàng online</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-pay">Thanh toán Tiện lợi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-chan">Giao hàng tận nơi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="i-ser">Phục vụ chu đáo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clr"></div>
+                        </div>
+                    </div>
                 </div>
                 <div id="Footer">
                     <div class="box-footer">
-                        <div class="foo-item">
-                            
-                            <span class="foo-row" style="margin-top: 15px;">
-                                
-                                
-                            </span>
-                            <span class="foo-row foo-text-5">
-                            </span>
-                            <span class="sp_social"> Chúng tôi trên: </span>
-                            <span class="sp_social"><a href="http://www.youtube.com/user/hathanhauto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/youtube20.png" alt="youtube" /></a></span>
-                            <span class="sp_social"><a href="https://twitter.com/HaThanhAuto" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/icon_twitter_20x20.gif" alt="twitter" /></a></span>
-                            <span class="sp_social"><a href="http://www.facebook.com/otohathanh" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/CarlsonFacebook.png" alt="facebook" /></a></span>
-                            <span class="sp_social"><a href="http://plus.google.com/u/0/106968288631124053505" ><img src="<?php echo base_url(); ?>template/ezwebvietnam/home/images/social-icon-google-plus.png" alt="googleplus" /></a></span>
-                        </div>
+                        
                         <div class="foo-item">
                             
                         </div>

@@ -183,18 +183,7 @@
                                     <li class="su-item-4"><i class="icon-support"></i><a href="mailto:lienhe@hathanhauto.com" rel="nofollow" class="lnkmailsupport">
                                             info@mitsuvnautoparts.com</a> 
                                     </li>
-                                    <li class="su-item-5">
-                                        <div class="iconSupport">
-                                            <div class="iconYahoo">
-                                                <a href="ymsgr:sendIM?hathanh.auto&amp;m=Chao ban!" rel="nofollow" style="background: url(http://opi.yahoo.com/online?u=hathanh.auto&amp;t=1&amp;l=us) no-repeat;
-                                                   padding-left: 64px; padding-top: 2px;"></a>
-                                            </div>
-                                            <div class="iconSkype">
-                                                <script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-                                                <a href="skype:hathanh.auto?chat"><img src="http://mystatus.skype.com/smallclassic/hathanh.auto" style="border: none;" width="63" height="17" alt="My status" /></a>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    
                                 </ul>
                   </div>
                   <div class="box-yeucau">
@@ -236,29 +225,7 @@
                   });
                </script>
                <div class="FooterTop">
-                  <div class="sp-viewMax-header" style="margin-top:20px;">
-                     <span style="font-size: 15px;color: #B41309;font-weight: bold;">
-                     Sản phẩm liên quan
-                     </span>
-                  </div>
-                  <div class="sp-viewMax">
-                     <a href="javascript:void(0)" class="sp-back2" id="btn-back">Back</a> 
-                     <a href="javascript:void(0)" class="sp-next2" id="btn-next">Next</a>
-                     <div class="content2">
-                        <ul>
-                           <li><a href='/Gioang-kinh-chan-gio-sau-xe-BMW-E39-520-523-525-528-product-c38818800-d74489048.aspx'><img src='upload/images/27o3cfobr0b314914114908bu-ly_logo.jpg?width=135&height=135' /><span class='pro-name'>Gioăng kính chắn gió sau xe BMW E39/520, 523, 525, 528</span><span class='ColorOrangeBold'>Vui lòng liên hệ</span></a></li>
-                           <li><a href='/Gioang-kinh-chan-gio-truoc-xe-BMW-E39-520-523-525-528-product-c38818800-d109585291.aspx'><img src='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2wdhkanfpa1290914060914bu-ly_logo.jpg?width=135&height=135' /><span class='pro-name'>Gioăng kính chắn gió trước xe BMW E39/520, 523, 525, 528</span><span class='ColorOrangeBold'>Vui lòng liên hệ</span></a></li>
-                           <li><a href='/Choi-gat-mua-xe-BMW-E39-chinh-hang-product-c38818800-d94244124.aspx'><img src='upload/images/2od5co7c1ze292514032506bu-ly_logo.jpg?width=135&height=135' /><span class='pro-name'>Chổi gạt mưa xe BMW E39 chính hãng</span><span class='ColorOrangeBold'>Vui lòng liên hệ</span></a></li>
-                           <li><a href='/Cong-tac-len-xuong-kinh-xe-BMW-E46-chinh-hang-product-c38818800-d100484668.aspx'><img src='upload/images/2bmfm7euvz1292314112356ct_logo.jpg?width=135&height=135' /><span class='pro-name'>Công tắc lên xuống kính xe BMW E46 chính hãng</span><span class='ColorOrangeBold'>Vui lòng liên hệ</span></a></li>
-                           <li><a href='/Hop-dieu-khien-den-pha-xe-BMW-745i-GT-chinh-hang-product-c38818800-d95661725.aspx'><img src='upload/images/2ffpgsqdcsn295214105258bu-ly_logo.jpg?width=135&height=135' /><span class='pro-name'>Hộp điều khiển đèn pha xe BMW 745i, GT chính hãng</span><span class='ColorOrangeBold'>Vui lòng liên hệ</span></a></li>
-                        </ul>
-                     </div>
-                     <div class="clr">
-                     </div>
-                     <input type="hidden" id="hidCurrentPage" value="1" />
-                     <input type="hidden" name="ctl00$cph1$ProductListRelate1$hidCateID" id="ctl00_cph1_ProductListRelate1_hidCateID" value="38818800" />
-                     <input type="hidden" name="ctl00$cph1$ProductListRelate1$hidTotalItem" id="ctl00_cph1_ProductListRelate1_hidTotalItem" value="152" />
-                  </div>
+                  
                   <script type="text/javascript">
                      $(function () {
                          var strIconLoad = '<div style="text-align:center;vertical-align:middle;width:100%;padding-top:50px;height:175px;"><img src="/images/ajax-loaderBig.gif" width="32" height="32" alt="Loading"/></div>';
