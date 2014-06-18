@@ -85,14 +85,11 @@
         $("#adminform").validate({
             rules: {
                 full_name: "required",
-                phone: "required",
-                address: "required",
-                
+                phone: "required"
             },
             messages: {
                 full_name: "Vui lòng nhập tên",
-                phone: "Vui lòng nhập SĐT",
-                address: "Vui lòng nhập địa chỉ"
+                phone: "Vui lòng nhập SĐT"
             }
             , submitHandler: function(form) {
                 var page = 1;

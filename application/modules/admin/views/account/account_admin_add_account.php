@@ -108,7 +108,7 @@ $password = array(
         var username = $(this).val();
         $.ajax({
                 type: "POST",
-                url: "<?php echo base_url();?>admin/ctvadmin/check_account_ajax",
+                url: "<?php echo base_url();?>admin/accountadmin/check_account_ajax",
                 data: {username:username},
                 dataType: "json",
                 success: function(data) {
@@ -131,7 +131,7 @@ $password = array(
         var email = $(this).val();
         $.ajax({
                 type: "POST",
-                url: "<?php echo base_url();?>admin/ctvadmin/check_email_ajax",
+                url: "<?php echo base_url();?>admin/accountadmin/check_email_ajax",
                 data: {email:email},
                 dataType: "json",
                 cache: false,
