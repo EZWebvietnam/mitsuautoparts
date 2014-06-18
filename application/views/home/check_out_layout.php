@@ -608,7 +608,7 @@
                 </div>
             </div>
             <div class="footer-info">
-                <span style="float: left;">Copyright © 2012 <b>Mitsuvnautoparts.com</b> All rights reserved.</span>
+                <span style="float: left;">Copyright © <?php echo date('Y');?> <b>Mitsuvnautoparts.com</b> All rights reserved.</span>
                 <span style="float: right;"><a href="/Mercedes-Benz-provider-c92477144.aspx" rel="nofollow"> &nbsp; Phụ tùng ô tô  Mercedes</a></span>
                 <span style="float: right;margin-left: 10px;"><a href="/" rel="nofollow">Phụ tùng ô tô chính hãng nhập khẩu </a>  |</span>
                 <span style="float: right;margin-left: 20px;"><a href="http://www.facebook.com/ezwebvietnam" rel="nofollow">Desgin EZWeb Việt Nam </a>  |</span>
