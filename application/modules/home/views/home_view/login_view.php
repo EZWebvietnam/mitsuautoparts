@@ -45,5 +45,5 @@
         </div>
     </div>
     <span style="line-height: 30px; margin-top: 10px; display: block">Bạn chưa có tài khoản
-        hãy click <a href="/CustomerRegister-lvn.aspx">Đăng ký</a></span>
+        hãy click <a href="<?php echo base_url();?>dang-ky">Đăng ký</a></span>
 </div>

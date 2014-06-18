@@ -352,7 +352,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$cph1$ScriptManager1', 'aspnet
             
         </div>
         <div class="maps-right">
-            <div id='map_canvas' style='width: 587px; height: 458px'></div><script type='text/javascript'>initialize(10.740495,106.686015,"<div class='inforCty' style='text-align:left;'><b>MITSUVNAUTOPARTS.COM<br/>THẾ GIỚI PHỤ TÙNG Ô TÔ NHẬP KHẨU-DẦU NHỚT PHỤ GIA Ô TÔ</b><div class='infoAdd'><b>Địa chỉ</b>: 263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM</div><div class='infoAdd'>Hotline: <span style='color:Red;'><b>082.218.9762</b></span> <br/> <b>  Website: </b><a href='http://www.hathanhauto.com' target='_blank'>www.mitsuvnautoparts.com</a></div></div>")</script>
+            <div id='map_canvas' style='width: 587px; height: 458px'></div><script type='text/javascript'>initialize(10.740495,106.686015,"<div class='inforCty' style='text-align:left;'><b>MITSUVNAUTOPARTS.COM<br/>THẾ GIỚI PHỤ TÙNG Ô TÔ NHẬP KHẨU-DẦU NHỚT PHỤ GIA Ô TÔ</b><div class='infoAdd'><b>Địa chỉ</b>: 263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM</div><div class='infoAdd'>Hotline: <span style='color:Red;'><b>082.218.9762</b></span> <br/> <b>  Website: </b><a href='<?php echo base_url();?>' target='_blank'>www.mitsuvnautoparts.com</a></div></div>")</script>
         </div>
         
     </div>
@@ -369,41 +369,8 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$cph1$ScriptManager1', 'aspnet
                         <div class="f-n-header">
                         </div>
                         <div class="f-n-content">
-                            <div class="f-n-item">
-
-                                <div class="n-item">
-                                    <span class="n-left"></span>
-                                    <span class="n-right">
-                                        <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
-                                            Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của MitsuvnAutoPart nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). MitsuvnAutoPart cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho MitsuvnAutoPart đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
-                                        </span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
-                                    </span>
-                                    <span class="clr"></span>
-                                </div>
-                            </div>
-                            <div class="f-n-item">
-                                <div class="n-item">
-                                    <div class="n-h-text ColorRedBold">
-                                        Dịch Vụ Ưu Trội
-                                    </div>
-                                    <div class="n-c-img">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="i-cart">Mua hàng online</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-pay">Thanh toán Tiện lợi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-chan">Giao hàng tận nơi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-ser">Phục vụ chu đáo</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                             
                             <div class="clr"></div>
                         </div>

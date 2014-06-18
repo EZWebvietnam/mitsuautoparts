@@ -26,7 +26,7 @@
                      <table cellpadding="0" cellspacing="0" align="center">
                         <tbody>
                            <tr>
-                              <td colspan="3" align="center" style="padding:20px 0"><a href="http://www.hathanhauto.com" style="font-size:12px;color:#444444;text-decoration:none" target="_blank">@ <?php echo date('Y');?> Mitsuvnautoparts.com</a></td>
+                              <td colspan="3" align="center" style="padding:20px 0"><a href="<?php echo base_url();?>" style="font-size:12px;color:#444444;text-decoration:none" target="_blank">@ <?php echo date('Y');?> Mitsuvnautoparts.com</a></td>
                            </tr>
                            <tr>
                               <td style="padding-right:30px;line-height:1.5em"><b>Mitsuvnautoparts.com – THẾ GIỚI PHỤ TÙNG Ô TÔ NHẬP KHẨU-DẦU NHỚT PHỤ GIA Ô TÔ.</b><br>263 Âu Dương Lân - Phường 2 - Quận 8 - TPHCM - Điện thoại: 082.218.9762</td>

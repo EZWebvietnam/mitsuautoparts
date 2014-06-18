@@ -7,7 +7,7 @@
         </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-        <link id="ctl00_lnkCano" rel="canonical" href="http://www.hathanhauto.com/orders.aspx" />
+        <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_s($_SERVER);?>" />
         <!--http://www.minifycss.com/css-compressor  async="true"/-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/Reset.css" /><!--rat quan trong de tuong thich voi nhieu trinh duyet -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ExtCss.css" />
@@ -463,41 +463,8 @@
                         <div class="f-n-header">
                         </div>
                         <div class="f-n-content">
-                            <div class="f-n-item">
-
-                                <div class="n-item">
-                                    <span class="n-left"></span>
-                                    <span class="n-right">
-                                        <span style='border-bottom:1px dotted #ccc;display:block;padding-bottom:15px;margin-bottom:10px;'>“Giá tiết kiệm hơn 30% so với các đơn vị cung cấp phụ tùng ô tô khác”
-                                            Đây là lần thứ hai tôi liên hệ và đặt mua phụ tùng ô tô trên website www.hathanhauto.com, thực sự là rất dễ dàng và nhanh chóng. Chỉ vài thao tác đặt hàng, không cần đăng ký, tôi được chuyên viên hỗ trợ kỹ thuật tư vấn và chọn mua sản phẩm như ý. Tôi nhận được hàng chỉ sau 1h đồng hồ, sản phẩm trong tình trạng tốt; lắp đặt tại xưởng liên kết của MitsuvnAutoPart nên giá giảm khá nhiều so với các garage ô tô khác (tôi ước tính vào khoảng 25  30%). MitsuvnAutoPart cũng miễn phí cho đơn hàng cho tôi vì tôi mua hàng ở Hà Nội. Sau một thơi gian dùng thử 2 sản phẩm mua ở đây, tôi đánh giá rất cao về chất lượng sản phẩm, dịch vụ cung cấp nên tôi viết email lại cho MitsuvnAutoPart đăng lên mục ý kiến khách hàng để cho nhiều bạn bè của tôi, những người muốn tiết kiệm chi phí có cơ hội mua phụ tùng ô tô chính hãng với giá cả cạnh tranh và dịch vụ nhanh chóng tiết kiệm chính xác nhất.
-                                        </span><span style='text-align:right;font-style:normal;display:block;'><b class='ColorRedBold' style='font-size:14px;'>Hoàng Anh Tuấn</b><br />Thái Hà-Đống Đa-Hà Nội</span>
-                                    </span>
-                                    <span class="clr"></span>
-                                </div>
-                            </div>
-                            <div class="f-n-item">
-                                <div class="n-item">
-                                    <div class="n-h-text ColorRedBold">
-                                        Dịch Vụ Ưu Trội
-                                    </div>
-                                    <div class="n-c-img">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="i-cart">Mua hàng online</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-pay">Thanh toán Tiện lợi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-chan">Giao hàng tận nơi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="i-ser">Phục vụ chu đáo</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                             
                             <div class="clr"></div>
                         </div>
