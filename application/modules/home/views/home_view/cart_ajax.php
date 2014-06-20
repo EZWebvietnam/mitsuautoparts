@@ -13,9 +13,7 @@
                             <div class="clear"></div>
                         </div> <!-- END  .order-steps -->
 
-                        <div class="order-cart-choice">
-                            <span id="ctl00_cph1_OrderHome1_lblCartChoice">Sản phẩm <b style='color: #B41309;'>Chổi gạt mưa trước xe Mercedes S320 WDB220</b> là sản phẩm mới nhất bạn vừa thêm</span>            
-                        </div>
+                        
 
                         <div class="oi-content">
 

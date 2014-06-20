@@ -7,6 +7,8 @@ class Cart extends MY_Controller{
 		$this->load->library('form_validation');
 		$this->load->library('tank_auth');
 		$this->lang->load('tank_auth');
+		 parent::list_cate_parent();
+        parent::list_manufac();
 	}
 	public function add_to_cart(){
 		$this->load->model('producthomemodel');

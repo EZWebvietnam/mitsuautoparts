@@ -7,7 +7,7 @@
         </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="google-site-verification" content="18O4kCaYdbSZqzfo__Wuyb3gSEqt7JPoCsBkE_wwCF8" />
-        <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_s($_SERVER);?>" />
+        <link id="ctl00_lnkCano" rel="canonical" href="<?php echo full_url_($_SERVER);?>" />
         <!--http://www.minifycss.com/css-compressor  async="true"/-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/Reset.css" /><!--rat quan trong de tuong thich voi nhieu trinh duyet -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/ezwebvietnam/home/css/ExtCss.css" />
@@ -252,9 +252,7 @@
                             <div class="clear"></div>
                         </div> <!-- END  .order-steps -->
 
-                        <div class="order-cart-choice">
-                            <span id="ctl00_cph1_OrderHome1_lblCartChoice">Sản phẩm <b style='color: #B41309;'>Chổi gạt mưa trước xe Mercedes S320 WDB220</b> là sản phẩm mới nhất bạn vừa thêm</span>            
-                        </div>
+                        
 
                         <div class="oi-content">
 
