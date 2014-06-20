@@ -12,17 +12,21 @@
                      <div class="fl-l">
                         <!--Slide image detail-->
                         <div class='wrap-slide-img-detail' style='z-index:1;'>
-                           <div class='cloud-zoom-first'><a href='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg' class = 'cloud-zoom' id='zoom1' rel='adjustX: 10, adjustY:-4'><img src='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg?width=394&height=412' border='0' style='z-index: 1;width:185px;height:206px;'/></a></div>
-                           <div class='wrap-carosel-box'>
-                              <div class='list_carousel'>
-                                 <ul id='Carousel-wrap' style='width:200px;'>
-                                    <li><a href='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: '<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg?width=394&height=412'"><img src='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg?width=44&height=44' alt = 'Ảnh 0' class='imgThumbZoom'/></a></li>
-                                 </ul>
-                                 <div class='clearfix'></div>
-                              </div>
-                              <a id='prev-carousel' href='#'></a><a id='next-carousel' href='#'></a>
-                           </div>
-                           <script>LoadProductImage();</script>
+                           <div class='cloud-zoom-first'>
+						   <a href='<?php echo base_url();?>template/ezwebvietnam/home/upload/images/2iqmisyk4xz042013052043CHOI GAT MUA_logo.jpg' class = 'cloud-zoom' id='zoom1' rel='adjustX: 10, adjustY:-4'>
+						   <?php 
+						   if(file_exists(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$product_detail[0]['image']) && is_file(PATH_FOLDER.ROT_DIR.'file/uploads/product/'.$product_detail[0]['image']) && $product_detail[0]['image']!='')
+						   {
+						   
+						   ?>
+						   <img src='<?php echo base_url();?>file/uploads/product/<?php echo $product_detail[0]['image']?>' width="394" height="412" border='0' style='z-index: 1;width:185px;height:206px;'/>
+						   <?php } else { ?>
+						   <img src='<?php echo base_url();?>file/uploads/no_image.gif' width="394" height="412" border='0' style='z-index: 1;width:185px;height:206px;'/>
+						   <?php } ?>
+						   </a>
+						   </div>
+                          
+                          
                         </div>
                      </div>
                      <!-- END .fl-l -->
@@ -31,7 +35,6 @@
                      <div class='fl-r pdt-r'>
                         <p class='pd-title'><?php echo $product_detail[0]['title']?> </p>
                         <p class='pd-code'>Mã SP: <span class='bold'><?php echo $product_detail[0]['code']?> </span></p>
-                        <p class='pd-code'>Nhà sản xuất: <span class='bold'><a href='/Phu-tung-Mercedes-Benz-provider-c92477144.aspx'><?php echo $product_detail[0]['name_fac']?> </a></span></p>
                         <div class='fl-l'>
                             <?php 
                             if($product_detail[0]['stock']>0)
@@ -41,7 +44,7 @@
                             <?php } else {?>
                            <p class='mrg-t-b-7'><span class='ColorRed bold'>Hết hàng</span></p>
                             <?php } ?>
-                           <p class='mrg-t-b-7'>Giao hàng miễn phí nội thành Hà Nội</p>
+                           <p class='mrg-t-b-7'>Giao hàng miễn phí nội thành HCM</p>
                            <p class='mrg-t-b-7'><a class='tcl-price-detail' title='' href='/Cuoc-phi-van-chuyen-lvn-Help-c70156952-d40371627.aspx'>Chi tiết cước phí</a></p>
                            <p class='pd-verify mrg-t-15'><span class='icon-tick'></span><span class='bold'>Đảm bảo giá thấp nhất</span></p>
                            <p ><span class='dis-block'>Chia sẻ</span>

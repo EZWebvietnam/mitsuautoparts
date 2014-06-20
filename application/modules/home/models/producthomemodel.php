@@ -20,7 +20,7 @@ class Producthomemodel extends CI_Model
     public function product_detail($id_product)
     {
         $id_product = intval($id_product);
-        $sql="SELECT *,product.id as id_pro, manufac.id as id_fac,manufac.name as name_fac, cate_product.id as id_cate,cate_product.name as name_cate FROM product INNER JOIN manufac ON product.id_fac = manufac.id INNER JOIN cate_product ON cate_product.id = product.id_cate WHERE product.id = ?";
+        $sql="SELECT *,product.id as id_pro, cate_product.id as id_cate,cate_product.name as name_cate FROM product INNER JOIN cate_product ON cate_product.id = product.id_cate WHERE product.id = ?";
         $query = $this->db->query($sql,array($id_product));
         return $query->result_array(); 
     }

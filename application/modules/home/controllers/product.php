@@ -14,6 +14,7 @@ class Product extends MY_Controller
     }
     public function detail($id = null)
     {
+		
         if(empty($id))
         {
             show_404();
@@ -25,6 +26,7 @@ class Product extends MY_Controller
             exit;
         }
         $detail_product = $this->producthomemodel->product_detail($id);
+		//print_r($detail_product);exit;
         if(empty($detail_product))
         {
             show_404();
